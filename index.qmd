@@ -1,0 +1,55 @@
+---
+title: "Publish using Quarto"
+subtitle: "SARA Data Science Bootcamp 2025"
+format: html
+toc: true
+number-sections: true
+#backgroundcolor: "#FFF0F5"
+---
+
+![](logo-lotus.png){width="45%"}
+
+<span style="text-shadow: none;"><a class="github-button" href="https://github.com/sara-institute/course-publish-quarto" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star this on GitHub">Star</a><script async defer src="https://buttons.github.io/buttons.js"></script></span>
+
+SARA is a non-profit organization in India. To know more about SARA, kindly vist our [website](https://sara-edu.netlify.app/).
+
+Quarto integrates seamlessly with R, Python, Julia, and other tools, enabling users to produce high-quality, reproducible documents for diverse audiences.
+
+We aim to create a community where creators, researchers, and professionals can enhance their publishing skills, share knowledge, and unlock the full potential of Quarto for their projects.
+
+- It is an annual five days residential training program for helping individuals and organizations leverage Quarto's powerful tools to create and share publications effortlessly.
+
+- Participants from Underrepresented Communities are Prioritized for Selection. 
+
+- There is no tuition fee for any participant. The fee of Rs. 6000 (70 USD) includes only the food and accommodation for five days at the SARA Institute, Dr. Ambedkar Bhawan, Sonipat, Haryana - 131001.
+
+Email us at `sara.institute.info@gmail.com` $\cdot$ Call us at `925 315 2024`.
+
+The slides title background image is from [Sora Sagano | unsplash](https://images.unsplash.com/photo-1593248196138-bad1a611a766?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+
+## {.unnumbered}
+
+<br>
+
+{{< revealjs file="welcome.html" height="500px" class="ratio ratio-16x9" >}}
+
+<br>
+
+## Session
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
