@@ -1,0 +1,96 @@
+---
+title: "[QUARTO]{.clr-white .r-fit-text}"
+subtitle: "[Dr. Ajay Kumar Koli (PhD) $\\cdot$ SARA Institute of Data Science, India]{.clr-white .r-fit-text}"
+#author: "[SARA Institute of Data Science, Sonipat, Haryana, India]{.clr-white .r-fit-text}"
+page-title: "quarto"
+format: revealjs
+progress: true
+controls: true
+slide-number: true
+scrollable: true
+menu: true
+logo: images/logo-sara.png
+#bibliography: references.bib
+theme: style.scss
+title-slide-attributes: 
+  data-background-image: "https://images.unsplash.com/photo-1593248196138-bad1a611a766?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  data-background-size: cover
+---
+
+## Most of Us Use {background-color=black}
+
+![](https://res.cdn.office.net/officehub/images/content/images/unauth-refresh/unauth-m365-hero-copilot-centric-7d5c104d84.png){fig-align="right"}
+
+## Some of Us Use {background-color=black}
+
+![](https://storage.googleapis.com/gweb-uniblog-publish-prod/images/blocosheader1.width-1200.format-webp.webp){fig-align="center"}
+
+## None of Us Use {background-color=black}
+
+<br>
+
+![](https://cdn.myportfolio.com/45214904-6a61-4e23-98d6-b140f8654a40/6f28e7d4-3394-43f9-8b0d-41c52de3883f_rw_1920.png?h=df468fed93290048029cf3bdfc27fbdf){fig-align="center"}
+
+::: aside
+Artwork from [Allison Horst](https://allisonhorst.com/horst-hill-collaborations)
+:::
+
+## {background-image="https://cdn.myportfolio.com/45214904-6a61-4e23-98d6-b140f8654a40/b041d35c-5117-4dd0-9b08-d2d0f7a77f9a.png?h=21528b7e9f1a2e24c9ec3d46cfca8653" background-size="cover"}
+
+## Quarto
+
+<br>
+
+::::: columns
+::: {.column width="25%"}
+![](https://raw.githubusercontent.com/github/explore/80f119e965a9a3df7b74c3f7b63a502e3d0ded36/topics/quarto/quarto.png)
+:::
+
+::: {.column width="75%"}
+"An open-source scientific and technical publishing system to prepare articles & reports; presentations; dashboards; websites; books; and interactive documents.
+:::
+:::::
+
+::: aside
+Official Quarto Website: <https://quarto.org/>
+:::
+
+## Quarto Publishing System {background-color=black}
+
+![](https://cdn.myportfolio.com/45214904-6a61-4e23-98d6-b140f8654a40/c2ef45f1-4a68-4c7a-a43f-bdcf0f90e104.png?h=57404b88e9bf43eea2d2b57c71b13303)
+
+::: aside
+Artwork from [Allison Horst](https://allisonhorst.com/horst-hill-collaborations)
+:::
+
+## Create Quarto Default Document {background-color="black"}
+
+::: {.centering layout-ncol=2 layout-valign="bottom"}
+
+![Step 1](images/quarto-new-file.png){width="45%"}
+
+![Step 2](images/quarto-new-document.png)
+
+:::
+
+## Quarto Document: Save & Render {background-color="black"}
+
+![](images/quarto-default-document.png)
+
+## Output of Quarto Document {background-color="black"}
+
+![](images/quarto-default-output.png)
+
+
+## `.qmd` Files {background-color=black}
+
+![](https://cdn.myportfolio.com/45214904-6a61-4e23-98d6-b140f8654a40/b5217f2a-f129-4bf9-90dc-c5b9783d0ea8.png?h=f8d3ed40353f4ae6eb77dae39072510c)
+
+::: aside
+Artwork from [Allison Horst](https://allisonhorst.com/horst-hill-collaborations)
+:::
+
+## YAML, Markdown & Code Cells {background-color=black}
+
+![](images/quarto-default-document.png)
+

@@ -1,0 +1,268 @@
+---
+title: "[GITHUB]{.clr-white .r-fit-text}"
+subtitle: "[Dr. Ajay Kumar Koli (PhD) $\\cdot$ SARA Institute of Data Science, India]{.clr-white .r-fit-text}"
+#author: "[SARA Institute of Data Science, Sonipat, Haryana, India]{.clr-white .r-fit-text}"
+page-title: "quarto"
+format: revealjs
+progress: true
+controls: true
+slide-number: true
+scrollable: true
+menu: true
+logo: images/logo-sara.png
+#bibliography: references.bib
+theme: style.scss
+title-slide-attributes: 
+  data-background-image: "https://images.unsplash.com/photo-1593248196138-bad1a611a766?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  data-background-size: cover
+bibliography: references.bib
+---
+
+## Track Changes in MS Word {background-color="black"}
+
+![](https://www.rogenamitchell.com/uploads/1/8/5/8/18589470/02-track-changes-on-all-markup-on-1024x640_orig.png){fig-align="center"}
+
+## 😢 {background-color="black"}
+
+![](images/msword-work-progress.jpg){fig-align="center"}
+
+## Version Control
+
+<br>
+
+> Version control is a system that records changes to a file or set of files over time so that you can **recall specific versions later**. [@atlassianLearnGitTutorials2025]
+
+. . .
+
+> Version control is like a time machine for your files. It keeps track of all the changes made to your documents, code, or any other files over time. (Le Chat)
+
+## 😍 Why use Version Control?
+
+1.  **Avoid Losing Work:**
+    -   Ever accidentally deleted something important? With version control, you can easily recover previous versions of your files.
+2.  **Collaborate Easily:**
+    -   Working with a team? Version control allows multiple people to work on the same project without overwriting each other’s changes.
+3.  **Track Changes:**
+    -   Know exactly who made what changes and when. This is especially useful for keeping track of progress and identifying issues.
+4.  **Experiment Safely:**
+    -   Want to try something new without risking your current work? Version control lets you create branches to experiment with new ideas. If it doesn’t work out, you can always go back to the original version.
+
+## Tracking + Version in Google Docs {background-color="black"}
+
+![](https://i.pcmag.com/imagery/articles/01UUnsPYh2VThtlAupMet0T-2..v1569470602.png){fig-align="center"}
+
+## [Work Journey is Less Painful with Version Control]{.r-fit-text} 
+
+![](images/track-changes.png){fig-align="center" width="55%"}
+
+. . .
+
+::: {.centering .r-fit-text layout-ncol="3"}
+![Git](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/1920px-Git-logo.svg.png){fig-align="center" width="30%"}
+
+![GitHub](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/300px-GitHub_Invertocat_Logo.svg.png){fig-align="center" width="15%"}
+
+![RStudio](https://static.macupdate.com/products/50318/l/rstudio-logo.webp?v=1671434805){fig-align="center" width="15%"}
+:::
+
+## Git {background-image="https://git-scm.com/book/en/v2/images/distributed.png" background-size="contain" background-position="right"}
+
+:::: columns
+::: {.column width="50%"}
+-   It is a free and open-source **distributed version control system** [@gitofficialwebpageGit].
+:::
+::::
+
+::: aside
+Image Source: @chaconProGit2014
+:::
+
+## Install Git
+
+```{=html}
+<iframe width="1100" height="500" src="https://gitforwindows.org/" title="Webpage example"></iframe>
+```
+
+::: aside
+Webpage: <https://gitforwindows.org/>
+:::
+
+## Install Git
+
+::: {layout-ncol="2"}
+![](images/git-install1.png)
+
+![](images/git-install2.png)
+:::
+
+## Open Terminal `git --version`
+
+![](images/terminal.png)
+
+## GitHub 
+
+![](images/github-homepage.png)
+
+::: aside
+Official Website: <https://github.com/>
+:::
+
+## GitHub
+
+<br>
+
+> A platform for hosting and collaborating on Git repositories.
+
+<br>
+
+![](images/github-users.png)
+
+::: aside
+Source Website: <https://github.com/about>
+:::
+
+## GitHub Sign up {background-color="black"}
+
+::::: columns
+::: {.column width="50%"}
+![](images/github-account.png)
+:::
+
+::: {.column width="50%"}
+-   **Username advice**
+    -   all small cases
+    -   use hyphen `-` to separate the words
+    -   the shorter the better
+    -   make it timeless (do not ajay-jnu, ajay-ny, ajay-microsoft)
+    -   avoid special characters
+    -   reuse from your social media
+    -   comfortable to reveal to the world
+:::
+:::::
+
+## GitHub Settings {background-color="black"}
+
+::: {layout-ncol="2"}
+![](images/github-settings.png)
+
+![](images/github-password.png)
+:::
+
+## Enable Two Factor Authentication {background-color="black"}
+
+![](images/github-two-factor1.png)
+
+## Enable Two Factor Authentication {background-color="black"}
+
+![](images/github-two-factor2.png)
+
+## [RStudio $\rightarrow$ Tools $\rightarrow$ Global Options $\rightarrow$ Git/SVN]{.r-fit-text}
+
+![](images/rstudio-github-path.png){fig-align=center}
+
+## Save GitHub Username in RStudio
+
+-   Using Console, Install R package `usethis`
+
+```{r}
+#| eval: false
+#| echo: true
+## install if needed (do this exactly once):
+## install.packages("usethis")
+
+library(usethis)
+use_git_config(user.name = "ajay-kolii",
+               user.email = "mynameajay@gmail.com")
+```
+
+-   To See Saved Credentials, Run in Terminal <br>`git config --global --list`
+
+::: aside
+Read more here: <https://usethis.r-lib.org/articles/git-credentials.html>
+:::
+
+## GitHub's Personal Access Token (PAT)
+
+<br>
+
+> It is a way to authenticate and interact with GitHub's API and repositories without using your username and password.
+
+## Create GitHub's PAT in Console
+
+```{r}
+#| eval: false
+#| echo: true
+
+library(gitcreds)
+create_github_token()
+```
+
+<br>
+
+. . .
+
+![](images/github-pat-codes.png)
+
+
+## Personal Access Token (PAT) {background-color="black"}
+
+![](images/github-pat1.png)
+
+## Personal Access Token (PAT) {background-color="black"}
+
+![](images/github-pat2.png)
+
+## Add PAT
+
+```{r}
+#| eval: false
+#| echo: true
+
+gitcreds_set()
+```
+
+<br>
+
+. . .
+
+![](images/github-pat-added.png)
+
+## View GitHub Credentials
+
+```{r}
+#| eval: false
+#| echo: true
+
+gitcreds_get()
+```
+
+<br>
+
+. . .
+
+![](images/github-credentials-rstudio.png)
+
+- To See Saved Credentials, Run in Terminal<br>
+`git config --global --list`
+
+## References
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

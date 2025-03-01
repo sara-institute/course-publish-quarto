@@ -4,10 +4,7 @@ project:
     - "*.qmd"
   preview:
     browser: true
- 
-website:
-  title: "Publish using Quarto"
-  # navbar:
-  #   left:
-  #     - href: index.qmd
-  #       text: Home
+
+
+
+    

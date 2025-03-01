@@ -1,6 +1,6 @@
 ---
-title: "[Welcome]{.clr-white .r-fit-text}"
-subtitle: "[SARA Data Science Bootcamp, 3-7 Mar 2025 <br> Sonipat, Haryana]{.clr-white .r-fit-text}"
+title: "[WELCOME]{.clr-white .r-fit-text}"
+subtitle: "[SARA Data Science Bootcamp <br> 3-7 Mar 2025 $\\cdot$ Sonipat (HR)]{.clr-white .r-fit-text}"
 #author: "[SARA Institute of Data Science, Sonipat, Haryana, India]{.clr-white .r-fit-text}"
 page-title: "Welcome"
 format: revealjs
@@ -49,7 +49,7 @@ title-slide-attributes:
 
 ## Our Mission
 
-> To empower under-represented communities in India using data science education.
+> To Democratise Data Science through Education, Open Tools, & Community Collaboration.
 
 ![](images/intro/visit-lehrara.png){fig-align="center"}
 
@@ -99,7 +99,7 @@ Image source: [Unsplash](https://unsplash.com/)
 
 :::
 
-## Latest News about the SARA
+## Latest News about the SARA {background-color="black"}
 
 {{< video https://youtu.be/c0ZJQSdoWXI?si=HKRjVfOHuJ1zME1b width="100%" height="75%" >}}
 
@@ -109,9 +109,11 @@ Thank You! [*News Beak*](https://thenewsbeak.in/) team.
 
 ## Support SARA {background-image="images/intro/babasaheb.jpg" background-size="contain" background-position="right" background-color=black}
 
+<br>
+
 ::::: columns
 ::: {.column .r-fit-text width="50%"}
-### Donate to SARA. [Get Income Tax Rebate!]() Under 80G.
+### Donate to SARA EDUCATION TRUST. [Get Income Tax Rebate!]() Under 80G.
 
 - UPI ID: `919253152024@sbi`
 
@@ -174,13 +176,11 @@ Thank You! [*News Beak*](https://thenewsbeak.in/) team.
 
 ::::
 
-## SARA Statistics Winter School
+## SARA Data Science Bootcamp
 
--   Around 30 hours of residential teaching for 5 days.
+-   Around **30 hours** of residential teaching for 5 days.
 
--   [No tuition fee.]{.clr-tom} But 1 week food & accommodation charges Rs.6000.
-
--   First 10 participants are given 10% discount on the food and accommodation fee as well.
+-   [**Open for All, Free for All.**]{.clr-blue}
 
 - **Feedback** on the last day of the event.
 
@@ -241,10 +241,10 @@ Thank You! [*News Beak*](https://thenewsbeak.in/) team.
 | Mr. Satyawan Bhatia <br>(President, Dr. Ambedkar Bhawan) | 94165 40721   |
 | Mr. Raj Pal (Supervisor, Dr. Ambedkar Bhawan)      | 93063 42596   |
 
-## Course Website 
+## Course Website {background-color="black"}
 
-<https://sara-institute.quarto.pub/stats-course/>
+<https://sara-course-quarto.netlify.app/>
 
 ```{=html}
-<iframe width="1500" height="550" src="https://sara-institute.quarto.pub/stats-course/" title="Course Website"></iframe>
+<iframe width="1500" height="550" src="https://sara-course-quarto.netlify.app/" title="Course Website"></iframe>
 ```

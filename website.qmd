@@ -1,0 +1,350 @@
+---
+title: "[WEBSITE]{.clr-white .r-fit-text}"
+subtitle: "[Dr. Ajay Kumar Koli (PhD) $\\cdot$ SARA Institute of Data Science, India]{.clr-white .r-fit-text}"
+#author: "[SARA Institute of Data Science, Sonipat, Haryana, India]{.clr-white .r-fit-text}"
+page-title: "quarto"
+format: revealjs
+#code-line-numbers: false
+progress: true
+controls: true
+slide-number: true
+scrollable: true
+menu: true
+logo: images/logo-sara.png
+#bibliography: references.bib
+theme: style.scss
+title-slide-attributes: 
+  data-background-image: "https://images.unsplash.com/photo-1593248196138-bad1a611a766?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  data-background-size: cover
+---
+
+## Website ... Why? {{< fa comments >}}
+
+- DeepSeek: "A website is not just a luxury—it’s a necessity for visibility, growth, and credibility in the digital age."
+
+- ChatGPT: "to showcase who you are and what you do. ... your digital identity, share your expertise, and open doors to new opportunities."
+
+- Le Chat: "a powerful tool for personal branding, networking, and career development."
+
+## Create a GitHub Repository
+
+![](images/new-repo.png){width=40%}
+
+. . .
+
+![](images/new-repo-name.png){width=70%}
+
+. . .
+
+![](images/new-repo-create.png){width=40%}
+
+## Copy Repo Link
+
+![](images/new-repo-link.png){width=50% fig-align=center}
+
+## Create Version Control Project
+
+![](images/project-version-control.png){width=50% fig-align=center}
+
+## Create Version Control Project
+
+![](images/project-repo-link.png){width=50% fig-align=center}
+
+## Create `_quarto.yml` File
+
+::: {layout-ncol=2}
+
+![](images/text-file.png){fig-align=center}
+
+![](images/yaml-file.png){fig-align=center}
+:::
+
+## Understanding the Project Structure
+
+```markdown
+website-ajay/
+├── _quarto.yml
+├── index.qmd
+├── about.qmd
+└── styles.css
+```
+
+. . .
+
+- **`_quarto.yml`:** **Configuration** file for your website.
+
+- **`index.qmd`:** The **homepage** of your website.
+    
+- **`about.qmd`:** An example about **page**.
+    
+- **`styles.css`:** Custom CSS for **styling** your website.
+
+## Create the Homepage
+
+![](images/homepage-ajay.png)
+
+## Edit `index.qmd`
+
+```yaml
+---
+title: "Dr. Ajay Kumar Koli"
+subtitle: "Data Science Educator <br>Co-founder of SARA"
+image: images/ajay.jpeg
+about:
+  template: trestles
+  links:
+    - icon: github
+      text: GitHub
+      href: https://github.com/sara-institute
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/ajay-kumar-koli/
+    - icon: twitter
+      text: Twitter
+      href: https://www.linkedin.com/in/ajay-kumar-koli/
+---
+
+Content goes here.
+```
+
+## Website Navigation
+
+![](images/navbar-ajay.png)
+
+## Edit `_quarto.yml`
+
+```yaml
+project: 
+  type: website
+
+website:
+  title: "Dr. Ajay Kumar Koli"
+  navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "About"
+        href: about.qmd
+    tools:
+      - icon: github
+        href: https://github.com/koliajaykr
+      - icon: linkedin
+        href: https://www.linkedin.com/in/ajay-kumar-koli/
+      - icon: twitter
+        href: https://x.com/ajay_kolii
+```
+
+## Built-In Templates, edit `index.qmd`
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- `jolla`
+
+- `trestles`
+
+- `solana`
+
+- `marquee`
+
+- `broadside`
+:::
+
+::: {.column width="50%"}
+```yaml
+---
+about:
+  template: trestles
+---
+```
+:::
+
+::::
+
+More information here <https://quarto.org/docs/websites/website-about.html#templates>
+
+## Themes; edit `_quarto.yml`
+
+```yaml
+format:
+  html:
+    theme: cosmo
+```
+
+. . .
+
+- Quarto includes 25 themes from the [Bootswatch](https://bootswatch.com/), check out other [themes](https://quarto.org/docs/output-formats/html-themes.html#basic-options).
+
+## Website Colors
+
+![](images/colors-ajay.png)
+
+## Colors; edit `_quarto.yml`
+
+- `fontcolor`: The main color for text on the site.
+
+- `linkcolor`: Color of the links.
+
+- `backgroundcolor`: Background color of the whole site.
+
+- `monobackgroundcolor`: Background color for code chunk.
+
+## Colors; edit `_quarto.yml`
+
+```yaml
+format:
+  html:
+    theme: cosmo
+    fontcolor: darkgreen
+    linkcolor: black
+    backgroundcolor: "#ECFFDC"
+    monobackgroundcolor: pink
+```
+
+![](images/colors-ajay.png){fig-align=center}
+
+## Fonts; edit `_quarto.yml`
+
+```yaml
+format:
+  html:
+    theme: cosmo
+    fontcolor: darkgreen
+    linkcolor: black
+    backgroundcolor: "#ECFFDC"
+    monobackgroundcolor: pink
+    mainfont: "monospace"
+```
+
+## CSS
+
+- Cascading Style Sheets (CSS) is a style sheet language.
+
+- CSS is used for specifying the presentation and styling of a document written in a markup language such as HTML
+
+::: {.aside}
+Source: <https://en.wikipedia.org/wiki/CSS>
+:::
+
+## CSS; edit `_quarto.yml`
+
+```yaml
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+```
+
+. . .
+
+Codes for the CSS file
+
+```markdown
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  color: #333;
+}
+
+```
+
+::: {.aside}
+Also check out [SCSS](https://sass-lang.com/).    
+Learn more about CSS: <https://www.w3schools.com/css/default.asp>
+:::
+
+## Render Website
+
+![](images/render-website.png)
+
+![](images/css-homepage-ajay.png)
+
+# 🚀 Launch Your Website
+
+## Your files for the github
+
+![](images/github-website1.png)
+
+## Select files and click `Commit`
+
+![](images/github-website2.png)
+
+## Commit message and click `Commit`
+
+![](images/github-website3.png)
+
+## Let it Run and Close
+
+![](images/github-website4.png)
+
+## Branch ahead Origin and click `Push`
+
+![](images/github-website5.png)
+
+## After update close all windows
+
+![](images/github-website7.png)
+
+## Check GitHub Repo for Latest Updates
+
+![](images/github-website8.png)
+
+## Open Netlify Account.
+
+```{=html}
+<iframe width="780" height="500" src="https://www.netlify.com/" title="Webpage example"></iframe>
+```
+
+::: {.aside}
+Log-in using your github user-name and password.
+:::
+
+## Netlify
+
+Add New Site $\rightarrow$ Import an Existing Project $\rightarrow$ Choose GitHub
+
+![](images/netlify1.png){fig-align=center}
+
+## Netlify
+
+- In Publish Directory box write `_site` 
+
+- Deploy website-ajay $\rightarrow$ Site deploy in progress
+
+![](images/netlify2.png)
+
+## Site Published, Configure Site
+
+![](images/netlify3.png)
+
+## Change Site Name
+
+![](images/netlify4.png)
+
+## Site Thumbnail with updated URL
+
+![](images/netlify5.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

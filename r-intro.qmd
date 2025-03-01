@@ -1,0 +1,161 @@
+---
+title: "[R & RStudio]{.clr-white .r-fit-text}"
+subtitle: "[Dr. Ajay Kumar Koli, PhD $\\cdot$ SARA Institute of Data Science, India]{.clr-white .r-fit-text}"
+#author: "[SARA Institute of Data Science, Sonipat, Haryana, India]{.clr-white .r-fit-text}"
+page-title: "RStudio"
+format: revealjs
+progress: true
+controls: true
+slide-number: true
+scrollable: true
+menu: true
+logo: images/logo-sara.png
+#bibliography: references.bib
+theme: style.scss
+title-slide-attributes: 
+  data-background-image: "https://images.unsplash.com/photo-1593248196138-bad1a611a766?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  data-background-size: cover
+---
+
+## Reproducible Research
+
+<br>
+
+> "Research is reproducible when others can reproduce the results of a scientific study given only the original data, code, and documentation."
+
+::: aside
+Source: [@alstonBeginnersGuideConducting2021]
+:::
+
+## Reproducible Research Requires:
+
+1.  **Data** - access to original data.
+
+2.  **Code** - others can read, learn & replicate results.
+
+3.  **Documentation** - complete information about how to conduct the study.
+
+## Data Science Project
+
+<br>
+
+![](https://r4ds.hadley.nz/diagrams/data-science/base.png){fig-align="center"}
+
+::: aside
+Image source: @wickhamDataScienceImport2023
+:::
+
+## R Programming Language
+
+<br> <br>
+
+::::: columns
+::: {.column width="30%"}
+![](https://www.r-project.org/logo/Rlogo.png)
+:::
+
+::: {.column width="70%"}
+<br>
+
+"R is a free software environment for statistical computing and graphics."
+:::
+:::::
+
+::: aside
+Download R from this link: <https://www.r-project.org/>
+:::
+
+## Practice R Software
+
+1.  Addition
+
+2.  Subtraction
+
+3.  Sequence
+
+4.  Combine
+
+5.  Function structure
+
+6.  Create an object
+
+## RStudio IDE
+
+<br> <br>
+
+::::: columns
+::: {.column width="30%"}
+![](https://static.macupdate.com/products/50318/l/rstudio-logo.webp?v=1671434805)
+:::
+
+::: {.column width="70%"}
+"The RStudio integrated development environment (IDE) is a set of tools built to help you be more productive with R and Python."
+:::
+:::::
+
+::: aside
+Download R from this link: <https://posit.co/download/rstudio-desktop/>
+:::
+
+## Practice RStudio
+
+1.  An overview of RStudio IDE.
+
+2.  Create project in RStudio.
+
+## Quarto Publishing System
+
+<br>
+
+::::: columns
+::: {.column width="30%"}
+![](https://raw.githubusercontent.com/github/explore/80f119e965a9a3df7b74c3f7b63a502e3d0ded36/topics/quarto/quarto.png)
+:::
+
+::: {.column width="70%"}
+"An open-source scientific and technical publishing system to prepare articles & reports; presentations; dashboards; websites; books; and interactive documents.
+:::
+:::::
+
+::: aside
+To know more about Quarto: <https://quarto.org/>
+:::
+
+## Practice Quarto using RStudio
+
+1.  Create a Quarto document with HTML format.
+
+2.  Explain YAML, Text and Code Chunk
+
+    -   To know about the all Quarto [YAML options](https://quarto.org/docs/reference/formats/html.html).
+    -   To know about the Quarto [text formating](https://quarto.org/docs/authoring/markdown-basics.html)
+
+## R Packages
+
+<br>
+
+![](images/metacran.png){fig-align="center"}
+
+> "a collection of functions, data and documentation that extends the capabilties of base R." [@wickhamDataScienceImport2023]
+
+::: aside
+Image source: On 29 Nov 2024 [Metacran](https://www.r-pkg.org/) \| [CRAN](https://cran.r-project.org/web/packages/available_packages_by_name.html).
+:::
+
+## Practice Quarto
+
+1.  Explain Code Chunk
+    -   To know about the Quarto [code chunk options](https://quarto.org/docs/computations/execution-options.html)
+2.  Install `tidyverse` package.
+
+## 🤯 Your Turn {background-color="seagreen"}
+
+```{r}
+library(countdown)
+
+countdown(minutes = 15)
+```
+
+![](images/turn01.png)
+
+## References
