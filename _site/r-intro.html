@@ -27,7 +27,92 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-  </style>
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-3f833ad789ad12d1d1e9ed1920be9c12.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -136,35 +221,19 @@
 </div>
 
 </section>
-<section id="reproducible-research" class="slide level2">
-<h2>Reproducible Research</h2>
-<p><br></p>
-<blockquote>
-<p>“Research is reproducible when others can reproduce the results of a scientific study given only the original data, code, and documentation.”</p>
-</blockquote>
 
-<aside><div>
-<p>Source: <span class="citation" data-cites="alstonBeginnersGuideConducting2021">[@alstonBeginnersGuideConducting2021]</span></p>
-</div></aside></section>
-<section id="reproducible-research-requires" class="slide level2 scrollable">
-<h2>Reproducible Research Requires:</h2>
-<ol type="1">
-<li><p><strong>Data</strong> - access to original data.</p></li>
-<li><p><strong>Code</strong> - others can read, learn &amp; replicate results.</p></li>
-<li><p><strong>Documentation</strong> - complete information about how to conduct the study.</p></li>
-</ol>
-</section>
-<section id="data-science-project" class="slide level2">
-<h2>Data Science Project</h2>
+
+<section id="whole-game" class="slide level2">
+<h2>Whole Game</h2>
 <p><br></p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="https://r4ds.hadley.nz/diagrams/data-science/base.png" class="quarto-figure quarto-figure-center"></p>
+<p><img data-src="https://r4ds.hadley.nz/diagrams/data-science/whole-game.png" class="quarto-figure quarto-figure-center"></p>
 </figure>
 </div>
 
 <aside><div>
-<p>Image source: <span class="citation" data-cites="wickhamDataScienceImport2023">@wickhamDataScienceImport2023</span></p>
+<p>Image source: <span class="citation" data-cites="wickhamDataScienceImport2023">Wickham, Cetinkaya-Rundel, and Grolemund (<a href="#/references" role="doc-biblioref" onclick="">2023</a>)</span></p>
 </div></aside></section>
 <section id="r-programming-language" class="slide level2">
 <h2>R Programming Language</h2>
@@ -180,14 +249,22 @@
 <aside><div>
 <p>Download R from this link: <a href="https://www.r-project.org/" class="uri">https://www.r-project.org/</a></p>
 </div></aside></section>
-<section id="practice-r-software" class="slide level2 scrollable">
+<section id="practice-r-software" class="slide level2 scrollable" data-background-image="images/r-software.png" data-background-size="contain" data-background-position="right">
 <h2>Practice R Software</h2>
 <ol type="1">
 <li><p>Addition</p></li>
 <li><p>Subtraction</p></li>
 <li><p>Sequence</p></li>
-<li><p>Combine</p></li>
-<li><p>Function structure</p></li>
+</ol>
+</section>
+<section id="structure-of-function" class="slide level2" data-background-color="black">
+<h2>Structure of Function</h2>
+
+<img data-src="https://sara-course-r4b.netlify.app/images/function_str5.png" class="r-stretch"></section>
+<section id="practice-r-software-1" class="slide level2 scrollable">
+<h2>Practice R Software</h2>
+<ol type="1">
+<li><p>Combine elements</p></li>
 <li><p>Create an object</p></li>
 </ol>
 </section>
@@ -204,35 +281,14 @@
 <aside><div>
 <p>Download R from this link: <a href="https://posit.co/download/rstudio-desktop/" class="uri">https://posit.co/download/rstudio-desktop/</a></p>
 </div></aside></section>
-<section id="practice-rstudio" class="slide level2 scrollable">
-<h2>Practice RStudio</h2>
+<section id="section" class="slide level2" data-background-image="https://sara-course-r4b.netlify.app/images/rstd_ide.png" data-background-size="contain" data-background-position="center" data-background-color="black">
+<h2></h2>
+</section>
+<section id="practice-in-rstudio" class="slide level2 scrollable">
+<h2>Practice in RStudio</h2>
 <ol type="1">
 <li><p>An overview of RStudio IDE.</p></li>
 <li><p>Create project in RStudio.</p></li>
-</ol>
-</section>
-<section id="quarto-publishing-system" class="slide level2">
-<h2>Quarto Publishing System</h2>
-<p><br></p>
-<div class="columns">
-<div class="column" style="width:30%;">
-<p><img data-src="https://raw.githubusercontent.com/github/explore/80f119e965a9a3df7b74c3f7b63a502e3d0ded36/topics/quarto/quarto.png"></p>
-</div><div class="column" style="width:70%;">
-<p>“An open-source scientific and technical publishing system to prepare articles &amp; reports; presentations; dashboards; websites; books; and interactive documents.</p>
-</div></div>
-
-<aside><div>
-<p>To know more about Quarto: <a href="https://quarto.org/" class="uri">https://quarto.org/</a></p>
-</div></aside></section>
-<section id="practice-quarto-using-rstudio" class="slide level2 scrollable">
-<h2>Practice Quarto using RStudio</h2>
-<ol type="1">
-<li><p>Create a Quarto document with HTML format.</p></li>
-<li><p>Explain YAML, Text and Code Chunk</p>
-<ul>
-<li>To know about the all Quarto <a href="https://quarto.org/docs/reference/formats/html.html">YAML options</a>.</li>
-<li>To know about the Quarto <a href="https://quarto.org/docs/authoring/markdown-basics.html">text formating</a></li>
-</ul></li>
 </ol>
 </section>
 <section id="r-packages" class="slide level2">
@@ -244,38 +300,51 @@
 </figure>
 </div>
 <blockquote>
-<p>“a collection of functions, data and documentation that extends the capabilties of base R.” <span class="citation" data-cites="wickhamDataScienceImport2023">[@wickhamDataScienceImport2023]</span></p>
+<p>“a collection of functions, data and documentation that extends the capabilties of base R.” <span class="citation" data-cites="wickhamDataScienceImport2023">(<a href="#/references" role="doc-biblioref" onclick="">Wickham, Cetinkaya-Rundel, and Grolemund 2023</a>)</span></p>
 </blockquote>
 
 <aside><div>
 <p>Image source: On 29 Nov 2024 <a href="https://www.r-pkg.org/">Metacran</a> | <a href="https://cran.r-project.org/web/packages/available_packages_by_name.html">CRAN</a>.</p>
 </div></aside></section>
-<section id="practice-quarto" class="slide level2 scrollable">
-<h2>Practice Quarto</h2>
-<ol type="1">
-<li>Explain Code Chunk
+<section id="install-r-packages" class="slide level2">
+<h2>Install R Packages</h2>
 <ul>
-<li>To know about the Quarto <a href="https://quarto.org/docs/computations/execution-options.html">code chunk options</a></li>
-</ul></li>
-<li>Install <code>tidyverse</code> package.</li>
-</ol>
+<li>Using Console</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)</span>
+<span id="cb1-2"><a></a></span>
+<span id="cb1-3"><a></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>Using RStudio Windows</li>
+</ul>
 </section>
-<section id="your-turn" class="slide level2" data-background-color="seagreen">
+<section id="your-turn" class="slide level2" data-background-color="#1e1e1e">
 <h2>🤯 Your Turn</h2>
+<p><br></p>
+<p>Write a brief note describing your experience of using R and RStudio for the first time.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_6509c3c6" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_7275b418" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">15</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 </div>
 </div>
-
-<img data-src="images/turn01.png" class="r-stretch"></section>
-<section id="references" class="slide level2">
+</section>
+<section id="references" class="slide level2 smaller scrollable">
 <h2>References</h2>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-alstonBeginnersGuideConducting2021" class="csl-entry" role="listitem">
+Alston, Jesse M., and Jessica A. Rick. 2021. <span>“A Beginner’s Guide to Conducting Reproducible Research.”</span> <em>The Bulletin of the Ecological Society of America</em> 102 (2): e01801. <a href="https://doi.org/10.1002/bes2.1801">https://doi.org/10.1002/bes2.1801</a>.
+</div>
+<div id="ref-wickhamDataScienceImport2023" class="csl-entry" role="listitem">
+Wickham, Hadley, Mine Cetinkaya-Rundel, and Garrett Grolemund. 2023. <em>R for Data Science: Import, Tidy, Transform, Visualize, and Model Data</em>. 2nd ed. edition. O’Reilly Media. <a href="https://r4ds.hadley.nz/">https://r4ds.hadley.nz/</a>.
+</div>
+</div>
 </section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">

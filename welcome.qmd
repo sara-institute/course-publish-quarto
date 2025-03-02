@@ -17,156 +17,19 @@ title-slide-attributes:
   data-background-size: cover
 ---
 
-##  {background-image="https://images.unsplash.com/photo-1615715035868-fc94bd5ffdac?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" background-size="cover"}
+## {background-color="black"}
 
-::::::: centering
-:::::: columns
-::: {.column width="35%"}
-![**Gyanjyoti [Sa]{.clr-tom}vitribai Phule**<br><br>🌺 🙏🏽 🌼](images/intro/savitrimai.png)
-:::
+{{< revealjs file="https://sara-intro.netlify.app/#/section" height="600px" class="ratio ratio-16x9" >}}
 
-::: {.column width="30%"}
-<br>
+# {background-image=images/march-workshop-promo.png background-size=contain background-color="black"}
 
-![](images/logo-sara.png){width="3in" fig-align="center"}
-:::
-
-::: {.column width="35%"}
-![**Mata [Ra]{.clr-tom}mabai Ambedkar**<br><br>🌺 🙏🏽 🌼](images/intro/ramai.png)
-:::
-::::::
-
-[**Savitribai Ramabai (SARA) Institute of Data Science**]{.r-fit-text}
-:::::::
-
-## SARA Education Trust
-
-> March 2024 registered charitable Trust in India.
-
-::: centering
-![5 April 2023 -- first class at the SARA.](images/intro/terra-sara.jpg){width="78%"}
-:::
-
-## Our Mission
-
-> To Democratise Data Science through Education, Open Tools, & Community Collaboration.
-
-![](images/intro/visit-lehrara.png){fig-align="center"}
-
-## Free & Open-source Courses
-
-<br>
-
-::::::: {.centering layout-ncol="4" layout-valign="bottom"}
-::: card
-![](https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=2922&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
-
-English Language
-:::
-
-::: card
-![](https://images.unsplash.com/photo-1649433391420-542fcd3835ea?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
-
-Computer Skills
-:::
-
-::: card
-![](https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
-
-Data Science
-:::
-
-::: card
-![](https://images.unsplash.com/photo-1508004680771-708b02aabdc0?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
-
-Research Methods
-:::
-:::::::
-
-::: aside
-Image source: [Unsplash](https://unsplash.com/)
-:::
-
-## Our Latest Data Science Trainings {background-color="black"}
-
-<br>
-
-::: {.centering layout-ncol="2" layout-valign="bottom"}
-
-!["R for Beginners", SARA Data Science Summer School July 2024](images/intro/2024summer.png)
-
-!["Statistics using R", SARA Winter School December 2024](images/intro/2024winter.jpeg)
-
-:::
-
-## Latest News about the SARA {background-color="black"}
-
-{{< video https://youtu.be/c0ZJQSdoWXI?si=HKRjVfOHuJ1zME1b width="100%" height="75%" >}}
-
-::: aside
-Thank You! [*News Beak*](https://thenewsbeak.in/) team.
-:::
-
-## Support SARA {background-image="images/intro/babasaheb.jpg" background-size="contain" background-position="right" background-color=black}
-
-<br>
-
-::::: columns
-::: {.column .r-fit-text width="50%"}
-### Donate to SARA EDUCATION TRUST. [Get Income Tax Rebate!]() Under 80G.
-
-- UPI ID: `919253152024@sbi`
-
--   Bank Transfer:<br>
-    -   Account Name: SARA EDUCATION TRUST.
-
-    -   Account Number: `42920911856`.
-
-    -   Bank Name: STATE BANK OF INDIA.
-
-    -   IFSC Code: `SBIN0000721`.
-:::
-
-::: {.column width="30%"}
-:::
-:::::
-
-## 
-
-:::::: columns
-::: {.column .centering width="30%"}
-<br> <br>
-
-![Savitribai Ramabai (SARA) Institute of Data Science](images/logo-sara.png)
-:::
-
-::: {.column width="10%"}
-:::
-
-::: {.column .r-fit-text width="60%"}
-<br> <br>
-
-**Dr. Ajay Kumar Koli**, <br>Executive Director, SARA Institute
-
-**Dr. Kiran Lata**, <br>Director, SARA Institute
-
-{{< fa location-dot >}} Dr. Ambedkar Bhawan, <br>Kakroi Road, Near Dayanand Hospital, <br>Sonipat - 131001, Haryana, India.
-
-<br>
-
-{{< fa mobile-screen >}}   925 315 2024 <br> {{< fa envelope >}}   [sara.institute.info\@gmail.com](mailto:%20sara.institute.info@gmail.com) <br> SARA Website   <https://sara-edu.netlify.app/>
-
-<br> Follow SARA Institute on Social Media.<br>
-
-[{{< fa brands github >}}](https://github.com/sara-edu)   [{{< fa brands twitter >}}](https://twitter.com/sara_institute)   [{{< fa brands facebook >}}](https://www.facebook.com/profile.php?id=61564043738390)   [{{< fa brands youtube >}}](https://www.youtube.com/@SARADataScience)   [{{< fa brands linkedin >}}](https://www.linkedin.com/company/sara-institute/)   [{{< fa brands whatsapp >}}](https://whatsapp.com/channel/0029Va4r7rGLCoWycMwThl2J)
-:::
-::::::
-
-#  {background-image="images/intro/flyer-march.png" background-position="right" background-size="contain" background-color="#003262"}
+##  {background-image="images/flyer-march.png" background-position="right" background-size="50%" background-color="black"}
 
 :::: {.columns}
 
 ::: {.column width="40%"}
+<br>
+
 [SARA <br>Data <br>Science <br>Bootcamp]{.r-fit-text}
 :::
 
@@ -176,17 +39,25 @@ Thank You! [*News Beak*](https://thenewsbeak.in/) team.
 
 ::::
 
-## SARA Data Science Bootcamp
+## Goals
 
--   Around **30 hours** of residential teaching for 5 days.
+1. Build your personal website.
 
--   [**Open for All, Free for All.**]{.clr-blue}
+1. Write thesis/book/article using data science tools.
 
-- **Feedback** on the last day of the event.
+1. Prepare slides using data science tools.
 
--   **Thank You Ceremony!** on Friday, 07 MAR 2024, 6-7 PM 🚂
+## Logistics:
 
-- **e-Certificate** of the participation via email.
+-   Don't be late for the class \~5 minutes
+
+- Ask questions, clear your doubts.
+
+-   Classes will be in the Mata Ramabai Auditorium, 1st Floor, Dr. Ambedkar Bhawan.
+
+-   [**You will have to use your own internet.**]{.clr-blue}
+
+-   Be kind to each and everyone.
 
 ## Daily Schedule:
 
@@ -218,33 +89,31 @@ Thank You! [*News Beak*](https://thenewsbeak.in/) team.
 
 :::
 
-
-## Logistics:
-
--   Don't be late for the class \~5 minutes
-
-- Ask questions, clear your doubts.
-
--   Classes will be in the Mata Ramabai Auditorium, 1st Floor, Dr. Ambedkar Bhawan.
-
--   You will have to use your own internet.
-
--   Be kind to each and everyone.
-
-## Contact Numbers:
+## Important Mobile Numbers:
 
 | Name                                                | Mobile |
 |-------------------------------------------|----------------------|
-| SARA Office                                         | 925 315 2024  |
-| Dr. Ajay Kumar (Ex. Director, SARA)                 | 88868 10879   |
-| Dr. Kiran Koli (Director, SARA)                     | 81680 60500   |
-| Mr. Satyawan Bhatia <br>(President, Dr. Ambedkar Bhawan) | 94165 40721   |
 | Mr. Raj Pal (Supervisor, Dr. Ambedkar Bhawan)      | 93063 42596   |
+| SARA Institute Office                              | 925 315 2024  |
+| Dr. Ajay Kumar (Ex. Director, SARA)                | 88868 10879   |
+| Dr. Kiran Koli (Director, SARA)                    | 81680 60500   |
+| Mr. Satyawan Bhatia <br>(President, Dr. Ambedkar Bhawan) | 94165 40721   |
+
+## Overview
+
+-   Around **30 hours** of residential teaching for 5 days.
+
+-   [**Open for All, Free for All.**]{.clr-blue}
+
+- **Feedback** on the last day of the event.
+
+-   **Thank You Ceremony!** on Friday, 07 MAR 2024, 4 PM
+
+- **e-Certificate** of the participation via email within a week.
 
 ## Course Website {background-color="black"}
 
 <https://sara-course-quarto.netlify.app/>
 
-```{=html}
-<iframe width="1500" height="550" src="https://sara-course-quarto.netlify.app/" title="Course Website"></iframe>
-```
+
+{{< revealjs file="https://sara-course-quarto.netlify.app/" height="600px" class="ratio ratio-16x9" full-screen-link=false >}}

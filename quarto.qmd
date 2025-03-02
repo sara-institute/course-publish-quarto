@@ -94,3 +94,67 @@ Artwork from [Allison Horst](https://allisonhorst.com/horst-hill-collaborations)
 
 ![](images/quarto-default-document.png)
 
+## Practice Quarto using RStudio
+
+1.  Create a Quarto document with HTML format.
+
+2.  Explain YAML and Text:
+
+    -   To know about the all Quarto [YAML options](https://quarto.org/docs/reference/formats/html.html).
+    -   To know about the Quarto [text formating](https://quarto.org/docs/authoring/markdown-basics.html)
+    
+## 🤯 Your Turn {background-color="black"}
+
+```{r}
+library(countdown)
+
+countdown(minutes = 7)
+```
+
+![](images/turns/quarto-html-news.png){fig-align=center}    
+    
+## Practice Quarto
+
+1.  Explain Code Chunk
+    -   To know about the Quarto [code chunk options](https://quarto.org/docs/computations/execution-options.html)
+2.  Install `tidyverse` package.
+
+## 🤯 Your Turn {background-color="black"}
+
+```{r}
+library(countdown)
+
+countdown(minutes = 7)
+```
+
+````yaml
+---
+title: "Quarto Exercise"
+author: "Your Name"
+date: "today"
+format: html
+---
+
+# Quarto Exercise
+
+Welcome to this Quarto exercise! In this exercise, we will practice using YAML, text, and code chunks to create a simple document.
+
+## Introduction
+
+Quarto is a powerful tool for creating documents that integrate text, code, and visualizations. In this exercise, we will create a simple plot using R.
+
+## Code Chunk
+
+Below is a code chunk that generates a simple plot using R.
+
+```{{r}}
+
+plot(1:100)
+
+```
+
+````
+
+
+
+    

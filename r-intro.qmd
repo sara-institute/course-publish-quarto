@@ -15,9 +15,10 @@ theme: style.scss
 title-slide-attributes: 
   data-background-image: "https://images.unsplash.com/photo-1593248196138-bad1a611a766?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   data-background-size: cover
+bibliography: references.bib
 ---
 
-## Reproducible Research
+## Reproducible Research {visibility="hidden"}
 
 <br>
 
@@ -27,7 +28,7 @@ title-slide-attributes:
 Source: [@alstonBeginnersGuideConducting2021]
 :::
 
-## Reproducible Research Requires:
+## Reproducible Research Requires: {visibility="hidden"}
 
 1.  **Data** - access to original data.
 
@@ -35,11 +36,11 @@ Source: [@alstonBeginnersGuideConducting2021]
 
 3.  **Documentation** - complete information about how to conduct the study.
 
-## Data Science Project
+## Whole Game
 
 <br>
 
-![](https://r4ds.hadley.nz/diagrams/data-science/base.png){fig-align="center"}
+![](https://r4ds.hadley.nz/diagrams/data-science/whole-game.png){fig-align="center"}
 
 ::: aside
 Image source: @wickhamDataScienceImport2023
@@ -65,19 +66,23 @@ Image source: @wickhamDataScienceImport2023
 Download R from this link: <https://www.r-project.org/>
 :::
 
-## Practice R Software
+## Practice R Software {background-image=images/r-software.png background-size=contain background-position=right}
 
 1.  Addition
 
-2.  Subtraction
+1.  Subtraction
 
-3.  Sequence
+1.  Sequence
 
-4.  Combine
+## Structure of Function {background-color=black}
 
-5.  Function structure
+![](https://sara-course-r4b.netlify.app/images/function_str5.png)
 
-6.  Create an object
+## Practice R Software
+
+1.  Combine elements
+
+1.  Create an object
 
 ## RStudio IDE
 
@@ -97,38 +102,13 @@ Download R from this link: <https://www.r-project.org/>
 Download R from this link: <https://posit.co/download/rstudio-desktop/>
 :::
 
-## Practice RStudio
+## {background-image="https://sara-course-r4b.netlify.app/images/rstd_ide.png" background-size=contain background-position=center background-color=black}
+
+## Practice in RStudio
 
 1.  An overview of RStudio IDE.
 
 2.  Create project in RStudio.
-
-## Quarto Publishing System
-
-<br>
-
-::::: columns
-::: {.column width="30%"}
-![](https://raw.githubusercontent.com/github/explore/80f119e965a9a3df7b74c3f7b63a502e3d0ded36/topics/quarto/quarto.png)
-:::
-
-::: {.column width="70%"}
-"An open-source scientific and technical publishing system to prepare articles & reports; presentations; dashboards; websites; books; and interactive documents.
-:::
-:::::
-
-::: aside
-To know more about Quarto: <https://quarto.org/>
-:::
-
-## Practice Quarto using RStudio
-
-1.  Create a Quarto document with HTML format.
-
-2.  Explain YAML, Text and Code Chunk
-
-    -   To know about the all Quarto [YAML options](https://quarto.org/docs/reference/formats/html.html).
-    -   To know about the Quarto [text formating](https://quarto.org/docs/authoring/markdown-basics.html)
 
 ## R Packages
 
@@ -142,20 +122,31 @@ To know more about Quarto: <https://quarto.org/>
 Image source: On 29 Nov 2024 [Metacran](https://www.r-pkg.org/) \| [CRAN](https://cran.r-project.org/web/packages/available_packages_by_name.html).
 :::
 
-## Practice Quarto
+## Install R Packages
 
-1.  Explain Code Chunk
-    -   To know about the Quarto [code chunk options](https://quarto.org/docs/computations/execution-options.html)
-2.  Install `tidyverse` package.
+- Using Console
 
-## 🤯 Your Turn {background-color="seagreen"}
+```{r}
+#| eval: false
+#| echo: true
+
+install.packages("tidyverse")
+
+library(tidyverse)
+```
+
+- Using RStudio Windows
+
+## 🤯 Your Turn {background-color="#1e1e1e"}
+
+<br>
+
+Write a brief note describing your experience of using R and RStudio for the first time.
 
 ```{r}
 library(countdown)
 
 countdown(minutes = 15)
 ```
-
-![](images/turn01.png)
 
 ## References

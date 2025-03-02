@@ -1,0 +1,277 @@
+---
+title: "[SLIDES]{.clr-white .r-fit-text}"
+subtitle: "[Dr. Ajay Kumar Koli (PhD) $\\cdot$ SARA Institute of Data Science, India]{.clr-white .r-fit-text}"
+#author: "[SARA Institute of Data Science, Sonipat, Haryana, India]{.clr-white .r-fit-text}"
+page-title: "quarto"
+format: revealjs
+progress: true
+controls: true
+slide-number: true
+scrollable: true
+menu: true
+logo: images/logo-sara.png
+#bibliography: references.bib
+theme: style.scss
+title-slide-attributes: 
+  data-background-image: "https://images.unsplash.com/photo-1593248196138-bad1a611a766?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  data-background-size: cover
+bibliography: references.bib
+---
+
+## Advantage of Slides using Quarto {background-image=images/presentation-lady.jpg background-size=40% background-position=right}
+
+1. Reproducibility
+
+1. Iterative Workflow
+
+1. Customization and Flexibility
+
+1. Multi-Format Output
+
+1. Integration with Other Tools
+
+1. Documentation and Support
+
+1. Efficiency
+
+1. Collaboration
+
+1. Interactive Elements
+
+1. Consistency
+
+## Set Up Your Project
+
+- Create a new directory for your slides project.
+
+- Inside this directory, create a file named **`index.qmd`**. This will contain the configuration settings and content for your slides.
+
+- Quarto will use `revealjs` format.
+
+
+::: aside
+Know more about revealjs: <https://revealjs.com/>
+:::
+
+## Creating Slides
+
+```markdown
+---
+title: "Habits"
+author: "John Doe"
+format: revealjs
+---
+
+## Getting up
+
+- Turn off alarm
+- Get out of bed
+
+## Going to sleep
+
+- Get in bed
+- Count sheep
+```
+
+## Slides Overview, press `o`
+
+![](images/slides-overview1.png)
+
+## Creating Sections in Slides
+
+```markdown
+---
+title: "Habits"
+author: "John Doe"
+format: revealjs
+---
+
+# In the morning
+
+## Getting up
+
+- Turn off alarm
+- Get out of bed
+
+## Breakfast
+
+- Eat eggs
+- Drink coffee
+
+# In the evening
+
+## Dinner
+
+- Eat spaghetti
+- Drink wine
+
+## Going to sleep
+
+- Get in bed
+- Count sheep
+```
+
+## Slides Overview, press `o`
+
+![](images/slides-overview2.png)
+
+## Incremental Lists
+
+```yaml
+---
+title: "My Presentation"
+format:
+  revealjs:
+    incremental: true   
+
+---
+```
+
+## Div
+
+:::: {.columns}
+
+::: {.column width="50%"}
+```markdown
+::: {.incremental}
+
+- Eat spaghetti
+- Drink wine
+
+:::
+```
+:::
+
+::: {.column width="50%"}
+```markdown
+::: {.nonincremental}
+
+- Eat spaghetti
+- Drink wine
+
+:::
+```
+
+:::
+
+::::
+
+
+::: aside
+Learn more about divs: <https://quarto.org/docs/authoring/markdown-basics.html#sec-divs-and-spans>
+:::
+
+## Multiple Columns
+
+```markdown
+:::: {.columns}
+
+::: {.column width="40%"}
+contents...
+:::
+
+::: {.column width="60%"}
+contents...
+:::
+
+::::
+
+```
+
+## Slide with a pause
+
+```markdown
+## Slide with a pause
+
+content before the pause
+
+. . .
+
+content after the pause
+```
+
+## Asides
+
+```markdown
+## Slide Title
+
+Slide content
+
+::: aside
+Some additional commentary of more peripheral interest.
+:::
+```
+
+## Footnotes
+
+```markdown
+## Slide Title
+
+- Green ^[A footnote]
+- Brown
+- Purple
+
+::: aside
+Some additional commentary of more peripheral interest.
+:::
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -6,11 +6,6 @@ subtitle: "SARA Data Science Bootcamp March 2025"
 format: html
 toc: true
 number-sections: true
-#backgroundcolor: "#faf7f8"
-
-#backgroundcolor: "#FFF0F5"
-
-
 ---
 
 ![](logo-lotus.png){fig-align=center width="30%"}
@@ -70,11 +65,42 @@ The slides title background image is from [Sora Sagano | unsplash](https://image
 
 <br>
 
+<br>
+
 ## Session
 
 {{< revealjs file="website.html" height="500px" class="ratio ratio-16x9" >}}
 
 <br>
+
+<br>
+
+<br>
+
+<br>
+
+## Session
+
+{{< revealjs file="thesis.html" height="500px" class="ratio ratio-16x9" >}}
+
+<br>
+
+<br>
+
+## Session
+
+{{< revealjs file="slides.html" height="500px" class="ratio ratio-16x9" >}}
+
+<br>
+
+<br>
+
+## Session
+
+{{< revealjs file="thanks.html" height="500px" class="ratio ratio-16x9" >}}
+
+
+
 
 
 
