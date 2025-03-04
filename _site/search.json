@@ -606,7 +606,7 @@
     "href": "markdown.html#add-images",
     "title": "MARKDOWN",
     "section": "Add images",
-    "text": "Add images\n\nIf image is saved in your computer, ![](add image path here)\n\n\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n![](rose.jpg)"
+    "text": "Add images\n\nIf image is saved in your computer, ![](add image path here)\n\n\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n![](lotus.png)"
   },
   {
     "objectID": "markdown.html#add-images-1",
@@ -676,7 +676,7 @@
     "href": "markdown.html#in-line-coding",
     "title": "MARKDOWN",
     "section": "In-line coding",
-    "text": "In-line coding\n\n`r `\n\n\n\n\n\nCode\n`r knitr::inline_expr(\"1+1\")`\n\nOutput\nr 1+1"
+    "text": "In-line coding\n\n`{r} `\n\n```{r}\n\nage &lt;- c(1, 2, 3, 4, 5)\n\n```\nInput: The mean age of the participants is `{r} mean(age)`.\nOutput: The mean age of the participants is 3."
   },
   {
     "objectID": "markdown.html#videos",
@@ -684,6 +684,13 @@
     "title": "MARKDOWN",
     "section": "Videos",
     "text": "Videos\n\nYou can include videos in documents using the {{&lt; video &gt;}} short code.\n\n\n\n\n\nCode\n{{&lt; video https://www.youtube.com/embed/wo9vZccmqwc &gt;}}\n\nOutput"
+  },
+  {
+    "objectID": "markdown.html#raw-content",
+    "href": "markdown.html#raw-content",
+    "title": "MARKDOWN",
+    "section": "Raw Content",
+    "text": "Raw Content\n```{=html}\n\n&lt;iframe src=\"https://quarto.org/\" width=\"500\" height=\"400\"&gt;&lt;/iframe&gt;\n\n```"
   },
   {
     "objectID": "markdown.html#tables",
@@ -999,5 +1006,12 @@
     "title": "WEBSITE",
     "section": "Site Thumbnail with updated URL",
     "text": "Site Thumbnail with updated URL"
+  },
+  {
+    "objectID": "website.html#add-content",
+    "href": "website.html#add-content",
+    "title": "WEBSITE",
+    "section": "Add Content",
+    "text": "Add Content\nDuis urna urna, pellentesque eu urna ut, malesuada bibendum dolor. Suspendisse potenti. Vivamus ornare, arcu quis molestie ultrices, magna est accumsan augue, auctor vulputate erat quam quis neque. Nullam scelerisque odio vel ultricies facilisis. Ut porta arcu non magna sagittis lacinia. Cras ornare vulputate lectus a tristique. Pellentesque ac arcu congue, rhoncus mi id, dignissim ligula."
   }
 ]

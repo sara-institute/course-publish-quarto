@@ -329,7 +329,9 @@ Add New Site $\rightarrow$ Import an Existing Project $\rightarrow$ Choose GitHu
 
 ![](images/netlify5.png)
 
+## Add Content
 
+{{< lipsum 1 >}}
 
 
 

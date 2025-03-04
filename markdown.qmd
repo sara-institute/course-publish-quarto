@@ -160,8 +160,8 @@ Source: [Quarto guide](https://quarto.org/docs/authoring/markdown-basics.html)
 +-------------------------+-----------------------+
 | Markdown Syntax         | Output                |
 +=========================+=======================+
-| ``` markdown            | ![](rose.jpg)         |
-| ![](rose.jpg)           |                       |
+| ``` markdown            | ![](lotus.png)        |
+| ![](lotus.png)          |                       |
 | ```                     |                       |
 +-------------------------+-----------------------+
 
@@ -351,29 +351,23 @@ Learn more about [Latex](https://www.overleaf.com/learn/latex/Mathematical_expre
 
 ## In-line coding
 
-> `` `r ` ``
+> `` `{r} ` ``
 
-<br>
+```{r}
 
-. . .
+age <- c(1, 2, 3, 4, 5)
 
-:::: {.columns}
+```
 
-::: {.column width="60%"}
-### Code
+```{{r}}
 
-`` `r knitr::inline_expr("1+1")` ``
-:::
+age <- c(1, 2, 3, 4, 5)
 
-::: {.column width="40%"}
+```
 
-### Output
+**Input:** The mean age of the participants is `` `{{r}} mean(age)` ``.
 
-`r 1+1`
-
-:::
-
-::::
+**Output:** The mean age of the participants is `{r} mean(age)`.
 
 ## Videos
 
@@ -400,6 +394,20 @@ Learn more about [Latex](https://www.overleaf.com/learn/latex/Mathematical_expre
 :::
 
 ::::
+
+## Raw Content
+
+````markdown
+```{=html}
+
+<iframe src="https://quarto.org/" width="500" height="400"></iframe>
+
+```
+````
+
+```{=html}
+<iframe src="https://quarto.org/" width="500" height="400"></iframe>
+```
 
 ## Tables {.scrollable}
 

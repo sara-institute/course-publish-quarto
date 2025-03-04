@@ -75,10 +75,6 @@ The slides title background image is from [Sora Sagano | unsplash](https://image
 
 <br>
 
-<br>
-
-<br>
-
 ## Session
 
 {{< revealjs file="thesis.html" height="500px" class="ratio ratio-16x9" >}}
