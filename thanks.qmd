@@ -18,3 +18,64 @@ title-slide-attributes:
 bibliography: references.bib
 ---
 
+##  {background-image="https://images.unsplash.com/photo-1615715035868-fc94bd5ffdac?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" background-size="cover"}
+
+<br>
+<br>
+
+::::::: centering
+:::::: columns
+::: {.column width="36%"}
+![**GYAN JYOTI [SA]{.clr-red}VITRIBAI PHULE (1831-1897)**<br>🌺 🙏🏽
+🌼](images/savitrimai.png){width=70%}
+:::
+
+::: {.column width="29%"}
+
+<br>
+
+![](images/logo-sara.png){width="2.0in" fig-align="center"}
+:::
+
+::: {.column width="34.75%"}
+![**MATA [RA]{.clr-red}MABAI AMBEDKAR (1898-1935)**<br>🌺 🙏🏽
+🌼](images/ramai.png){width=70%}
+:::
+::::::
+
+[**Savitribai Ramabai (SARA) Institute of Data Science**]{.r-fit-text}
+:::::::
+
+# {background-image="https://images.unsplash.com/photo-1615715035868-fc94bd5ffdac?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" background-size="cover"}
+
+[![](images/flyer-march.png){fig-align=center}]{.r-stretch}
+
+## Event Overview {background-image="https://images.unsplash.com/photo-1615715035868-fc94bd5ffdac?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" background-size="cover"}
+
+- Open to Everyone, **Free** for all.
+
+- Participants
+    - 46 registered.
+    - 13 reached.
+    - **10 attended**.
+
+- **30 hours** of teaching.
+
+## {background-image="https://images.unsplash.com/photo-1615715035868-fc94bd5ffdac?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" background-size="cover"}
+
+<br>
+<br>
+
+:::: {.centering}
+
+![](images/sonipat-bhawan.png)
+
+[***The Ambedkar <br>Educational Society Sonipat***]{.r-fit-text}
+
+::::
+
+## {background-image=images/students.jpg background-size=cover}
+
+
+
+
