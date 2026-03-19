@@ -1,21 +1,26 @@
 ---
-title: "[R & RStudio]{.clr-white .r-fit-text}"
-subtitle: "[Dr. Ajay Kumar Koli, PhD $\\cdot$ SARA Institute of Data Science, India]{.clr-white .r-fit-text}"
+title: "[R, RStudio & GitHub]{.clr-white .r-fit-text}"
+subtitle: "[Dr. Ajay Kumar Koli $\\cdot$ 2nd SARA Bootcamp]{.clr-white .r-fit-text}"
 #author: "[SARA Institute of Data Science, Sonipat, Haryana, India]{.clr-white .r-fit-text}"
-page-title: "RStudio"
+logo: images/logo-sara.png
+page-title: "Bootcamp"
 format: revealjs
 progress: true
 controls: true
 slide-number: true
 scrollable: true
 menu: true
-logo: images/logo-sara.png
-#bibliography: references.bib
 theme: style.scss
-title-slide-attributes: 
-  data-background-image: "https://images.unsplash.com/photo-1593248196138-bad1a611a766?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  data-background-size: cover
+transition: slide
+lightbox: true
 bibliography: references.bib
+filters:
+  - roughnotation
+title-slide-attributes: 
+  data-background-image: "https://images.unsplash.com/photo-1621947081720-86970823b77a?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  data-background-size: "cover"
+  data-background-color: "black"
+  data-background-opacity: "0.5"
 ---
 
 ## Reproducible Research {visibility="hidden"}
@@ -24,9 +29,9 @@ bibliography: references.bib
 
 > "Research is reproducible when others can reproduce the results of a scientific study given only the original data, code, and documentation."
 
-::: aside
-Source: [@alstonBeginnersGuideConducting2021]
-:::
+<!-- ::: {.aside} -->
+<!-- Source: [@alstonBeginnersGuideConducting2021] -->
+<!-- ::: -->
 
 ## Reproducible Research Requires: {visibility="hidden"}
 
@@ -36,17 +41,9 @@ Source: [@alstonBeginnersGuideConducting2021]
 
 3.  **Documentation** - complete information about how to conduct the study.
 
-## Whole Game
+# R Language {background-image="https://www.r-project.org/logo/Rlogo.png" background-size="30%" background-position=75% background-color="silver"}
 
-<br>
-
-![](https://r4ds.hadley.nz/diagrams/data-science/whole-game.png){fig-align="center"}
-
-::: aside
-Image source: @wickhamDataScienceImport2023
-:::
-
-## R Programming Language
+## Download R Programming Language
 
 <br> <br>
 
@@ -62,11 +59,22 @@ Image source: @wickhamDataScienceImport2023
 :::
 :::::
 
-::: aside
+::: footer
 Download R from this link: <https://www.r-project.org/>
 :::
 
-## Practice R Software {background-image=images/r-software.png background-size=contain background-position=right}
+## Data Science Project Flowchart
+
+<br>
+
+![](https://r4ds.hadley.nz/diagrams/data-science/whole-game.png){fig-align="center"}
+
+::: footer
+Image source: <https://r4ds.hadley.nz/>
+:::
+
+
+## Practice in R Console {background-image=images/r-software.png background-size=contain background-position=right}
 
 1.  Addition
 
@@ -74,11 +82,11 @@ Download R from this link: <https://www.r-project.org/>
 
 1.  Sequence
 
-## Structure of Function {background-color=black}
+## Structure of R Function 
 
 ![](https://sara-course-r4b.netlify.app/images/function_str5.png)
 
-## Practice R Software
+## Practice R Console
 
 1.  Combine elements
 
@@ -89,55 +97,251 @@ Download R from this link: <https://www.r-project.org/>
 <br> <br>
 
 ::::: columns
-::: {.column width="30%"}
+::: {.column width="25%"}
 ![](https://static.macupdate.com/products/50318/l/rstudio-logo.webp?v=1671434805)
 :::
 
-::: {.column width="70%"}
+::: {.column width="75%"}
+<br>
 "The RStudio integrated development environment (IDE) is a set of tools built to help you be more productive with R and Python."
 :::
 :::::
 
-::: aside
-Download R from this link: <https://posit.co/download/rstudio-desktop/>
+::: footer
+Download RStudio from this link: <https://posit.co/download/rstudio-desktop/>
 :::
 
 ## {background-image="https://sara-course-r4b.netlify.app/images/rstd_ide.png" background-size=contain background-position=center background-color=black}
 
-## Practice in RStudio
+## Practice in RStudio 
 
 1.  An overview of RStudio IDE.
 
 2.  Create project in RStudio.
 
-## R Packages
+# R<br>Packages {background-image="images/packages.png" background-size="contain" background-position="right" background-color="silver"}
+
+## R Packages 
+
+> Package is "a collection of [functions, data and documentation]{.rn-fragment rn-color=lightgreen} that extends the capabilties of base R."
+
+. . .
 
 <br>
 
 ![](images/metacran.png){fig-align="center"}
 
-> "a collection of functions, data and documentation that extends the capabilties of base R." [@wickhamDataScienceImport2023]
 
-::: aside
-Image source: On 29 Nov 2024 [Metacran](https://www.r-pkg.org/) \| [CRAN](https://cran.r-project.org/web/packages/available_packages_by_name.html).
+::: footer
+Image source: On 13 March 2026 [Metacran](https://www.r-pkg.org/) \| [CRAN](https://cran.r-project.org/web/packages/available_packages_by_name.html).
 :::
 
-## Install R Packages
+## Install R Packages {auto-animate=true}
+
+::: {.incremental}
 
 - Using Console
+
+```{.markdown}
+# function to install R package
+install.packages("tidyverse")
+
+library(tidyverse) #fun to call r package
+```
+
+- Using RStudio Windows
+
+:::
+
+# GitHub {background-image="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/960px-GitHub_Invertocat_Logo.svg.png" background-size="30%" background-position=75% background-color="silver"}
+
+## GitHub
+
+> "platform that allows developers to create, store, manage, and share their code."
+
+. . .
+
+<br>
+
+> "It uses Git to provide distributed version control"
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/1920px-Git-logo.svg.png){width=30% fig-align=center}
+
+::: footer
+Source of information <https://en.wikipedia.org/wiki/GitHub>
+:::
+
+## Install Git
+
+```{=html}
+<iframe width="1100" height="500" src="https://gitforwindows.org/" title="Webpage example"></iframe>
+```
+
+::: aside
+Webpage: <https://gitforwindows.org/>
+:::
+
+## Install Git
+
+::: {layout-ncol="2"}
+![](images/git-install1.png)
+
+![](images/git-install2.png)
+:::
+
+## Open Terminal `git --version`
+
+![](images/terminal.png)
+
+
+## GitHub Users
+
+<br>
+
+<br>
+
+![](images/github-users2.png)
+
+::: footer
+Source <https://github.com/about>
+:::
+
+## GitHub Sign up {background-color="black" .smaller} 
+
+::::: columns
+::: {.column width="50%"}
+![](images/github-account.png)
+:::
+
+::: {.column width="50%"}
+-   **Username advice**
+    -   all small cases
+    -   use hyphen `-` to separate the words
+    -   the shorter the better
+    -   make it timeless (do not ajay-jnu, ajay-ny, ajay-microsoft)
+    -   avoid special characters
+    -   reuse from your social media
+    -   comfortable to reveal to the world
+:::
+:::::
+
+## GitHub Settings {background-color="black"}
+
+::: {layout-ncol="2"}
+![](images/github-settings.png)
+
+![](images/github-password.png)
+:::
+
+## Enable Two Factor Authentication {background-color="black"}
+
+![](images/github-two-factor1.png)
+
+## Enable Two Factor Authentication {background-color="black"}
+
+![](images/github-two-factor2.png)
+
+## [RStudio $\rightarrow$ Tools $\rightarrow$ Global Options $\rightarrow$ Git/SVN]{.r-fit-text}
+
+![](images/rstudio-github-path.png){fig-align=center}
+
+## In RStudio save GitHub Details {auto-animate=true}
+
+- Using Console, Install R package `usethis`
+
+```{.markdown}
+## install if needed (do this exactly once):
+## install.packages("usethis")
+
+library(usethis)
+use_git_config(user.name = "ajay-kolii",
+               user.email = "mynameajay@gmail.com")
+```
+
+::: footer
+Read more here: <https://usethis.r-lib.org/articles/git-credentials.html>
+:::
+
+## See/Edit saved GitHub information
+
+- Run in console `edit_git_config()` from `usethis` package. OR
+
+- Run in Terminal <br>`git config --global --list`
+
+::: footer
+Read more here: <https://usethis.r-lib.org/articles/git-credentials.html>
+:::
+
+## GitHub's Personal Access Token (PAT)
+
+<br>
+
+> It is a way to authenticate and interact with GitHub's API and repositories without using your username and password.
+
+## Create GitHub's PAT in Console {auto-animate=true}
+
+```{.markdown}
+library(gitcreds)
+create_github_token()
+```
+
+<br>
+
+. . .
+
+![](images/github-pat-codes.png)
+
+
+## Personal Access Token (PAT) {background-color="black"}
+
+![](images/github-pat1.png)
+
+## Personal Access Token (PAT) {background-color="black"}
+
+![](images/github-pat2.png)
+
+## Add PAT {auto-animate=true}
 
 ```{r}
 #| eval: false
 #| echo: true
 
-install.packages("tidyverse")
-
-library(tidyverse)
+gitcreds_set()
 ```
 
-- Using RStudio Windows
+<br>
 
-## 🤯 Your Turn {background-color="#1e1e1e"}
+. . .
+
+![](images/github-pat-added.png)
+
+## View GitHub Credentials {auto-animate=true}
+
+```{r}
+#| eval: false
+#| echo: true
+
+gitcreds_get()
+```
+
+<br>
+
+. . .
+
+![](images/github-credentials-rstudio.png)
+
+- To See Saved Credentials, Run in Terminal<br>
+`git config --global --list`
+
+## First `.qmd` File
+
+1. Create the file
+
+1. Save the file
+
+1. Render the file
+
+## 🤯 Your Turn {background-color="#003263"}
 
 <br>
 
@@ -146,7 +350,5 @@ Write a brief note describing your experience of using R and RStudio for the fir
 ```{r}
 library(countdown)
 
-countdown(minutes = 15)
+countdown(minutes = 5)
 ```
-
-## References

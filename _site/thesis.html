@@ -6,10 +6,17 @@
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.6.39">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-662ae1889177880cb371f83234c0a158.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/quarto-contrib/roughnotation-0.5.1/rough-notation.iife.js"></script>
+<script src="site_libs/quarto-contrib/roughnotation-init-1.0.0/rough.js"></script>
+<link href="site_libs/quarto-contrib/roughnotation-init-1.0.0/rough.css" rel="stylesheet">
+<script src="site_libs/quarto-contrib/roughnotation-flourish-bridge-1.0.0/flourish-bridge.js"></script>
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.30">
 
-  <title>THESIS</title>
+  <title>Thesis using Quarto</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -28,8 +35,9 @@
       vertical-align: middle;
     }
     /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
     pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
     pre > code.sourceCode > span:empty { height: 1.2em; }
     .sourceCode { overflow: visible; }
     code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -40,7 +48,7 @@
     }
     @media print {
     pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
     }
     pre.numberSource code
       { counter-reset: source-line 0; }
@@ -54,46 +62,46 @@
         -khtml-user-select: none; -moz-user-select: none;
         -ms-user-select: none; user-select: none;
         padding: 0 4px; width: 4em;
-        color: #aaaaaa;
       }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
     div.sourceCode
-      { color: #003b4f; background-color: #f1f3f5; }
+      { color: #24292e;  }
     @media screen {
     pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
     }
-    code span { color: #003b4f; } /* Normal */
-    code span.al { color: #ad0000; } /* Alert */
-    code span.an { color: #5e5e5e; } /* Annotation */
-    code span.at { color: #657422; } /* Attribute */
-    code span.bn { color: #ad0000; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
-    code span.ch { color: #20794d; } /* Char */
-    code span.cn { color: #8f5902; } /* Constant */
-    code span.co { color: #5e5e5e; } /* Comment */
-    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-    code span.dt { color: #ad0000; } /* DataType */
-    code span.dv { color: #ad0000; } /* DecVal */
-    code span.er { color: #ad0000; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #ad0000; } /* Float */
-    code span.fu { color: #4758ab; } /* Function */
-    code span.im { color: #00769e; } /* Import */
-    code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
-    code span.op { color: #5e5e5e; } /* Operator */
-    code span.ot { color: #003b4f; } /* Other */
-    code span.pp { color: #ad0000; } /* Preprocessor */
-    code span.sc { color: #5e5e5e; } /* SpecialChar */
-    code span.ss { color: #20794d; } /* SpecialString */
-    code span.st { color: #20794d; } /* String */
-    code span.va { color: #111111; } /* Variable */
-    code span.vs { color: #20794d; } /* VerbatimString */
-    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+    code span { color: #24292e; } /* Normal */
+    code span.al { color: #ff5555; font-weight: bold; } /* Alert */
+    code span.an { color: #6a737d; } /* Annotation */
+    code span.at { color: #d73a49; } /* Attribute */
+    code span.bn { color: #005cc5; } /* BaseN */
+    code span.bu { color: #d73a49; } /* BuiltIn */
+    code span.cf { color: #d73a49; } /* ControlFlow */
+    code span.ch { color: #032f62; } /* Char */
+    code span.cn { color: #005cc5; } /* Constant */
+    code span.co { color: #6a737d; } /* Comment */
+    code span.cv { color: #6a737d; } /* CommentVar */
+    code span.do { color: #6a737d; } /* Documentation */
+    code span.dt { color: #d73a49; } /* DataType */
+    code span.dv { color: #005cc5; } /* DecVal */
+    code span.er { color: #ff5555; text-decoration: underline; } /* Error */
+    code span.ex { color: #d73a49; font-weight: bold; } /* Extension */
+    code span.fl { color: #005cc5; } /* Float */
+    code span.fu { color: #6f42c1; } /* Function */
+    code span.im { color: #032f62; } /* Import */
+    code span.in { color: #6a737d; } /* Information */
+    code span.kw { color: #d73a49; } /* Keyword */
+    code span.op { color: #24292e; } /* Operator */
+    code span.ot { color: #6f42c1; } /* Other */
+    code span.pp { color: #d73a49; } /* Preprocessor */
+    code span.re { color: #6a737d; } /* RegionMarker */
+    code span.sc { color: #005cc5; } /* SpecialChar */
+    code span.ss { color: #032f62; } /* SpecialString */
+    code span.st { color: #032f62; } /* String */
+    code span.va { color: #e36209; } /* Variable */
+    code span.vs { color: #032f62; } /* VerbatimString */
+    code span.wa { color: #ff5555; } /* Warning */
   </style>
-  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-3f833ad789ad12d1d1e9ed1920be9c12.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-e699b38f026904c891a8682dc878e627.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -186,76 +194,75 @@
       margin-right: 0; 
     }
   </style>
+  <link href="site_libs/countdown-0.6.0/countdown.css" rel="stylesheet">
+  <script src="site_libs/countdown-0.6.0/countdown.js"></script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" data-background-image="https://images.unsplash.com/photo-1593248196138-bad1a611a766?q=80&amp;w=1932&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-background-size="cover" class="quarto-title-block center">
-  <h1 class="title"><span class="clr-white r-fit-text">THESIS</span></h1>
-  <p class="subtitle"><span class="clr-white r-fit-text">Dr.&nbsp;Ajay Kumar Koli (PhD) <span class="math inline">\(\cdot\)</span> SARA Institute of Data Science, India</span></p>
+<section id="title-slide" data-background-color="black" data-background-image="https://images.unsplash.com/photo-1621947081720-86970823b77a?q=80&amp;w=1932&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-background-opacity="0.5" data-background-size="cover" class="quarto-title-block center">
+  <h1 class="title"><span class="clr-white r-fit-text">Thesis using Quarto</span></h1>
+  <p class="subtitle"><span class="clr-white r-fit-text">Dr.&nbsp;Ajay Kumar Koli <span class="math inline">\(\cdot\)</span> 2nd SARA Bootcamp</span></p>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="why-use-quarto-to-write-a-thesis" class="slide level2 scrollable" data-background-image="images/thesis-writing.jpg" data-background-size="40%" data-background-position="right">
-<h2>Why use Quarto to write a thesis?</h2>
-<ol type="1">
-<li><p>Reproducibility</p></li>
-<li><p>Iterative Workflow</p></li>
-<li><p>Customization and Flexibility</p></li>
-<li><p>Multi-Format Output</p></li>
-<li><p>Collaboration</p></li>
-<li><p>Reduced Formatting Issues</p></li>
-<li><p>Integration with Other Tools</p></li>
-<li><p>Documentation and Support</p></li>
-</ol>
-</section>
-<section id="set-up-github-repo" class="slide level2 scrollable">
-<h2>Set Up GitHub Repo</h2>
-<ol type="1">
-<li>Create a new GitHub repository (repo) for your book project.</li>
-</ol>
-<div>
+<section>
+<section id="thesis-structure" class="title-slide slide level1 center" data-background-image="images/thesis-writing.jpg" data-background-size="contain" data-background-position="110%" data-background-color="silver">
+<h1>Thesis<br>Structure</h1>
 
-</div>
+</section>
+<section id="set-up-github-repo" class="slide level2">
+<h2>Set Up GitHub Repo</h2>
+<p>Create a new GitHub repository (repo) for your book project.</p>
 <div class="quarto-layout-panel" data-layout="[3,-0.05,7]">
 <div class="quarto-layout-row quarto-layout-valign-bottom">
 <div class="quarto-layout-cell" style="flex-basis: 29.9%;justify-content: center;">
-<p><img data-src="images/github-repo-new.png"></p>
+<p><a href="images/github-repo-new.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img data-src="images/github-repo-new.png"></a></p>
 </div>
 <div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 0.5%;justify-content: flex-start;">
 <p>&nbsp;</p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 69.7%;justify-content: center;">
-<p><img data-src="images/github-repo-name.png"></p>
+<p><a href="images/github-repo-name.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img data-src="images/github-repo-name.png"></a></p>
 </div>
 </div>
 </div>
 </section>
 <section id="from-repo-copy-the-https-link" class="slide level2">
 <h2>From Repo Copy the <code>HTTPS</code> Link</h2>
-
-<img data-src="images/github-repo-link.png" class="r-stretch"></section>
+<p><a href="images/github-repo-link.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img data-src="images/github-repo-link.png"></a></p>
+</section>
 <section id="create-version-control-rstudio-project" class="slide level2">
-<h2>Create Version Control RStudio Project</h2>
-
-<img data-src="images/project-version-control.png" class="quarto-figure quarto-figure-center r-stretch" style="width:50.0%"></section>
+<h2><span class="r-fit-text">Create Version Control RStudio Project</span></h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/project-version-control.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img data-src="images/project-version-control.png" class="quarto-figure quarto-figure-center" style="width:70.0%"></a></p>
+</figure>
+</div>
+</section>
 <section id="paste-the-repo-linkurl" class="slide level2">
 <h2>Paste the Repo Link/URL</h2>
-
-<img data-src="images/project-repo-link.png" class="quarto-figure quarto-figure-center r-stretch" style="width:50.0%"></section>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/project-repo-link.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img data-src="images/project-repo-link.png" class="quarto-figure quarto-figure-center" style="width:70.0%"></a></p>
+</figure>
+</div>
+</section>
 <section id="set-up-rstudio-project" class="slide level2">
 <h2>Set Up RStudio Project</h2>
-<ul>
-<li>Create a file named <strong><code>_quarto.yml</code></strong>. It will contain the configuration settings for your book.</li>
-</ul>
-
-<img data-src="images/rstudio-yml.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<p>Create a file named <strong><code>_quarto.yml</code></strong>. It will contain the configuration settings for your thesis.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/rstudio-yml.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img data-src="images/rstudio-yml.png" class="quarto-figure quarto-figure-center"></a></p>
+</figure>
+</div>
+</section>
 <section id="configure-_quarto.yml" class="slide level2">
 <h2>Configure <code>_quarto.yml</code>:</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a></a><span class="fu">project</span><span class="kw">:</span></span>
+<div class="sourceCode" id="cb1" data-code-line-numbers="1-2|4-7|8-11|13-15|16-17"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a></a><span class="fu">project</span><span class="kw">:</span></span>
 <span id="cb1-2"><a></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> book</span></span>
 <span id="cb1-3"><a></a></span>
 <span id="cb1-4"><a></a><span class="fu">book</span><span class="kw">:</span></span>
@@ -273,56 +280,1590 @@
 <span id="cb1-16"><a></a><span class="at">  </span><span class="fu">pdf</span><span class="kw">:</span></span>
 <span id="cb1-17"><a></a><span class="at">    </span><span class="fu">documentclass</span><span class="kw">:</span><span class="at"> scrreprt</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="create-conent-files" class="slide level2">
-<h2>Create Conent Files</h2>
+<section id="create-content-files" class="slide level2">
+<h2>Create Content Files</h2>
 <ul>
-<li><p>Create the content files for your chapters (e.g., <strong>index.qmd, chapter1.qmd, chapter3.qmd</strong>).</p></li>
-<li><p>Write your content using Markdown syntax. You can also include code, figures, and othe elements.</p></li>
+<li class="fragment"><p>Create the content files for your chapters (e.g., <code>index.qmd</code>, <code>chapter1.qmd</code>, <code>chapter2.qmd</code>).</p></li>
+<li class="fragment"><p>Write your content using Markdown syntax. You can also include code, figures, and other elements.</p></li>
 </ul>
 <div class="fragment">
-<ul>
-<li>Example <strong><code>index.qmd</code></strong></li>
-</ul>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a></a><span class="fu"># Introduction</span></span>
-<span id="cb2-2"><a></a></span>
-<span id="cb2-3"><a></a>Welcome to my book. This is the introduction chapter.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ul>
-<li>Example <strong><code>chapter1.qmd</code></strong></li>
-</ul>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a></a><span class="fu"># Chapter 1</span></span>
-<span id="cb3-2"><a></a></span>
-<span id="cb3-3"><a></a>This is the content of Chapter 1.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Example <strong><code>index.qmd</code></strong></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a></a><span class="co">---</span></span>
+<span id="cb2-2"><a></a><span class="an">format:</span><span class="co"> html</span></span>
+<span id="cb2-3"><a></a><span class="co">---</span></span>
+<span id="cb2-4"><a></a></span>
+<span id="cb2-5"><a></a><span class="fu"># Introduction</span></span>
+<span id="cb2-6"><a></a></span>
+<span id="cb2-7"><a></a>Welcome to my book. This is the introduction chapter.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="fragment">
+<p>Example <strong><code>chapter1.qmd</code></strong></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a></a><span class="co">---</span></span>
+<span id="cb3-2"><a></a><span class="an">format:</span><span class="co"> html</span></span>
+<span id="cb3-3"><a></a><span class="co">---</span></span>
+<span id="cb3-4"><a></a></span>
+<span id="cb3-5"><a></a><span class="fu"># Chapter 1</span></span>
+<span id="cb3-6"><a></a></span>
+<span id="cb3-7"><a></a>This is the content of Chapter 1.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="render-the-book" class="slide level2">
 <h2>Render the Book</h2>
-
-<img data-src="images/render-quarto.png" class="r-stretch"></section>
+<p><a href="images/render-quarto.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img data-src="images/render-quarto.png"></a></p>
+</section>
 <section id="preview-and-iterate-html" class="slide level2">
 <h2>Preview and Iterate (html)</h2>
-
-<img data-src="images/preview-html-book.png" class="r-stretch"></section>
+<p><a href="images/preview-html-book.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img data-src="images/preview-html-book.png"></a></p>
+</section>
 <section id="preview-and-iterate-pdf" class="slide level2">
 <h2>Preview and Iterate (pdf)</h2>
-<div>
-
-</div>
 <div class="quarto-layout-panel" data-layout-ncol="3">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
-<p><img data-src="images/preview-pdf-book1.png"></p>
+<p><a href="images/preview-pdf-book1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img data-src="images/preview-pdf-book1.png"></a></p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
-<p><img data-src="images/preview-pdf-book2.png"></p>
+<p><a href="images/preview-pdf-book2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img data-src="images/preview-pdf-book2.png"></a></p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
-<p><img data-src="images/preview-pdf-book3.png"></p>
+<p><a href="images/preview-pdf-book3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img data-src="images/preview-pdf-book3.png"></a></p>
 </div>
 </div>
 </div>
-
+</section></section>
+<section>
+<section id="thesis-text-formating" class="title-slide slide level1 center" data-background-image="images/thesis-writing.jpg" data-background-size="contain" data-background-position="110%" data-background-color="silver">
+<h1>Thesis Text<br>Formating</h1>
 
 </section>
+<section id="markdown" class="slide level2">
+<h2>Markdown</h2>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:30%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://logowik.com/content/uploads/images/markdown1678.logowik.com.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img data-src="https://logowik.com/content/uploads/images/markdown1678.logowik.com.webp" class="quarto-figure quarto-figure-center"></a></p>
+</figure>
+</div>
+</div><div class="column" style="width:70%;">
+<p>Markdown is a lightweight markup language for creating <strong>formatted text</strong> using a plain-text editor. Developed by John Gruber in 2004.</p>
+</div></div>
+<div class="footer">
+<p>Source: <a href="https://en.wikipedia.org/wiki/Markdown" class="uri">https://en.wikipedia.org/wiki/Markdown</a></p>
+</div>
+</section>
+<section id="text-formatting" class="slide level2">
+<h2>Text formatting</h2>
+<p><br></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Markdown Syntax</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a></a>normal</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td>normal</td>
+</tr>
+<tr class="even">
+<td><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a></a>*italics*</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><em>italics</em></td>
+</tr>
+<tr class="odd">
+<td><div class="sourceCode" id="cb6"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a></a>**bold**</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><strong>bold</strong></td>
+</tr>
+<tr class="even">
+<td><div class="sourceCode" id="cb7"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a></a>***bold italics***</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><strong><em>bold italics</em></strong></td>
+</tr>
+</tbody>
+</table>
+<div class="footer">
+<p>Source: <a href="https://quarto.org/docs/authoring/markdown-basics.html">Quarto guide</a></p>
+</div>
+</section>
+<section id="text-formatting-1" class="slide level2">
+<h2>Text formatting</h2>
+<p><br></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Markdown Syntax</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><div class="sourceCode" id="cb8"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a></a>superscript^2^</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td>superscript<sup>2</sup></td>
+</tr>
+<tr class="even">
+<td><div class="sourceCode" id="cb9"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a></a>subscript~2~</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td>subscript<sub>2</sub></td>
+</tr>
+<tr class="odd">
+<td><div class="sourceCode" id="cb10"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a></a>~~strike through~~</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><del>strike through</del></td>
+</tr>
+<tr class="even">
+<td><div class="sourceCode" id="cb11"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a></a><span class="in">`verbatim code`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><code>verbatim code</code></td>
+</tr>
+</tbody>
+</table>
+<div class="footer">
+<p>Source: <a href="https://quarto.org/docs/authoring/markdown-basics.html">Quarto guide</a></p>
+</div>
+</section>
+<section id="headings" class="slide level2 smaller">
+<h2>Headings</h2>
+<p><br></p>
+<table class="caption-top" style="width:75%;">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Markdown Syntax</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><div class="sourceCode" id="cb12"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a></a><span class="fu"># Header 1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><h1 id="header-1" class="heading-output">Header 1</h1></td>
+</tr>
+<tr class="even">
+<td><div class="sourceCode" id="cb13"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a></a><span class="fu">## Header 2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><h2 id="header-2" class="heading-output">Header 2</h2></td>
+</tr>
+<tr class="odd">
+<td><div class="sourceCode" id="cb14"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb14-1"><a></a><span class="fu">### Header 3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><h3 id="header-3" class="heading-output">Header 3</h3></td>
+</tr>
+<tr class="even">
+<td><div class="sourceCode" id="cb15"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb15-1"><a></a><span class="fu">#### Header 4</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><h4 id="header-4" class="heading-output">Header 4</h4></td>
+</tr>
+<tr class="odd">
+<td><div class="sourceCode" id="cb16"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb16-1"><a></a><span class="fu">##### Header 5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><h5 id="header-5" class="heading-output">Header 5</h5></td>
+</tr>
+<tr class="even">
+<td><div class="sourceCode" id="cb17"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb17-1"><a></a><span class="fu">###### Header 6</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><h6 id="header-6" class="heading-output">Header 6</h6></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="insert-links" class="slide level2 scrollable">
+<h2>Insert links</h2>
+<p><br></p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Markdown syntax</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><div class="sourceCode" id="cb18"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb18-1"><a></a><span class="ot">&lt;https://saraedu.netlify.app/&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><a href="https://saraedu.netlify.app/" class="uri">https://saraedu.netlify.app/</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="insert-links-1" class="slide level2 scrollable">
+<h2>Insert links</h2>
+<p><br></p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Markdown syntax</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><div class="sourceCode" id="cb19"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb19-1"><a></a><span class="co">[</span><span class="ot">SARA</span><span class="co">](https://saraedu.netlify.app/)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><a href="https://saraedu.netlify.app/">SARA</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="add-images" class="slide level2 scrollable">
+<h2>Add images</h2>
+<blockquote>
+<p>If image is saved in your computer, <br><code>![](add image path here)</code></p>
+</blockquote>
+<div class="fragment">
+<p><br></p>
+<table class="caption-top" style="width:69%;">
+<colgroup>
+<col style="width: 36%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Markdown Syntax</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><div class="sourceCode" id="cb20"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb20-1"><a></a><span class="al">![](lotus.png)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><img data-src="lotus.png"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="add-images-1" class="slide level2 scrollable">
+<h2>Add images</h2>
+<blockquote>
+<p>If image is taken from the internet, <br><code>![](add image link here)</code></p>
+</blockquote>
+<div class="fragment">
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:70%;">
+<div class="sourceCode" id="cb21"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb21-1"><a></a><span class="al">![](https://images.unsplash.com/photo-1627130595904-ebeeb6540a93?q=80&amp;w=1974&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column" style="width:30%;">
+<p><a href="https://images.unsplash.com/photo-1627130595904-ebeeb6540a93?q=80&amp;w=1974&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img data-src="https://images.unsplash.com/photo-1627130595904-ebeeb6540a93?q=80&amp;w=1974&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:70.0%"></a></p>
+</div></div>
+</div>
+</section>
+<section id="unordered-list" class="slide level2 scrollable">
+<h2>Unordered list</h2>
+<p><br></p>
+<table class="caption-top" style="width:83%;">
+<colgroup>
+<col style="width: 36%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Markdown Syntax</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><div class="sourceCode" id="cb22"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb22-1"><a></a><span class="ss">* </span>Item 1</span>
+<span id="cb22-2"><a></a><span class="ss">* </span>Item 2</span>
+<span id="cb22-3"><a></a><span class="ss">* </span>Item 3</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><ul>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="unordered-list-sub-items" class="slide level2 scrollable">
+<h2>Unordered list: Sub-items</h2>
+<p><br></p>
+<table class="caption-top" style="width:97%;">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Markdown Syntax</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><div class="sourceCode" id="cb23"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb23-1"><a></a><span class="ss">* </span>Main items</span>
+<span id="cb23-2"><a></a><span class="ss">    + </span>Sub-item 1</span>
+<span id="cb23-3"><a></a><span class="ss">    + </span>Sub-item 2</span>
+<span id="cb23-4"><a></a><span class="ss">        - </span>Sub-sub-item 1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><ul>
+<li>Main items
+<ul>
+<li>Sub-item 1</li>
+<li>Sub-item 2
+<ul>
+<li>Sub-sub-item 1</li>
+</ul></li>
+</ul></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="ordered-list" class="slide level2 scrollable">
+<h2>Ordered list</h2>
+<p><br></p>
+<table class="caption-top" style="width:97%;">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Markdown Syntax</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><div class="sourceCode" id="cb24"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb24-1"><a></a><span class="ss">1. </span>Eggs</span>
+<span id="cb24-2"><a></a><span class="ss">1. </span>Tea</span>
+<span id="cb24-3"><a></a><span class="ss">1. </span>Fish</span>
+<span id="cb24-4"><a></a><span class="ss">1. </span>Milk</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><ol type="1">
+<li>Eggs</li>
+<li>Tea</li>
+<li>Fish</li>
+<li>Milk</li>
+</ol></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="list" class="slide level2 scrollable">
+<h2>List</h2>
+<p><br></p>
+<table class="caption-top" style="width:97%;">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Markdown Syntax</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><div class="sourceCode" id="cb25"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb25-1"><a></a>(@)  A list whose numbering</span>
+<span id="cb25-2"><a></a></span>
+<span id="cb25-3"><a></a>continues after</span>
+<span id="cb25-4"><a></a></span>
+<span id="cb25-5"><a></a>(@)  an interruption</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><ol type="1">
+<li>A list whose numbering</li>
+</ol>
+<p>continues after</p>
+<ol start="2" type="1">
+<li>an interruption</li>
+</ol></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="list-1" class="slide level2 scrollable">
+<h2>List</h2>
+<p><br></p>
+<table class="caption-top" style="width:97%;">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Markdown Syntax</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><div class="sourceCode" id="cb26"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb26-1"><a></a>::: {}</span>
+<span id="cb26-2"><a></a><span class="ss">1. </span>A item</span>
+<span id="cb26-3"><a></a><span class="ss">1. </span>B item</span>
+<span id="cb26-4"><a></a>:::</span>
+<span id="cb26-5"><a></a></span>
+<span id="cb26-6"><a></a>::: {}</span>
+<span id="cb26-7"><a></a><span class="ss">1. </span>Followed by another list</span>
+<span id="cb26-8"><a></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><div>
+<ol type="1">
+<li>A item</li>
+<li>A item</li>
+</ol>
+</div>
+<div>
+<ol type="1">
+<li>Followed by another list</li>
+</ol>
+</div></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="equations" class="slide level2">
+<h2>Equations</h2>
+<blockquote>
+<p>Use <code>$</code> delimiters for inline math.</p>
+</blockquote>
+<p><br></p>
+<div class="fragment">
+<table class="caption-top">
+<colgroup>
+<col style="width: 51%">
+<col style="width: 48%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Markdown Syntax</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><div class="sourceCode" id="cb27"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb27-1"><a></a>It is a great equation $E = mc^{2}$</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td>It is a great equation <span class="math inline">\(E=mc^{2}\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="equations-1" class="slide level2">
+<h2>Equations</h2>
+<blockquote>
+<p>Use <code>$$</code> delimiters for display math.</p>
+</blockquote>
+<p><br></p>
+<div class="fragment">
+<table class="caption-top">
+<colgroup>
+<col style="width: 51%">
+<col style="width: 48%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Markdown Syntax</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><div class="sourceCode" id="cb28"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb28-1"><a></a>It is a great equation $$E = mc^{2}$$</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td>It is a great equation <span class="math display">\[E=mc^{2}\]</span></td>
+</tr>
+</tbody>
+</table>
+
+</div>
+<aside><div>
+<p>Learn more about <a href="https://www.overleaf.com/learn/latex/Mathematical_expressions">Latex</a> math expressions</p>
+</div></aside></section>
+<section id="in-line-coding" class="slide level2">
+<h2>In-line coding</h2>
+<blockquote>
+<p><code>`{r} `</code></p>
+</blockquote>
+<div class="sourceCode" id="cb29"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb29-1"><a></a><span class="in">```{r}</span></span>
+<span id="cb29-2"><a></a></span>
+<span id="cb29-3"><a></a>age <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>)</span>
+<span id="cb29-4"><a></a></span>
+<span id="cb29-5"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Input:</strong> The mean age of the participants is <code>`{r} mean(age)`</code>.</p>
+<p><strong>Output:</strong> The mean age of the participants is 3.</p>
+</section></section>
+<section>
+<section id="tables-figures-data-in-a-thesis" class="title-slide slide level1 center" data-background-image="images/thesis-writing.jpg" data-background-size="contain" data-background-position="110%" data-background-color="silver">
+<h1>Tables,<br>Figures &amp;<br>Data in<br>a Thesis</h1>
+
+</section>
+<section id="what-we-will-cover-now" class="slide level2">
+<h2>What We Will Cover Now</h2>
+<ul>
+<li class="fragment">📊 Adding Tables (Markdown → kable → kableExtra)</li>
+<li class="fragment">🖼️ Adding Figures (Images → Code → ggplot)</li>
+<li class="fragment">🔗 Cross-Referencing Tables &amp; Figures</li>
+<li class="fragment">📁 Loading &amp; Displaying Real Data</li>
+<li class="fragment">🎯 Hands-on Your Turn Exercises</li>
+</ul>
+</section></section>
+<section>
+<section id="adding-tables" class="title-slide slide level1 center" data-background-color="#2d4a6b">
+<h1>📊 Adding Tables</h1>
+
+</section>
+<section id="step-1-markdown-table-simplest" class="slide level2">
+<h2>Step 1: Markdown Table (Simplest)</h2>
+<p>Type this in your <code>.qmd</code> file:</p>
+<div class="sourceCode" id="cb30"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb30-1"><a></a><span class="pp">|</span> Name  <span class="pp">|</span> Age <span class="pp">|</span> City     <span class="pp">|</span></span>
+<span id="cb30-2"><a></a><span class="pp">|-------|-----|----------|</span></span>
+<span id="cb30-3"><a></a><span class="pp">|</span> Ajay  <span class="pp">|</span> 25  <span class="pp">|</span> Delhi    <span class="pp">|</span></span>
+<span id="cb30-4"><a></a><span class="pp">|</span> Kiram <span class="pp">|</span> 30  <span class="pp">|</span> Sonipat  <span class="pp">|</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Output:</strong></p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Age</th>
+<th>City</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ajay</td>
+<td>25</td>
+<td>Delhi</td>
+</tr>
+<tr class="even">
+<td>Kiram</td>
+<td>30</td>
+<td>Sonipat</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="step-2-kable-table" class="slide level2">
+<h2>Step 2: kable Table</h2>
+<div class="sourceCode" id="cb31"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb31-1"><a></a><span class="in">```{r}</span></span>
+<span id="cb31-2"><a></a><span class="co"># call the r package</span></span>
+<span id="cb31-3"><a></a><span class="fu">library</span>(knitr)</span>
+<span id="cb31-4"><a></a></span>
+<span id="cb31-5"><a></a><span class="fu">kable</span>(<span class="fu">head</span>(mtcars), </span>
+<span id="cb31-6"><a></a>      <span class="at">caption =</span> <span class="st">"My First Table"</span>)</span>
+<span id="cb31-7"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br></p>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p><code>kable()</code> is the go-to function for simple, clean tables in R.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="step-3-kableextra-styled-tables" class="slide level2">
+<h2>Step 3: kableExtra (Styled Tables)</h2>
+<div class="sourceCode" id="cb32"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb32-1"><a></a><span class="in">```{r}</span></span>
+<span id="cb32-2"><a></a><span class="fu">library</span>(kableExtra)</span>
+<span id="cb32-3"><a></a></span>
+<span id="cb32-4"><a></a><span class="fu">kable</span>(<span class="fu">head</span>(mtcars), <span class="at">caption =</span> <span class="st">"Styled Table"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb32-5"><a></a>  <span class="fu">kable_styling</span>(</span>
+<span id="cb32-6"><a></a>    <span class="at">bootstrap_options =</span> <span class="st">"striped"</span>,</span>
+<span id="cb32-7"><a></a>    <span class="at">full_width =</span> <span class="cn">FALSE</span></span>
+<span id="cb32-8"><a></a>  )</span>
+<span id="cb32-9"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li class="fragment"><code>striped</code> — alternating row colors</li>
+<li class="fragment"><code>hover</code> — highlight on mouse hover</li>
+<li class="fragment"><code>condensed</code> — compact layout</li>
+</ul>
+</section>
+<section id="your-turn-tables" class="slide level2" data-background-color="#003262">
+<h2>🎯 Your Turn: Tables</h2>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_5c920da0" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+</div>
+</div>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Exercise 1</strong></p>
+</div>
+<div class="callout-content">
+<p>Create a table showing <strong>5 rows</strong> of any dataset of your choice.</p>
+<p>✅ Add a caption<br>
+✅ Make it striped<br>
+✅ Set <code>full_width = FALSE</code></p>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="adding-figures" class="title-slide slide level1 center" data-background-color="#2d4a6b">
+<h1>🖼️ Adding Figures</h1>
+
+</section>
+<section id="step-1-insert-an-external-image" class="slide level2">
+<h2>Step 1: Insert an External Image</h2>
+<div class="sourceCode" id="cb33"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb33-1"><a></a><span class="al">![Figure Caption](images/my-photo.png)</span>{</span>
+<span id="cb33-2"><a></a>  fig-alt="description" </span>
+<span id="cb33-3"><a></a>  width="70%"</span>
+<span id="cb33-4"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br></p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>Always add <code>fig-alt</code> for accessibility — it’s good research practice!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="step-2-figure-from-r-code" class="slide level2">
+<h2>Step 2: Figure from R Code</h2>
+<div class="sourceCode" id="cb34"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb34-1"><a></a><span class="in">```{r}</span></span>
+<span id="cb34-2"><a></a><span class="co">#| label: fig-cars</span></span>
+<span id="cb34-3"><a></a><span class="co">#| fig-cap: "Relationship between Speed and Distance"</span></span>
+<span id="cb34-4"><a></a></span>
+<span id="cb34-5"><a></a><span class="fu">plot</span>(cars<span class="sc">$</span>speed, cars<span class="sc">$</span>dist,</span>
+<span id="cb34-6"><a></a>     <span class="at">xlab =</span> <span class="st">"Speed"</span>, <span class="at">ylab =</span> <span class="st">"Distance"</span>)</span>
+<span id="cb34-7"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li class="fragment"><code>label</code> — must start with <code>fig-</code> for cross-referencing</li>
+<li class="fragment"><code>fig-cap</code> — your figure caption</li>
+</ul>
+</section>
+<section id="step-3-ggplot-figure" class="slide level2">
+<h2>Step 3: ggplot Figure</h2>
+<div class="sourceCode" id="cb35"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb35-1"><a></a><span class="in">```{r}</span></span>
+<span id="cb35-2"><a></a><span class="co">#| label: fig-ggplot</span></span>
+<span id="cb35-3"><a></a><span class="co">#| fig-cap: "MPG by Cylinder Count"</span></span>
+<span id="cb35-4"><a></a><span class="co">#| fig-width: 6</span></span>
+<span id="cb35-5"><a></a><span class="co">#| fig-height: 4</span></span>
+<span id="cb35-6"><a></a><span class="co">#| eval: false</span></span>
+<span id="cb35-7"><a></a></span>
+<span id="cb35-8"><a></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb35-9"><a></a></span>
+<span id="cb35-10"><a></a><span class="fu">ggplot</span>(mtcars, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">factor</span>(cyl), <span class="at">y =</span> mpg)) <span class="sc">+</span></span>
+<span id="cb35-11"><a></a>  <span class="fu">geom_boxplot</span>(<span class="at">fill =</span> <span class="st">"steelblue"</span>) <span class="sc">+</span></span>
+<span id="cb35-12"><a></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Cylinders"</span>, <span class="at">y =</span> <span class="st">"MPG"</span>)</span>
+<span id="cb35-13"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="your-turn-figures" class="slide level2 scrollable" data-background-color="#003262">
+<h2>🎯 Your Turn: Figures</h2>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_79dd5ae6" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+</div>
+</div>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Exercise 2</strong></p>
+</div>
+<div class="callout-content">
+<ol type="1">
+<li>Insert any image from your computer<br>
+</li>
+<li>Create a <code>ggplot</code> figure using the <code>iris</code> dataset<br>
+</li>
+<li>Add a proper caption using <code>fig-cap</code><br>
+</li>
+<li>Set figure width and height</li>
+</ol>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="cross-referencing" class="title-slide slide level1 center" data-background-color="#2d4a6b">
+<h1>🔗 Cross-Referencing</h1>
+
+</section>
+<section id="why-cross-reference" class="slide level2">
+<h2>Why Cross-Reference?</h2>
+<p>In a thesis, you write:</p>
+<blockquote>
+<p><em>“As shown in <strong>Figure 3.2</strong>, the results indicate…”</em></p>
+</blockquote>
+<p>Quarto handles the <strong>numbering automatically</strong> - you just use labels!</p>
+</section>
+<section id="cross-referencing-figures" class="slide level2">
+<h2>Cross-Referencing Figures</h2>
+<p><strong>In your code chunk:</strong></p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb36-1"><a></a>#| label: fig-scatter</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>In your text:</strong></p>
+<div class="sourceCode" id="cb37"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb37-1"><a></a>As shown in @fig-scatter, there is a positive trend...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br></p>
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Important Rule</strong></p>
+</div>
+<div class="callout-content">
+<p>Figure labels <strong>must start with</strong> <code>fig-</code><br>
+Table labels <strong>must start with</strong> <code>tbl-</code></p>
+</div>
+</div>
+</div>
+</section>
+<section id="cross-referencing-tables" class="slide level2">
+<h2>Cross-Referencing Tables</h2>
+<p><strong>In your code chunk:</strong></p>
+<div class="sourceCode" id="cb38"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb38-1"><a></a>#| label: tbl-summary</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>In your text:</strong></p>
+<div class="sourceCode" id="cb39"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb39-1"><a></a>As seen in @tbl-summary, the results indicate...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br></p>
+<p>Quarto automatically converts <code>@tbl-summary</code> <span class="math inline">\(\rightarrow\)</span> <strong>Table 1</strong></p>
+</section>
+<section id="your-turn-cross-referencing" class="slide level2 scrollable" data-background-color="#003262">
+<h2>🎯 Your Turn: Cross-Referencing</h2>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_f1b4dfc7" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+</div>
+</div>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Exercise 3</strong></p>
+</div>
+<div class="callout-content">
+<ol type="1">
+<li>Create <strong>one table</strong> with a <code>tbl-</code> label<br>
+</li>
+<li>Create <strong>one figure</strong> with a <code>fig-</code> label<br>
+</li>
+<li>Reference <strong>both</strong> somewhere in your text using <code>@</code><br>
+</li>
+<li>Render and check the automatic numbering</li>
+</ol>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="real-data-in-your-thesis" class="title-slide slide level1 center" data-background-color="#2d4a6b">
+<h1>📁 Real Data in Your Thesis</h1>
+
+</section>
+<section id="loading-data" class="slide level2">
+<h2>Loading Data</h2>
+<div class="sourceCode" id="cb40"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb40-1"><a></a><span class="in">```{r}</span></span>
+<span id="cb40-2"><a></a><span class="co"># CSV file</span></span>
+<span id="cb40-3"><a></a>data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"data/survey.csv"</span>)</span>
+<span id="cb40-4"><a></a></span>
+<span id="cb40-5"><a></a><span class="co"># Excel file</span></span>
+<span id="cb40-6"><a></a><span class="fu">library</span>(readxl)</span>
+<span id="cb40-7"><a></a>data <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"data/survey.xlsx"</span>)</span>
+<span id="cb40-8"><a></a></span>
+<span id="cb40-9"><a></a><span class="co"># Built-in dataset</span></span>
+<span id="cb40-10"><a></a>data <span class="ot">&lt;-</span> mtcars</span>
+<span id="cb40-11"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="displaying-data-as-a-table" class="slide level2">
+<h2>Displaying Data as a Table</h2>
+<div class="sourceCode" id="cb41"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb41-1"><a></a><span class="in">```{r}</span></span>
+<span id="cb41-2"><a></a><span class="co">#| label: tbl-data</span></span>
+<span id="cb41-3"><a></a><span class="co">#| tbl-cap: "Summary of Survey Data"</span></span>
+<span id="cb41-4"><a></a></span>
+<span id="cb41-5"><a></a><span class="fu">library</span>(knitr)</span>
+<span id="cb41-6"><a></a></span>
+<span id="cb41-7"><a></a><span class="fu">kable</span>(<span class="fu">head</span>(data))</span>
+<span id="cb41-8"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="creating-a-figure-from-real-data" class="slide level2">
+<h2>Creating a Figure from Real Data</h2>
+<div class="sourceCode" id="cb42"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb42-1"><a></a><span class="in">```{r}</span></span>
+<span id="cb42-2"><a></a><span class="co">#| label: fig-data</span></span>
+<span id="cb42-3"><a></a><span class="co">#| fig-cap: "Distribution of Responses"</span></span>
+<span id="cb42-4"><a></a></span>
+<span id="cb42-5"><a></a><span class="fu">hist</span>(data<span class="sc">$</span>age, </span>
+<span id="cb42-6"><a></a>     <span class="at">main =</span> <span class="st">""</span>, </span>
+<span id="cb42-7"><a></a>     <span class="at">xlab =</span> <span class="st">"Age"</span>,</span>
+<span id="cb42-8"><a></a>     <span class="at">col =</span> <span class="st">"steelblue"</span>)</span>
+<span id="cb42-9"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="your-turn-real-data" class="slide level2 scrollable" data-background-color="#003262">
+<h2>🎯 Your Turn: Real Data</h2>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_35178673" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+</div>
+</div>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Exercise 4</strong></p>
+</div>
+<div class="callout-content">
+<p>Using the built-in <code>airquality</code> dataset:</p>
+<ol type="1">
+<li>Display the <strong>first 6 rows</strong> as a kable table<br>
+</li>
+<li>Create a <strong>histogram</strong> of the <code>Temp</code> column<br>
+</li>
+<li>Add proper captions to both<br>
+</li>
+<li>Cross-reference them in a short paragraph</li>
+</ol>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="thesis-specific-settings" class="title-slide slide level1 center" data-background-color="#2d4a6b">
+<h1>📐 Thesis-Specific Settings</h1>
+
+</section>
+<section id="global-settings-in-_quarto.yml" class="slide level2">
+<h2>Global Settings in <code>_quarto.yml</code></h2>
+<div class="sourceCode" id="cb43"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb43-1"><a></a><span class="fu">execute</span><span class="kw">:</span></span>
+<span id="cb43-2"><a></a><span class="at">  </span><span class="fu">echo</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span><span class="co">       # hide code in final thesis</span></span>
+<span id="cb43-3"><a></a><span class="at">  </span><span class="fu">warning</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span><span class="co">    # hide warnings</span></span>
+<span id="cb43-4"><a></a><span class="at">  </span><span class="fu">message</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span><span class="co">    # hide messages</span></span>
+<span id="cb43-5"><a></a></span>
+<span id="cb43-6"><a></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb43-7"><a></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb43-8"><a></a><span class="at">    </span><span class="fu">fig-width</span><span class="kw">:</span><span class="at"> </span><span class="dv">7</span></span>
+<span id="cb43-9"><a></a><span class="at">    </span><span class="fu">fig-height</span><span class="kw">:</span><span class="at"> </span><span class="dv">5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br></p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>Set <code>echo: false</code> globally so your thesis shows <strong>only output</strong>, not code.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="useful-chunk-options" class="slide level2">
+<h2>Useful Chunk Options</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Option</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>echo: false</code></td>
+<td>Hide code, show output</td>
+</tr>
+<tr class="even">
+<td><code>eval: false</code></td>
+<td>Show code, don’t run it</td>
+</tr>
+<tr class="odd">
+<td><code>fig-width: 7</code></td>
+<td>Set figure width</td>
+</tr>
+<tr class="even">
+<td><code>fig-height: 5</code></td>
+<td>Set figure height</td>
+</tr>
+<tr class="odd">
+<td><code>tbl-cap</code></td>
+<td>Add table caption</td>
+</tr>
+<tr class="even">
+<td><code>fig-cap</code></td>
+<td>Add figure caption</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="key-takeaway" class="slide level2">
+<h2>Key Takeaway</h2>
+<div class="r-fit-text">
+<p>In a Quarto thesis, <strong>everything is connected</strong></p>
+</div>
+<p>Your data, code, and writing live in <strong>one place</strong>.</p>
+<p>When data changes → tables and figures <strong>update automatically</strong>.</p>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>That is <strong>Reproducible Research</strong> in action! 🎉</p>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="add-references" class="title-slide slide level1 center" data-background-image="images/thesis-writing.jpg" data-background-size="contain" data-background-position="110%" data-background-color="silver">
+<h1>Add<br>References</h1>
+
+</section>
+<section id="what-we-will-cover-now-1" class="slide level2">
+<h2>What We Will Cover Now</h2>
+<ul>
+<li class="fragment">📖 What is Zotero and why use it?</li>
+<li class="fragment">⚙️ Setting up Zotero with Quarto</li>
+<li class="fragment">📝 Adding a bibliography to your thesis</li>
+<li class="fragment">✍️ Inserting citations in your text</li>
+<li class="fragment">🎨 Changing citation styles (APA, Chicago, etc.)</li>
+<li class="fragment">🔗 Connecting Zotero directly in RStudio</li>
+<li class="fragment">🎯 Hands-on Your Turn Exercises</li>
+</ul>
+</section></section>
+<section>
+<section id="what-is-zotero" class="title-slide slide level1 center" data-background-color="#2d4a6b">
+<h1>📖 What is Zotero?</h1>
+
+</section>
+<section id="zotero-simply-put" class="slide level2">
+<h2>Zotero — Simply Put</h2>
+<p>Think of Zotero as a <strong>smart bookshelf</strong> for your research.</p>
+<ul>
+<li class="fragment">📚 Saves all your papers, books, and articles in one place</li>
+<li class="fragment">🏷️ Stores author, year, title, journal — automatically</li>
+<li class="fragment">📤 Exports references in any format Quarto needs</li>
+<li class="fragment">🔄 Syncs across devices via zotero.org</li>
+</ul>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>Zotero is <strong>free and open source</strong> — perfect for researchers!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="why-zotero-quarto" class="slide level2">
+<h2>Why Zotero + Quarto?</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Without Zotero</th>
+<th>With Zotero + Quarto</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type references manually</td>
+<td>References inserted automatically</td>
+</tr>
+<tr class="even">
+<td>Format APA by hand</td>
+<td>Style applied instantly</td>
+</tr>
+<tr class="odd">
+<td>Risk of typos</td>
+<td>Always accurate</td>
+</tr>
+<tr class="even">
+<td>Hard to update</td>
+<td>One click to refresh</td>
+</tr>
+<tr class="odd">
+<td>Separate reference list</td>
+<td>Auto-generated bibliography</td>
+</tr>
+</tbody>
+</table>
+</section></section>
+<section>
+<section id="setting-up-zotero" class="title-slide slide level1 center" data-background-color="#2d4a6b">
+<h1>⚙️ Setting Up Zotero</h1>
+
+</section>
+<section id="step-1-install-zotero" class="slide level2 scrollable">
+<h2>Step 1: Install Zotero</h2>
+<ol type="1">
+<li class="fragment">Go to <strong><a href="https://www.zotero.org">zotero.org</a></strong> and download Zotero</li>
+<li class="fragment">Install the <strong>Zotero Connector</strong> browser extension</li>
+<li class="fragment">Create a free account at <strong>zotero.org/user/register</strong></li>
+<li class="fragment">Sign in inside the Zotero app</li>
+</ol>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>The browser extension lets you <strong>save a paper in one click</strong> while browsing Google Scholar or any journal website.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="step-2-add-references-to-zotero" class="slide level2">
+<h2>Step 2: Add References to Zotero</h2>
+<p><strong>Three easy ways:</strong></p>
+<ul>
+<li class="fragment">🌐 <strong>Browser Connector</strong> — click the Zotero icon while on any paper page</li>
+<li class="fragment">🔍 <strong>Search by DOI/ISBN</strong> — Edit → Add Item by Identifier</li>
+<li class="fragment">📄 <strong>Import PDF</strong> — drag and drop a PDF into Zotero</li>
+</ul>
+</section>
+<section id="step-3-install-better-bibtex-plugin" class="slide level2 scrollable">
+<h2>Step 3: Install Better BibTeX Plugin</h2>
+<p>This plugin exports your library in a format Quarto understands.</p>
+<ol type="1">
+<li class="fragment">Go to <strong><a href="https://github.com/retorquere/zotero-better-bibtex/releases">github.com/retorquere/zotero-better-bibtex</a></strong></li>
+<li class="fragment">Download the <code>.xpi</code> file</li>
+<li class="fragment">In Zotero → <strong>Tools → Add-ons → Install Add-on From File</strong></li>
+<li class="fragment">Select the downloaded <code>.xpi</code> file</li>
+<li class="fragment">Restart Zotero</li>
+</ol>
+</section>
+<section id="step-4-export-your-library-as-.bib" class="slide level2 scrollable">
+<h2>Step 4: Export Your Library as <code>.bib</code></h2>
+<ol type="1">
+<li class="fragment">In Zotero, right-click your collection</li>
+<li class="fragment">Select <strong>Export Collection</strong></li>
+<li class="fragment">Choose format: <strong>Better BibTeX</strong></li>
+<li class="fragment">✅ Check <strong>Keep Updated</strong> — auto-syncs when you add new references!</li>
+<li class="fragment">Save as <code>references.bib</code> inside your Quarto project folder</li>
+</ol>
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Warning</strong></p>
+</div>
+<div class="callout-content">
+<p>Save the <code>.bib</code> file in the <strong>same folder</strong> as your <code>_quarto.yml</code></p>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="linking-bibliography-in-quarto" class="title-slide slide level1 center" data-background-color="#2d4a6b">
+<h1>📝 Linking Bibliography in Quarto</h1>
+
+</section>
+<section id="add-bibliography-to-_quarto.yml" class="slide level2">
+<h2>Add Bibliography to <code>_quarto.yml</code></h2>
+<div class="sourceCode" id="cb44"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb44-1"><a></a><span class="fu">project</span><span class="kw">:</span></span>
+<span id="cb44-2"><a></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> book</span></span>
+<span id="cb44-3"><a></a></span>
+<span id="cb44-4"><a></a><span class="fu">book</span><span class="kw">:</span></span>
+<span id="cb44-5"><a></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Thesis"</span></span>
+<span id="cb44-6"><a></a><span class="at">  </span><span class="fu">author</span><span class="kw">:</span><span class="at"> </span><span class="st">"Your Name"</span></span>
+<span id="cb44-7"><a></a></span>
+<span id="cb44-8"><a></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> references.bib</span></span>
+<span id="cb44-9"><a></a><span class="fu">csl</span><span class="kw">:</span><span class="at"> apa.csl</span><span class="co">                  # citation style (optional)</span></span>
+<span id="cb44-10"><a></a></span>
+<span id="cb44-11"><a></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb44-12"><a></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb44-13"><a></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span><span class="at"> cosmo</span></span>
+<span id="cb44-14"><a></a><span class="at">  </span><span class="fu">pdf</span><span class="kw">:</span></span>
+<span id="cb44-15"><a></a><span class="at">    </span><span class="fu">documentclass</span><span class="kw">:</span><span class="at"> scrreprt</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p><code>bibliography:</code> tells Quarto where your references file lives.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="or-add-to-a-single-chapters-yaml" class="slide level2">
+<h2>Or Add to a Single Chapter’s YAML</h2>
+<p>If you only want bibliography in one <code>.qmd</code> file:</p>
+<div class="sourceCode" id="cb45"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb45-1"><a></a><span class="pp">---</span></span>
+<span id="cb45-2"><a></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Literature Review"</span></span>
+<span id="cb45-3"><a></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> references.bib</span></span>
+<span id="cb45-4"><a></a><span class="fu">csl</span><span class="kw">:</span><span class="at"> apa.csl</span></span>
+<span id="cb45-5"><a></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section></section>
+<section>
+<section id="inserting-citations-in-text" class="title-slide slide level1 center" data-background-color="#2d4a6b">
+<h1>✍️ Inserting Citations in Text</h1>
+
+</section>
+<section id="citation-syntax-the-basics" class="slide level2">
+<h2>Citation Syntax — The Basics</h2>
+<p>Every reference in your <code>.bib</code> file has a <strong>citation key</strong> like:</p>
+<pre><code>@peng2011reproducible
+@wickham2016ggplot2
+@gandrud2016reproducible</code></pre>
+</section>
+<section id="how-to-cite-in-text" class="slide level2">
+<h2>How to Cite in Text</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 48%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>What you want</th>
+<th>Syntax</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Author (Year)</td>
+<td><code>@peng2011</code></td>
+<td>Peng (2011)</td>
+</tr>
+<tr class="even">
+<td>(Author, Year)</td>
+<td><code>[@peng2011]</code></td>
+<td>(Peng, 2011)</td>
+</tr>
+<tr class="odd">
+<td>Multiple sources</td>
+<td><code>[@peng2011; @knuth1984]</code></td>
+<td>(Peng, 2011; Knuth, 1984)</td>
+</tr>
+<tr class="even">
+<td>Page number</td>
+<td><code>[@peng2011, p. 45]</code></td>
+<td>(Peng, 2011, p.&nbsp;45)</td>
+</tr>
+<tr class="odd">
+<td>Suppress author</td>
+<td><code>[-@peng2011]</code></td>
+<td>(2011)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="example-in-your-thesis-text" class="slide level2">
+<h2>Example in Your Thesis Text</h2>
+<div class="sourceCode" id="cb47"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb47-1"><a></a>Reproducible research has been defined as sharing data and </span>
+<span id="cb47-2"><a></a>code alongside findings <span class="co">[</span><span class="ot">@peng2011</span><span class="co">]</span>.</span>
+<span id="cb47-3"><a></a></span>
+<span id="cb47-4"><a></a>As @buckheit1995 argued, the actual scholarship is the </span>
+<span id="cb47-5"><a></a>complete software environment that produced the results.</span>
+<span id="cb47-6"><a></a></span>
+<span id="cb47-7"><a></a>Several studies <span class="co">[</span><span class="ot">@peng2011; @gandrud2016; @knuth1984</span><span class="co">]</span> </span>
+<span id="cb47-8"><a></a>have emphasized the importance of literate programming.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="the-bibliography-appears-automatically" class="slide level2">
+<h2>The Bibliography Appears Automatically!</h2>
+<p>At the end of your document, Quarto automatically generates:</p>
+<pre><code>## References
+
+Peng, R. D. (2011). Reproducible research in computational 
+science. *Science*, 334(6060), 1226–1227.
+
+Buckheit, J., &amp; Donoho, D. (1995). WaveLab and reproducible 
+research. *Wavelets and Statistics*, 55–81.</code></pre>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>No need to type the reference list — Quarto does it for you! 🎉</p>
+</div>
+</div>
+</div>
+</section>
+<section id="your-turn-first-citation" class="slide level2 scrollable">
+<h2>🎯 Your Turn: First Citation</h2>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Exercise 1</strong></p>
+</div>
+<div class="callout-content">
+<ol type="1">
+<li class="fragment">Add <strong>3 references</strong> to your Zotero library<br>
+</li>
+<li class="fragment">Export as <code>references.bib</code> to your project folder<br>
+</li>
+<li class="fragment">Link it in your <code>_quarto.yml</code><br>
+</li>
+<li class="fragment">Write one paragraph and cite all 3 sources<br>
+</li>
+<li class="fragment">Render and check the bibliography at the end</li>
+</ol>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+</section></section>
+<section>
+<section id="citation-styles" class="title-slide slide level1 center" data-background-color="#2d4a6b">
+<h1>🎨 Citation Styles</h1>
+
+</section>
+<section id="what-is-a-csl-file" class="slide level2">
+<h2>What is a CSL File?</h2>
+<p><strong>CSL = Citation Style Language</strong></p>
+<p>It controls <em>how</em> your citations look:</p>
+<ul>
+<li class="fragment"><strong>APA</strong> → (Peng, 2011)</li>
+<li class="fragment"><strong>Chicago</strong> → Peng, Roger D. 2011. “Reproducible Research…”</li>
+<li class="fragment"><strong>Vancouver</strong> → [1]</li>
+<li class="fragment"><strong>Harvard</strong> → Peng (2011)</li>
+<li class="fragment"><strong>IEEE</strong> → [1] R. D. Peng…</li>
+</ul>
+</section>
+<section id="download-a-csl-file" class="slide level2 scrollable">
+<h2>Download a CSL File</h2>
+<ol type="1">
+<li class="fragment">Go to <strong><a href="https://www.zotero.org/styles">zotero.org/styles</a></strong></li>
+<li class="fragment">Search for your required style (e.g., APA 7th)</li>
+<li class="fragment">Download the <code>.csl</code> file</li>
+<li class="fragment">Place it in your <strong>Quarto project folder</strong></li>
+<li class="fragment">Add to <code>_quarto.yml</code>:</li>
+</ol>
+<div class="sourceCode" id="cb49"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb49-1"><a></a><span class="fu">csl</span><span class="kw">:</span><span class="at"> apa.csl</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="common-csl-files" class="slide level2">
+<h2>Common CSL Files</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Style</th>
+<th>File Name</th>
+<th>Used In</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>APA 7th</td>
+<td><code>apa.csl</code></td>
+<td>Social sciences</td>
+</tr>
+<tr class="even">
+<td>Chicago</td>
+<td><code>chicago-author-date.csl</code></td>
+<td>Humanities</td>
+</tr>
+<tr class="odd">
+<td>Vancouver</td>
+<td><code>vancouver.csl</code></td>
+<td>Medicine</td>
+</tr>
+<tr class="even">
+<td>Harvard</td>
+<td><code>harvard-cite-them-right.csl</code></td>
+<td>General</td>
+</tr>
+<tr class="odd">
+<td>IEEE</td>
+<td><code>ieee.csl</code></td>
+<td>Engineering</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>Check with your university which style they require for your thesis!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="your-turn-change-citation-style" class="slide level2 scrollable">
+<h2>🎯 Your Turn: Change Citation Style</h2>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Exercise 2</strong></p>
+</div>
+<div class="callout-content">
+<ol type="1">
+<li class="fragment">Download the <strong>APA 7th</strong> CSL file from zotero.org/styles<br>
+</li>
+<li class="fragment">Place it in your project folder<br>
+</li>
+<li class="fragment">Add <code>csl: apa.csl</code> to your <code>_quarto.yml</code><br>
+</li>
+<li class="fragment">Render your document<br>
+</li>
+<li class="fragment">Now switch to <strong>Chicago</strong> style and render again<br>
+</li>
+<li class="fragment">Compare the difference!</li>
+</ol>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="zotero-direct-integration-in-rstudio" class="title-slide slide level1 center" data-background-color="#2d4a6b">
+<h1>🔗 Zotero Direct Integration in RStudio</h1>
+
+</section>
+<section id="the-easiest-way-visual-editor" class="slide level2 scrollable">
+<h2>The Easiest Way — Visual Editor</h2>
+<p>RStudio’s <strong>Visual Editor</strong> connects directly to Zotero!</p>
+<ol type="1">
+<li class="fragment">Open your <code>.qmd</code> file in RStudio</li>
+<li class="fragment">Switch to <strong>Visual mode</strong> (top-left toggle)</li>
+<li class="fragment">Go to <strong>Insert → Citation</strong></li>
+<li class="fragment">Search your Zotero library directly!</li>
+<li class="fragment">Click <strong>Insert</strong> — citation key added automatically</li>
+</ol>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>No need to remember citation keys — RStudio finds them for you!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="visual-editor-citation-dialog" class="slide level2">
+<h2>Visual Editor Citation Dialog</h2>
+<pre><code>Insert → Citation
+
+┌─────────────────────────────────┐
+│  🔍 Search: reproducible        │
+│                                 │
+│  📚 My Library                  │
+│  ├── Peng 2011                  │
+│  ├── Buckheit 1995              │
+│  └── Gandrud 2016               │
+│                                 │
+│  [ Insert ]  [ Cancel ]         │
+└─────────────────────────────────┘</code></pre>
+</section>
+<section id="setting-up-zotero-in-rstudio" class="slide level2 scrollable">
+<h2>Setting Up Zotero in RStudio</h2>
+<p>Make sure RStudio can find your Zotero:</p>
+<ol type="1">
+<li class="fragment"><strong>Tools → Global Options → R Markdown → Citations</strong></li>
+<li class="fragment">Set <strong>Zotero Library</strong> to: Local or Web</li>
+<li class="fragment">If Web: add your <strong>Zotero API key</strong> from zotero.org/settings/keys</li>
+<li class="fragment">Click <strong>OK</strong></li>
+</ol>
+</section>
+<section id="auto-complete-citation-keys" class="slide level2">
+<h2>Auto-Complete Citation Keys</h2>
+<p>In <strong>Source mode</strong>, type <code>@</code> and start typing:</p>
+<div class="sourceCode" id="cb51"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb51-1"><a></a>As shown by @pen...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>RStudio will <strong>autocomplete</strong> from your <code>.bib</code> file:</p>
+<pre><code>@peng2011reproducible  ← select this!
+@penman2019...</code></pre>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>This works like autocomplete in coding — fast and accurate!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="your-turn-visual-editor-citations" class="slide level2 scrollable">
+<h2>🎯 Your Turn: Visual Editor Citations</h2>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Exercise 3</strong></p>
+</div>
+<div class="callout-content">
+<ol type="1">
+<li class="fragment">Open a <code>.qmd</code> file in <strong>Visual mode</strong><br>
+</li>
+<li class="fragment">Use <strong>Insert → Citation</strong> to search your Zotero library<br>
+</li>
+<li class="fragment">Insert <strong>2 citations</strong> into a paragraph<br>
+</li>
+<li class="fragment">Switch to <strong>Source mode</strong> and observe the citation keys<br>
+</li>
+<li class="fragment">Render and check the output</li>
+</ol>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="your-.bib-file-a-closer-look" class="title-slide slide level1 center" data-background-color="#2d4a6b">
+<h1>📁 Your <code>.bib</code> File — A Closer Look</h1>
+
+</section>
+<section id="what-a-.bib-file-looks-like" class="slide level2">
+<h2>What a <code>.bib</code> File Looks Like</h2>
+<div class="sourceCode" id="cb53"><pre class="sourceCode numberSource bibtex number-lines code-with-copy"><code class="sourceCode bibtex"><span id="cb53-1"><a></a><span class="va">@article</span>{<span class="ot">peng2011reproducible</span>,</span>
+<span id="cb53-2"><a></a>  <span class="dt">title</span>   = {Reproducible Research in Computational Science},</span>
+<span id="cb53-3"><a></a>  <span class="dt">author</span>  = {Peng, Roger D},</span>
+<span id="cb53-4"><a></a>  <span class="dt">journal</span> = {Science},</span>
+<span id="cb53-5"><a></a>  <span class="dt">volume</span>  = {334},</span>
+<span id="cb53-6"><a></a>  <span class="dt">number</span>  = {6060},</span>
+<span id="cb53-7"><a></a>  <span class="dt">pages</span>   = {1226--1227},</span>
+<span id="cb53-8"><a></a>  <span class="dt">year</span>    = {2011}</span>
+<span id="cb53-9"><a></a>}</span>
+<span id="cb53-10"><a></a></span>
+<span id="cb53-11"><a></a><span class="va">@book</span>{<span class="ot">gandrud2016reproducible</span>,</span>
+<span id="cb53-12"><a></a>  <span class="dt">title</span>     = {Reproducible Research with R and RStudio},</span>
+<span id="cb53-13"><a></a>  <span class="dt">author</span>    = {Gandrud, Christopher},</span>
+<span id="cb53-14"><a></a>  <span class="dt">publisher</span> = {CRC Press},</span>
+<span id="cb53-15"><a></a>  <span class="dt">year</span>      = {2016}</span>
+<span id="cb53-16"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="anatomy-of-a-citation-key" class="slide level2">
+<h2>Anatomy of a Citation Key</h2>
+<pre><code>@article{peng2011reproducible,
+          ^^^^^^^^^^^^^^^^^^^^
+          This is the citation key you use in text
+          
+          Convention: AuthorYearKeyword
+          e.g., peng2011reproducible
+               wickham2016ggplot
+               gandrud2016reproducible</code></pre>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>Better BibTeX generates these keys <strong>automatically</strong> for you!</p>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="troubleshooting" class="title-slide slide level1 center" data-background-color="#2d4a6b">
+<h1>🛠️ Troubleshooting</h1>
+
+</section>
+<section id="common-problems-fixes" class="slide level2">
+<h2>Common Problems &amp; Fixes</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 64%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Problem</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Citation not found</td>
+<td>Check the key matches exactly in <code>.bib</code></td>
+</tr>
+<tr class="even">
+<td>Bibliography not showing</td>
+<td>Add <code>bibliography: references.bib</code> to YAML</td>
+</tr>
+<tr class="odd">
+<td>Wrong style</td>
+<td>Check <code>.csl</code> file name and path</td>
+</tr>
+<tr class="even">
+<td><code>.bib</code> not updating</td>
+<td>Re-export from Zotero with Keep Updated</td>
+</tr>
+<tr class="odd">
+<td>RStudio can’t find Zotero</td>
+<td>Check Global Options → Citations</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="checklist-before-rendering" class="slide level2">
+<h2>Checklist Before Rendering</h2>
+<ul>
+<li class="fragment">✅ <code>references.bib</code> is in the project folder</li>
+<li class="fragment">✅ <code>bibliography: references.bib</code> is in <code>_quarto.yml</code></li>
+<li class="fragment">✅ Citation keys in text match keys in <code>.bib</code> file</li>
+<li class="fragment">✅ <code>.csl</code> file is downloaded and path is correct</li>
+<li class="fragment">✅ Zotero is open (for live sync)</li>
+</ul>
+</section>
+<section id="key-takeaway-1" class="slide level2">
+<h2>Key Takeaway 🔑</h2>
+<div class="r-fit-text">
+<p><strong>Never format a reference manually again!</strong></p>
+</div>
+<p>Zotero + Quarto means:</p>
+<ul>
+<li class="fragment">✍️ You write — Quarto formats</li>
+<li class="fragment">📚 You collect — Zotero organizes</li>
+<li class="fragment">🎨 You choose the style — CSL applies it</li>
+<li class="fragment">🔄 You add a source — bibliography updates automatically</li>
+</ul>
+</section>
+<section id="benefits-of-using-quarto" class="slide level2 scrollable" data-background-image="images/thesis-writing.jpg" data-background-size="40%" data-background-position="right" data-background-color="#2d4a6b">
+<h2>💛 Benefits of using Quarto</h2>
+<ol type="1">
+<li class="fragment"><p>Reproducibility</p></li>
+<li class="fragment"><p>Iterative Workflow</p></li>
+<li class="fragment"><p>Customization and Flexibility</p></li>
+<li class="fragment"><p>Multi-Format Output</p></li>
+<li class="fragment"><p>Collaboration</p></li>
+<li class="fragment"><p>Reduced Formatting Issues</p></li>
+<li class="fragment"><p>Integration with Other Tools</p></li>
+<li class="fragment"><p>Documentation and Support</p></li>
+</ol>
+
+
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="images/logo-sara.png" class="slide-logo"></p>
@@ -485,7 +2026,7 @@
         previewLinks: false,
 
         // Transition style (none/fade/slide/convex/concave/zoom)
-        transition: 'none',
+        transition: 'slide',
 
         // Transition speed (default/fast/slow)
         transitionSpeed: 'default',
@@ -539,191 +2080,243 @@
         ]
       });
     </script>
-    <script id="quarto-html-after-body" type="application/javascript">
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-      const toggleBodyColorMode = (bsSheetEl) => {
-        const mode = bsSheetEl.getAttribute("data-mode");
-        const bodyEl = window.document.querySelector("body");
-        if (mode === "dark") {
-          bodyEl.classList.add("quarto-dark");
-          bodyEl.classList.remove("quarto-light");
-        } else {
-          bodyEl.classList.add("quarto-light");
-          bodyEl.classList.remove("quarto-dark");
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
         }
-      }
-      const toggleBodyColorPrimary = () => {
-        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-        if (bsSheetEl) {
-          toggleBodyColorMode(bsSheetEl);
-        }
-      }
-      toggleBodyColorPrimary();  
-      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
-      tabsets.forEach(function(tabset) {
-        const tabby = new Tabby('#' + tabset.id);
-      });
-      const isCodeAnnotation = (el) => {
-        for (const clz of el.classList) {
-          if (clz.startsWith('code-annotation-')) {                     
-            return true;
-          }
-        }
-        return false;
-      }
-      const onCopySuccess = function(e) {
-        // button target
-        const button = e.trigger;
-        // don't keep focus
-        button.blur();
-        // flash "checked"
-        button.classList.add('code-copy-button-checked');
-        var currentTitle = button.getAttribute("title");
-        button.setAttribute("title", "Copied!");
-        let tooltip;
-        if (window.bootstrap) {
-          button.setAttribute("data-bs-toggle", "tooltip");
-          button.setAttribute("data-bs-placement", "left");
-          button.setAttribute("data-bs-title", "Copied!");
-          tooltip = new bootstrap.Tooltip(button, 
-            { trigger: "manual", 
-              customClass: "code-copy-button-tooltip",
-              offset: [0, -8]});
-          tooltip.show();    
-        }
-        setTimeout(function() {
-          if (tooltip) {
-            tooltip.hide();
-            button.removeAttribute("data-bs-title");
-            button.removeAttribute("data-bs-toggle");
-            button.removeAttribute("data-bs-placement");
-          }
-          button.setAttribute("title", currentTitle);
-          button.classList.remove('code-copy-button-checked');
-        }, 1000);
-        // clear code selection
-        e.clearSelection();
-      }
-      const getTextToCopy = function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
             }
-          }
-          return codeEl.innerText;
-      }
-      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-        text: getTextToCopy
-      });
-      clipboard.on('success', onCopySuccess);
-      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-          text: getTextToCopy,
-          container: window.document.getElementById('quarto-embedded-source-code-modal')
-        });
-        clipboardModal.on('success', onCopySuccess);
-      }
-        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-        var mailtoRegex = new RegExp(/^mailto:/);
-          var filterRegex = new RegExp('/' + window.location.host + '/');
-        var isInternal = (href) => {
-            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-        }
-        // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-        for (var i=0; i<links.length; i++) {
-          const link = links[i];
-          if (!isInternal(link.href)) {
-            // undo the damage that might have been done by quarto-nav.js in the case of
-            // links that we want to consider external
-            if (link.dataset.originalHref !== undefined) {
-              link.href = link.dataset.originalHref;
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
             }
           }
         }
-      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-        const config = {
-          allowHTML: true,
-          maxWidth: 500,
-          delay: 100,
-          arrow: false,
-          appendTo: function(el) {
-              return el.closest('section.slide') || el.parentElement;
-          },
-          interactive: true,
-          interactiveBorder: 10,
-          theme: 'light-border',
-          placement: 'bottom-start',
-        };
-        if (contentFn) {
-          config.content = contentFn;
-        }
-        if (onTriggerFn) {
-          config.onTrigger = onTriggerFn;
-        }
-        if (onUntriggerFn) {
-          config.onUntrigger = onUntriggerFn;
-        }
-          config['offset'] = [0,0];
-          config['maxWidth'] = 700;
-        window.tippy(el, config); 
-      }
-      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-      for (var i=0; i<noterefs.length; i++) {
-        const ref = noterefs[i];
-        tippyHover(ref, function() {
-          // use id or data attribute instead here
-          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-          try { href = new URL(href).hash; } catch {}
-          const id = href.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note) {
-            return note.innerHTML;
-          } else {
-            return "";
-          }
-        });
-      }
-      const findCites = (el) => {
-        const parentEl = el.parentElement;
-        if (parentEl) {
-          const cites = parentEl.dataset.cites;
-          if (cites) {
-            return {
-              el,
-              cites: cites.split(' ')
-            };
-          } else {
-            return findCites(el.parentElement)
-          }
-        } else {
-          return undefined;
-        }
-      };
-      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-      for (var i=0; i<bibliorefs.length; i++) {
-        const ref = bibliorefs[i];
-        const citeInfo = findCites(ref);
-        if (citeInfo) {
-          tippyHover(citeInfo.el, function() {
-            var popup = window.document.createElement('div');
-            citeInfo.cites.forEach(function(cite) {
-              var citeDiv = window.document.createElement('div');
-              citeDiv.classList.add('hanging-indent');
-              citeDiv.classList.add('csl-entry');
-              var biblioDiv = window.document.getElementById('ref-' + cite);
-              if (biblioDiv) {
-                citeDiv.innerHTML = biblioDiv.innerHTML;
-              }
-              popup.appendChild(citeDiv);
-            });
-            return popup.innerHTML;
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
           });
         }
-      }
-    });
+
+      })();
     </script>
+
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
+              }
+            }
+            return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+    (function() {
+      let previousOnload = window.onload;
+      window.onload = () => {
+        if (previousOnload) {
+          previousOnload();
+        }
+        lightboxQuarto.on('slide_before_load', (data) => {
+          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+          const href = trigger.getAttribute('href');
+          if (href !== null) {
+            const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+            if (imgEl !== null) {
+              const srcAttr = imgEl.getAttribute("src");
+              if (srcAttr && srcAttr.startsWith("data:")) {
+                slideConfig.href = srcAttr;
+              }
+            }
+          } 
+        });
+      
+        lightboxQuarto.on('slide_after_load', (data) => {
+          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(slideNode);
+          }
+        });
+      
+      };
+      
+    })();
+              </script>
     
 
 </body></html>

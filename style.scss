@@ -1,5 +1,8 @@
 /*-- scss:defaults --*/
 
+// cursive font style for hello and thank you.
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Sail&display=swap');
+
 // color system
 $clr-navyblue:    #003262;
 $clr-gray:        #2A2121;
@@ -7,6 +10,19 @@ $clr-blue:        #0061ab;
 $clr-cream:       #f2f2f2;
 $clr-white:       #fff;
 $clr-tom:         #ef4338;
+
+
+/*-- scss:variables --*/
+// Change link color
+$link-color:  #006261; // Example: Red
+
+// Change h1 color
+$h2-font-color: #001b3a; // Example: Blue
+
+.theme-cursive {
+  font-family: 'Sail';
+  color: #003262;
+}
 
 .clr-blue {
   color: $clr-blue;
@@ -30,11 +46,6 @@ $clr-tom:         #ef4338;
 
 
 
-
-
-
-
-
 .banner-blue {
   background-color: $clr-navyblue;
 }
@@ -50,7 +61,7 @@ $clr-tom:         #ef4338;
   border-top: 2px solid;
   border-radius: 0.5rem; 
   box-shadow: 0 1rem 1.5rem -0.5rem rgba(0 50 100 / 0.15);
-  background: #0e6655;
+  background: #001b3a;
   text-align: left;
   color: $clr-white;
 }

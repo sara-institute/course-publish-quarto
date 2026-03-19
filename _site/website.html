@@ -6,12 +6,17 @@
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.6.39">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/quarto-contrib/roughnotation-0.5.1/rough-notation.iife.js"></script>
+<script src="site_libs/quarto-contrib/roughnotation-init-1.0.0/rough.js"></script>
+<link href="site_libs/quarto-contrib/roughnotation-init-1.0.0/rough.css" rel="stylesheet">
+<script src="site_libs/quarto-contrib/roughnotation-flourish-bridge-1.0.0/flourish-bridge.js"></script>
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.30">
 
-  <title>WEBSITE</title>
+  <title>Personal Website</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -30,8 +35,9 @@
       vertical-align: middle;
     }
     /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
     pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
     pre > code.sourceCode > span:empty { height: 1.2em; }
     .sourceCode { overflow: visible; }
     code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -42,7 +48,7 @@
     }
     @media print {
     pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
     }
     pre.numberSource code
       { counter-reset: source-line 0; }
@@ -95,7 +101,7 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-3f833ad789ad12d1d1e9ed1920be9c12.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-e699b38f026904c891a8682dc878e627.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -188,139 +194,187 @@
       margin-right: 0; 
     }
   </style>
+  <link href="site_libs/countdown-0.6.0/countdown.css" rel="stylesheet">
+  <script src="site_libs/countdown-0.6.0/countdown.js"></script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" data-background-image="https://images.unsplash.com/photo-1593248196138-bad1a611a766?q=80&amp;w=1932&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-background-size="cover" class="quarto-title-block center">
-  <h1 class="title"><span class="clr-white r-fit-text">WEBSITE</span></h1>
-  <p class="subtitle"><span class="clr-white r-fit-text">Dr.&nbsp;Ajay Kumar Koli (PhD) <span class="math inline">\(\cdot\)</span> SARA Institute of Data Science, India</span></p>
+<section id="title-slide" data-background-color="black" data-background-image="https://images.unsplash.com/photo-1621947081720-86970823b77a?q=80&amp;w=1932&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-background-opacity="0.5" data-background-size="cover" class="quarto-title-block center">
+  <h1 class="title"><span class="clr-white r-fit-text">Personal Website</span></h1>
+  <p class="subtitle"><span class="clr-white r-fit-text">Dr.&nbsp;Ajay Kumar Koli <span class="math inline">\(\cdot\)</span> 2nd SARA Bootcamp</span></p>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="website-why" class="slide level2">
-<h2>Website … Why? <i class="fa-solid fa-comments" aria-label="comments"></i></h2>
-<ul>
-<li><p>DeepSeek: “A website is not just a luxury—it’s a necessity for visibility, growth, and credibility in the digital age.”</p></li>
-<li><p>ChatGPT: “to showcase who you are and what you do. … your digital identity, share your expertise, and open doors to new opportunities.”</p></li>
-<li><p>Le Chat: “a powerful tool for personal branding, networking, and career development.”</p></li>
-</ul>
+<section id="why-personal-website" class="slide level2 scrollable">
+<h2>🙄 Why Personal Website⁉️</h2>
+<ol type="1">
+<li><p><span class="rn-fragment fragment" data-rn-color="skyblue"><strong>Your digital presence already exists — you just don’t control it.</strong> Google your own name. Whatever comes up — a LinkedIn profile, an old social media post, someone else’s mention of you — that’s your reputation by default. A personal website lets you own that narrative instead of leaving it to algorithms and third-party platforms.</span></p></li>
+<li><p><span class="rn-fragment fragment" data-rn-color="gold"><strong>It’s a living portfolio that works while you sleep.</strong> Whether you’re a developer, designer, teacher, or accountant, a personal website signals seriousness. Recruiters, clients, and collaborators will look you up. A well-crafted site tells your story better than a resume ever could — and it’s available 24/7 without you having to say a word.</span></p></li>
+<li><p><span class="rn-fragment fragment" data-rn-color="lavender"><strong>Social media platforms are rented land.</strong> Twitter, LinkedIn, Instagram — they change their rules, throttle your reach, or simply disappear. Remember MySpace? Vine? Your personal website is yours permanently. No algorithm decides who sees it. No platform can delete your account.</span></p></li>
+<li><p><span class="rn-fragment fragment" data-rn-color="lightgreen"><strong>It forces you to think clearly about who you are.</strong> Writing an “About Me” page, listing your work, articulating what you believe — it’s unexpectedly clarifying. Most people never sit down and answer “what do I actually do and why does it matter?” A personal website makes you do that work.</span></p></li>
+<li><p><span class="rn-fragment fragment" data-rn-color="orange"><strong>The barrier is lower than ever.</strong> You don’t need to know how to code. Tools like Notion, Framer, or Squarespace mean you can have something live in an afternoon. The cost of not having one — missed opportunities, weak first impressions — far outweighs the effort.</span></p></li>
+<li><p><span class="rn-fragment fragment"><strong>It compounds over time.</strong> Every post you write, project you document, or idea you share builds a body of work. Five years from now, that archive is invaluable — to future employers, to your own growth, to people you haven’t met yet who will find you through a search.</span></p></li>
+</ol>
+<div class="footer">
+<p>Reasons from Claude AI</p>
+</div>
+</section>
+<section>
+<section id="create-project" class="title-slide slide level1 center" data-background-image="https://bookdown.org/amy_yarnell/T32-book/images/session3/github-Rstudio.jpg" data-background-size="60%" data-background-position="right" data-background-color="silver">
+<h1>Create<br>Project</h1>
+<div class="footer">
+<p>Image source: <a href="https://bookdown.org/amy_yarnell/T32-book/version-control-and-rstudio.html" class="uri">https://bookdown.org/amy_yarnell/T32-book/version-control-and-rstudio.html</a></p>
+</div>
 </section>
 <section id="create-a-github-repository" class="slide level2">
 <h2>Create a GitHub Repository</h2>
-<p><img data-src="images/new-repo.png" style="width:40.0%"></p>
+<p><a href="images/new-repo.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img data-src="images/new-repo.png" style="width:40.0%"></a></p>
 <div class="fragment">
-<p><img data-src="images/new-repo-name.png" style="width:70.0%"></p>
+<p><a href="images/new-repo-name.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img data-src="images/new-repo-name.png" style="width:70.0%"></a></p>
 </div>
 <div class="fragment">
-<p><img data-src="images/new-repo-create.png" style="width:40.0%"></p>
+<p><a href="images/new-repo-create.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img data-src="images/new-repo-create.png" style="width:40.0%"></a></p>
 </div>
 </section>
 <section id="copy-repo-link" class="slide level2">
 <h2>Copy Repo Link</h2>
-
-<img data-src="images/new-repo-link.png" class="quarto-figure quarto-figure-center r-stretch" style="width:50.0%"></section>
-<section id="create-version-control-project" class="slide level2">
-<h2>Create Version Control Project</h2>
-
-<img data-src="images/project-version-control.png" class="quarto-figure quarto-figure-center r-stretch" style="width:50.0%"></section>
-<section id="create-version-control-project-1" class="slide level2">
-<h2>Create Version Control Project</h2>
-
-<img data-src="images/project-repo-link.png" class="quarto-figure quarto-figure-center r-stretch" style="width:50.0%"></section>
-<section id="create-_quarto.yml-file" class="slide level2">
-<h2>Create <code>_quarto.yml</code> File</h2>
-<div>
-
-</div>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/text-file.png" class="quarto-figure quarto-figure-center"></p>
+<p><a href="images/new-repo-link.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img data-src="images/new-repo-link.png" class="quarto-figure quarto-figure-center" style="width:70.0%"></a></p>
 </figure>
-</div>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/yaml-file.png" class="quarto-figure quarto-figure-center"></p>
-</figure>
-</div>
-</div>
-</div>
 </div>
 </section>
-<section id="understanding-the-project-structure" class="slide level2">
+<section id="create-rstudio-version-control-project" class="slide level2">
+<h2><span class="r-fit-text">Create RStudio Version Control Project</span></h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/project-version-control.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img data-src="images/project-version-control.png" class="quarto-figure quarto-figure-center" style="width:70.0%"></a></p>
+</figure>
+</div>
+</section>
+<section id="paste-github-url-link-here" class="slide level2">
+<h2>Paste GitHub URL Link here</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/project-repo-link.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img data-src="images/project-repo-link.png" class="quarto-figure quarto-figure-center" style="width:70.0%"></a></p>
+</figure>
+</div>
+</section></section>
+<section>
+<section id="create-project-files" class="title-slide slide level1 center" data-background-image="images/bg-quarto-files.png" data-background-size="45%" data-background-position="right" data-background-color="silver">
+<h1>Create<br>Project Files</h1>
+<div class="footer">
+<p>Image source: <a href="https://www.avonture.be/blog/quarto-revealjs-tips/" class="uri">https://www.avonture.be/blog/quarto-revealjs-tips/</a></p>
+</div>
+</section>
+<section id="understanding-the-project-structure" class="slide level2 scrollable">
 <h2>Understanding the Project Structure</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a></a>website-ajay/</span>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource .markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a></a>website-ajay/</span>
 <span id="cb1-2"><a></a>├── _quarto.yml</span>
 <span id="cb1-3"><a></a>├── index.qmd</span>
 <span id="cb1-4"><a></a>├── about.qmd</span>
 <span id="cb1-5"><a></a>└── styles.css</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="fragment">
-<ul>
-<li><p><strong><code>_quarto.yml</code>:</strong> <strong>Configuration</strong> file for your website.</p></li>
-<li><p><strong><code>index.qmd</code>:</strong> The <strong>homepage</strong> of your website.</p></li>
-<li><p><strong><code>about.qmd</code>:</strong> An example about <strong>page</strong>.</p></li>
-<li><p><strong><code>styles.css</code>:</strong> Custom CSS for <strong>styling</strong> your website.</p></li>
-</ul>
+<ol type="1">
+<li class="fragment"><p><strong><code>_quarto.yml</code></strong> is a <strong>Configuration</strong> file for your website.</p></li>
+<li class="fragment"><p><strong><code>index.qmd</code></strong> creates the <strong>homepage</strong> of your website.</p></li>
+<li class="fragment"><p><strong><code>about.qmd</code></strong> ia an example about <strong>page</strong>.</p></li>
+<li class="fragment"><p><strong><code>styles.css</code></strong> is <strong>styling</strong> your website using customs CSS.</p></li>
+</ol>
+</div>
+</section>
+<section id="create-_quarto.yml-file" class="slide level2">
+<h2>Create <code>_quarto.yml</code> File</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="select-text-file">Select Text File</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/text-file.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img data-src="images/text-file.png" class="quarto-figure quarto-figure-center" style="width:40.0%"></a></p>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<h3 id="change-extension">Change Extension</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/yaml-file.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img data-src="images/yaml-file.png" class="quarto-figure quarto-figure-center" style="width:40.0%"></a></p>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="edit-_quarto.yml" class="slide level2 scrollable" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Edit <code>_quarto.yml</code></h2>
+<div class="sourceCode" id="cb2" data-code-line-numbers="1-2|4-5"><pre class="sourceCode numberSource yaml number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode yaml hljs"><span id="cb2-1" class="hljs-ln-code"><a></a><span class="fu">project</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb2-2" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> website</span></span>
+<span id="cb2-3" class="hljs-ln-code"><a></a></span>
+<span id="cb2-4" class="hljs-ln-code"><a></a><span class="fu">website</span><span class="kw">:</span></span>
+<span id="cb2-5" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Dr. Ajay Kumar Koli"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br></p>
+<div class="fragment">
+<div class="callout callout-caution callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Caution</strong></p>
+</div>
+<div class="callout-content">
+<ol type="1">
+<li><p>The file extension is <code>.yml</code> and the selected extension was <code>YAML</code>.</p></li>
+<li><p>Refresh the RStudio Project to see the <code>Build</code> option.</p></li>
+</ol>
+</div>
+</div>
+</div>
 </div>
 </section>
 <section id="create-the-homepage" class="slide level2">
 <h2>Create the Homepage</h2>
-
-<img data-src="images/homepage-ajay.png" class="r-stretch"></section>
-<section id="edit-index.qmd" class="slide level2">
-<h2>Edit <code>index.qmd</code></h2>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a></a><span class="pp">---</span></span>
-<span id="cb2-2"><a></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Dr. Ajay Kumar Koli"</span></span>
-<span id="cb2-3"><a></a><span class="fu">subtitle</span><span class="kw">:</span><span class="at"> </span><span class="st">"Data Science Educator &lt;br&gt;Co-founder of SARA"</span></span>
-<span id="cb2-4"><a></a><span class="fu">image</span><span class="kw">:</span><span class="at"> images/ajay.jpeg</span></span>
-<span id="cb2-5"><a></a><span class="fu">about</span><span class="kw">:</span></span>
-<span id="cb2-6"><a></a><span class="at">  </span><span class="fu">template</span><span class="kw">:</span><span class="at"> trestles</span></span>
-<span id="cb2-7"><a></a><span class="at">  </span><span class="fu">links</span><span class="kw">:</span></span>
-<span id="cb2-8"><a></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> github</span></span>
-<span id="cb2-9"><a></a><span class="at">      </span><span class="fu">text</span><span class="kw">:</span><span class="at"> GitHub</span></span>
-<span id="cb2-10"><a></a><span class="at">      </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://github.com/sara-institute</span></span>
-<span id="cb2-11"><a></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> linkedin</span></span>
-<span id="cb2-12"><a></a><span class="at">      </span><span class="fu">text</span><span class="kw">:</span><span class="at"> LinkedIn</span></span>
-<span id="cb2-13"><a></a><span class="at">      </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://www.linkedin.com/in/ajay-kumar-koli/</span></span>
-<span id="cb2-14"><a></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> twitter</span></span>
-<span id="cb2-15"><a></a><span class="at">      </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Twitter</span></span>
-<span id="cb2-16"><a></a><span class="at">      </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://www.linkedin.com/in/ajay-kumar-koli/</span></span>
-<span id="cb2-17"><a></a><span class="pp">---</span></span>
-<span id="cb2-18"><a></a></span>
-<span id="cb2-19"><a></a><span class="at">Content goes here.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><a href="images/homepage-ajay.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img data-src="images/homepage-ajay.png"></a></p>
 </section>
-<section id="website-navigation" class="slide level2">
-<h2>Website Navigation</h2>
-
-<img data-src="images/navbar-ajay.png" class="r-stretch"></section>
-<section id="edit-_quarto.yml" class="slide level2">
-<h2>Edit <code>_quarto.yml</code></h2>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a></a><span class="fu">project</span><span class="kw">:</span><span class="at"> </span></span>
-<span id="cb3-2"><a></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> website</span></span>
-<span id="cb3-3"><a></a></span>
-<span id="cb3-4"><a></a><span class="fu">website</span><span class="kw">:</span></span>
-<span id="cb3-5"><a></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Dr. Ajay Kumar Koli"</span></span>
-<span id="cb3-6"><a></a><span class="at">  </span><span class="fu">navbar</span><span class="kw">:</span></span>
-<span id="cb3-7"><a></a><span class="at">    </span><span class="fu">left</span><span class="kw">:</span></span>
-<span id="cb3-8"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Home"</span></span>
-<span id="cb3-9"><a></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> index.qmd</span></span>
-<span id="cb3-10"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"About"</span></span>
-<span id="cb3-11"><a></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> about.qmd</span></span>
-<span id="cb3-12"><a></a><span class="at">    </span><span class="fu">tools</span><span class="kw">:</span></span>
-<span id="cb3-13"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> github</span></span>
-<span id="cb3-14"><a></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://github.com/koliajaykr</span></span>
-<span id="cb3-15"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> linkedin</span></span>
-<span id="cb3-16"><a></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://www.linkedin.com/in/ajay-kumar-koli/</span></span>
-<span id="cb3-17"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> twitter</span></span>
-<span id="cb3-18"><a></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://x.com/ajay_kolii</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="edit-index.qmd" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Edit <code>index.qmd</code></h2>
+<div class="sourceCode" id="cb3" data-code-line-numbers="1-3|4|5-6|7-10|7-17|19-21|23-29|31-35"><pre class="sourceCode numberSource yaml number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode yaml hljs"><span id="cb3-1" class="hljs-ln-code"><a></a><span class="pp">---</span></span>
+<span id="cb3-2" class="hljs-ln-code"><a></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Dr. Ajay Kumar Koli"</span></span>
+<span id="cb3-3" class="hljs-ln-code"><a></a><span class="fu">subtitle</span><span class="kw">:</span><span class="at"> </span><span class="st">"Data Science Educator &lt;br&gt;Co-founder of SARA"</span></span>
+<span id="cb3-4" class="hljs-ln-code"><a></a><span class="fu">image</span><span class="kw">:</span><span class="at"> images/ajay.jpeg</span></span>
+<span id="cb3-5" class="hljs-ln-code"><a></a><span class="fu">about</span><span class="kw">:</span></span>
+<span id="cb3-6" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">template</span><span class="kw">:</span><span class="at"> trestles</span></span>
+<span id="cb3-7" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">links</span><span class="kw">:</span></span>
+<span id="cb3-8" class="hljs-ln-code"><a></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> github</span></span>
+<span id="cb3-9" class="hljs-ln-code"><a></a><span class="at">      </span><span class="fu">text</span><span class="kw">:</span><span class="at"> GitHub</span></span>
+<span id="cb3-10" class="hljs-ln-code"><a></a><span class="at">      </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://github.com/sara-institute</span></span>
+<span id="cb3-11" class="hljs-ln-code"><a></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> linkedin</span></span>
+<span id="cb3-12" class="hljs-ln-code"><a></a><span class="at">      </span><span class="fu">text</span><span class="kw">:</span><span class="at"> LinkedIn</span></span>
+<span id="cb3-13" class="hljs-ln-code"><a></a><span class="at">      </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://www.linkedin.com/in/ajay-kumar-koli/</span></span>
+<span id="cb3-14" class="hljs-ln-code"><a></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> twitter</span></span>
+<span id="cb3-15" class="hljs-ln-code"><a></a><span class="at">      </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Twitter</span></span>
+<span id="cb3-16" class="hljs-ln-code"><a></a><span class="at">      </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://www.linkedin.com/in/ajay-kumar-koli/</span></span>
+<span id="cb3-17" class="hljs-ln-code"><a></a><span class="pp">---</span></span>
+<span id="cb3-18" class="hljs-ln-code"><a></a></span>
+<span id="cb3-19" class="hljs-ln-code"><a></a><span class="at">Ajay Kumar is the Chief Data Scientist at Wengo Analytics. </span></span>
+<span id="cb3-20" class="hljs-ln-code"><a></a><span class="at">When not innovating on data platforms, Finley enjoys spending time</span></span>
+<span id="cb3-21" class="hljs-ln-code"><a></a><span class="at">unicycling and playing with her pet iguana.</span></span>
+<span id="cb3-22" class="hljs-ln-code"><a></a></span>
+<span id="cb3-23" class="hljs-ln-code"><a></a><span class="co">## Education</span></span>
+<span id="cb3-24" class="hljs-ln-code"><a></a></span>
+<span id="cb3-25" class="hljs-ln-code"><a></a><span class="at">University of California, San Diego | San Diego, CA</span></span>
+<span id="cb3-26" class="hljs-ln-code"><a></a><span class="at">PhD in Mathematics | Sept 2011 - June 2015</span></span>
+<span id="cb3-27" class="hljs-ln-code"><a></a></span>
+<span id="cb3-28" class="hljs-ln-code"><a></a><span class="at">Macalester College | St. Paul, MN</span></span>
+<span id="cb3-29" class="hljs-ln-code"><a></a><span class="at">B.A in Economics | Sept 2007 - June 2011</span></span>
+<span id="cb3-30" class="hljs-ln-code"><a></a></span>
+<span id="cb3-31" class="hljs-ln-code"><a></a><span class="co">## Experience</span></span>
+<span id="cb3-32" class="hljs-ln-code"><a></a></span>
+<span id="cb3-33" class="hljs-ln-code"><a></a><span class="at">Wengo Analytics | Head Data Scientist | April 2018 - present</span></span>
+<span id="cb3-34" class="hljs-ln-code"><a></a></span>
+<span id="cb3-35" class="hljs-ln-code"><a></a><span class="at">GeoScynce | Chief Analyst | Spet 2012 - April 2018</span></span>
+<span id="cb3-36" class="hljs-ln-code"><a></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="built-in-templates-edit-index.qmd" class="slide level2">
 <h2>Built-In Templates, edit <code>index.qmd</code></h2>
@@ -339,126 +393,252 @@
 <span id="cb4-3"><a></a><span class="at">  </span><span class="fu">template</span><span class="kw">:</span><span class="at"> trestles</span></span>
 <span id="cb4-4"><a></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div>
+<div class="footer">
 <p>More information here <a href="https://quarto.org/docs/websites/website-about.html#templates" class="uri">https://quarto.org/docs/websites/website-about.html#templates</a></p>
+</div>
+</section>
+<section id="website-navigation-bar" class="slide level2">
+<h2>Website Navigation Bar</h2>
+<p><a href="images/navbar-ajay.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img data-src="images/navbar-ajay.png"></a></p>
+</section>
+<section id="edit-_quarto.yml-1" class="slide level2">
+<h2>Edit <code>_quarto.yml</code></h2>
+<div class="sourceCode" id="cb5" data-code-line-numbers="6-9|10-11|12-18|19-21"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a></a><span class="fu">project</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb5-2"><a></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> website</span></span>
+<span id="cb5-3"><a></a></span>
+<span id="cb5-4"><a></a><span class="fu">website</span><span class="kw">:</span></span>
+<span id="cb5-5"><a></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Dr. Ajay Kumar Koli"</span></span>
+<span id="cb5-6"><a></a><span class="at">  </span><span class="fu">navbar</span><span class="kw">:</span></span>
+<span id="cb5-7"><a></a><span class="at">    </span><span class="fu">left</span><span class="kw">:</span></span>
+<span id="cb5-8"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Home"</span></span>
+<span id="cb5-9"><a></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> index.qmd</span></span>
+<span id="cb5-10"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"About"</span></span>
+<span id="cb5-11"><a></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> about.qmd</span></span>
+<span id="cb5-12"><a></a><span class="at">    </span><span class="fu">tools</span><span class="kw">:</span></span>
+<span id="cb5-13"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> github</span></span>
+<span id="cb5-14"><a></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://github.com/koliajaykr</span></span>
+<span id="cb5-15"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> linkedin</span></span>
+<span id="cb5-16"><a></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://www.linkedin.com/in/ajay-kumar-koli/</span></span>
+<span id="cb5-17"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> twitter</span></span>
+<span id="cb5-18"><a></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://x.com/ajay_kolii</span></span>
+<span id="cb5-19"><a></a><span class="at">  </span><span class="fu">page-footer</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb5-20"><a></a><span class="at">    </span><span class="fu">left</span><span class="kw">:</span><span class="at"> </span><span class="st">"Copyright 2021, Norah Jones"</span></span>
+<span id="cb5-21"><a></a><span class="at">    </span><span class="fu">right</span><span class="kw">:</span><span class="at"> </span><span class="st">"Made with Quarto &amp; 💙"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="your-turn" class="slide level2" data-background-color="#003262">
+<h2>🤯 Your Turn</h2>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_34b969cf" minutes="15" seconds="0" update-every="1" tabindex="0" style="top:0;right:0;"></countdown-timer>
+</div>
+</div>
+<p><br></p>
+<h3 id="add-an-about-page-to-your-quarto-website">Add an “About” Page to Your Quarto Website</h3>
+<p><br></p>
+<div title="💡 Hints">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>💡 Hints</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li><p>Create a new file called <code>about.qmd</code></p></li>
+<li><p>Use <code>href:</code> to add it to the navbar in <code>_quarto.yml</code></p></li>
+<li><p>A clickable email link in Markdown looks like: <code>[text](mailto:you@example.com)</code></p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="answer" class="slide level2" data-background-color="#156A6B">
+<h2>✅ Answer</h2>
+<h3 id="step-1---create-about.qmd">Step 1 - Create <code>about.qmd</code></h3>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><a></a><span class="pp">---</span></span>
+<span id="cb6-2"><a></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"About"</span></span>
+<span id="cb6-3"><a></a><span class="pp">---</span></span>
+<span id="cb6-4"><a></a></span>
+<span id="cb6-5"><a></a><span class="at">Hi, I'm Ajay Kumar, a data scientist based in New York.</span></span>
+<span id="cb6-6"><a></a><span class="at">I specialize in R, machine learning, and data visualization.</span></span>
+<span id="cb6-7"><a></a><span class="at">Feel free to reach out — I love connecting with like-minded people!</span></span>
+<span id="cb6-8"><a></a></span>
+<span id="cb6-9"><a></a><span class="at">📧 [koliajaykumar@gmail.com](mailto:koliajaykumar@gmail.com)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="answer-1" class="slide level2" data-background-color="#156A6B">
+<h2>✅ Answer</h2>
+<h3 id="step-2---update-_quarto.yml">Step 2 - Update <code>_quarto.yml</code></h3>
+<div class="sourceCode" id="cb7" data-code-line-numbers="10-11"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb7-1"><a></a><span class="fu">project</span><span class="kw">:</span></span>
+<span id="cb7-2"><a></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> website</span></span>
+<span id="cb7-3"><a></a></span>
+<span id="cb7-4"><a></a><span class="fu">website</span><span class="kw">:</span></span>
+<span id="cb7-5"><a></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Ajay Kumar"</span></span>
+<span id="cb7-6"><a></a><span class="at">  </span><span class="fu">navbar</span><span class="kw">:</span></span>
+<span id="cb7-7"><a></a><span class="at">    </span><span class="fu">left</span><span class="kw">:</span></span>
+<span id="cb7-8"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> index.qmd</span></span>
+<span id="cb7-9"><a></a><span class="at">        </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Home</span></span>
+<span id="cb7-10"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> about.qmd</span></span>
+<span id="cb7-11"><a></a><span class="at">        </span><span class="fu">text</span><span class="kw">:</span><span class="at"> About</span></span>
+<span id="cb7-12"><a></a><span class="at">        </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="themes-edit-_quarto.yml" class="slide level2">
 <h2>Themes; edit <code>_quarto.yml</code></h2>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a></a><span class="fu">format</span><span class="kw">:</span></span>
-<span id="cb5-2"><a></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
-<span id="cb5-3"><a></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span><span class="at"> cosmo</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb8-1"><a></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb8-2"><a></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb8-3"><a></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span><span class="at"> cosmo</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br></p>
 <div class="fragment">
-<ul>
-<li>Quarto includes 25 themes from the <a href="https://bootswatch.com/">Bootswatch</a>, check out other <a href="https://quarto.org/docs/output-formats/html-themes.html#basic-options">themes</a>.</li>
-</ul>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb9-1"><a></a><span class="fu">theme</span><span class="kw">:</span><span class="at"> default</span><span class="co"> # bootstrap 5 default</span></span>
+<span id="cb9-2"><a></a><span class="fu">theme</span><span class="kw">:</span><span class="at"> cosmo</span><span class="co">   # cosmo bootswatch theme</span></span>
+<span id="cb9-3"><a></a><span class="fu">theme</span><span class="kw">:</span><span class="at"> pandoc</span><span class="co">  # pandoc default html treatment</span></span>
+<span id="cb9-4"><a></a><span class="fu">theme</span><span class="kw">:</span><span class="at"> none</span><span class="co">    # no theme css added to document</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="footer">
+<p>More about HTML themes <a href="https://quarto.org/docs/output-formats/html-themes.html" class="uri">https://quarto.org/docs/output-formats/html-themes.html</a></p>
+</div>
 </div>
 </section>
-<section id="website-colors" class="slide level2">
-<h2>Website Colors</h2>
-
-<img data-src="images/colors-ajay.png" class="r-stretch"></section>
-<section id="colors-edit-_quarto.yml" class="slide level2">
-<h2>Colors; edit <code>_quarto.yml</code></h2>
+<section id="customise-website-appearance" class="slide level2">
+<h2>Customise Website Appearance</h2>
+<p><a href="images/colors-ajay.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img data-src="images/colors-ajay.png"></a></p>
+</section>
+<section id="customize-colors-edit-_quarto.yml" class="slide level2">
+<h2>Customize Colors; edit <code>_quarto.yml</code></h2>
+<blockquote>
+<p><span class="rn-fragment fragment">“If you are using a Bootstrap theme or the Pandoc theme, there are a set of options you can provide in document metadata to customize its appearance.”</span></p>
+</blockquote>
+<div class="fragment">
 <ul>
 <li><p><code>fontcolor</code>: The main color for text on the site.</p></li>
 <li><p><code>linkcolor</code>: Color of the links.</p></li>
 <li><p><code>backgroundcolor</code>: Background color of the whole site.</p></li>
 <li><p><code>monobackgroundcolor</code>: Background color for code chunk.</p></li>
 </ul>
+<div class="footer">
+<p>Learn more about HTML colors <a href="https://www.canva.com/colors/" class="uri">https://www.canva.com/colors/</a></p>
+</div>
+</div>
 </section>
-<section id="colors-edit-_quarto.yml-1" class="slide level2">
+<section id="colors-edit-_quarto.yml" class="slide level2">
 <h2>Colors; edit <code>_quarto.yml</code></h2>
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><a></a><span class="fu">format</span><span class="kw">:</span></span>
-<span id="cb6-2"><a></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
-<span id="cb6-3"><a></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span><span class="at"> cosmo</span></span>
-<span id="cb6-4"><a></a><span class="at">    </span><span class="fu">fontcolor</span><span class="kw">:</span><span class="at"> darkgreen</span></span>
-<span id="cb6-5"><a></a><span class="at">    </span><span class="fu">linkcolor</span><span class="kw">:</span><span class="at"> black</span></span>
-<span id="cb6-6"><a></a><span class="at">    </span><span class="fu">backgroundcolor</span><span class="kw">:</span><span class="at"> </span><span class="st">"#ECFFDC"</span></span>
-<span id="cb6-7"><a></a><span class="at">    </span><span class="fu">monobackgroundcolor</span><span class="kw">:</span><span class="at"> pink</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-
-<img data-src="images/colors-ajay.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="fonts-edit-_quarto.yml" class="slide level2">
-<h2>Fonts; edit <code>_quarto.yml</code></h2>
-<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb7-1"><a></a><span class="fu">format</span><span class="kw">:</span></span>
-<span id="cb7-2"><a></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
-<span id="cb7-3"><a></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span><span class="at"> cosmo</span></span>
-<span id="cb7-4"><a></a><span class="at">    </span><span class="fu">fontcolor</span><span class="kw">:</span><span class="at"> darkgreen</span></span>
-<span id="cb7-5"><a></a><span class="at">    </span><span class="fu">linkcolor</span><span class="kw">:</span><span class="at"> black</span></span>
-<span id="cb7-6"><a></a><span class="at">    </span><span class="fu">backgroundcolor</span><span class="kw">:</span><span class="at"> </span><span class="st">"#ECFFDC"</span></span>
-<span id="cb7-7"><a></a><span class="at">    </span><span class="fu">monobackgroundcolor</span><span class="kw">:</span><span class="at"> pink</span></span>
-<span id="cb7-8"><a></a><span class="at">    </span><span class="fu">mainfont</span><span class="kw">:</span><span class="at"> </span><span class="st">"monospace"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb10-1"><a></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb10-2"><a></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb10-3"><a></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span><span class="at"> cosmo</span></span>
+<span id="cb10-4"><a></a><span class="at">    </span><span class="fu">fontcolor</span><span class="kw">:</span><span class="at"> darkgreen</span></span>
+<span id="cb10-5"><a></a><span class="at">    </span><span class="fu">linkcolor</span><span class="kw">:</span><span class="at"> black</span></span>
+<span id="cb10-6"><a></a><span class="at">    </span><span class="fu">backgroundcolor</span><span class="kw">:</span><span class="at"> </span><span class="st">"#ECFFDC"</span></span>
+<span id="cb10-7"><a></a><span class="at">    </span><span class="fu">monobackgroundcolor</span><span class="kw">:</span><span class="at"> pink</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/colors-ajay.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img data-src="images/colors-ajay.png" class="quarto-figure quarto-figure-center"></a></p>
+</figure>
+</div>
 </section>
-<section id="css" class="slide level2">
-<h2>CSS</h2>
+<section id="customize-fonts-edit-_quarto.yml" class="slide level2">
+<h2>Customize Fonts; edit <code>_quarto.yml</code></h2>
+<div class="sourceCode" id="cb11" data-code-line-numbers="8"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb11-1"><a></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb11-2"><a></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb11-3"><a></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span><span class="at"> cosmo</span></span>
+<span id="cb11-4"><a></a><span class="at">    </span><span class="fu">fontcolor</span><span class="kw">:</span><span class="at"> darkgreen</span></span>
+<span id="cb11-5"><a></a><span class="at">    </span><span class="fu">linkcolor</span><span class="kw">:</span><span class="at"> black</span></span>
+<span id="cb11-6"><a></a><span class="at">    </span><span class="fu">backgroundcolor</span><span class="kw">:</span><span class="at"> </span><span class="st">"#ECFFDC"</span></span>
+<span id="cb11-7"><a></a><span class="at">    </span><span class="fu">monobackgroundcolor</span><span class="kw">:</span><span class="at"> pink</span></span>
+<span id="cb11-8"><a></a><span class="at">    </span><span class="fu">mainfont</span><span class="kw">:</span><span class="at"> </span><span class="st">"monospace"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br></p>
+<div class="fragment">
+<p><code>mainfont</code> - Sets the font-family property for the document. Also try sans-serif, serif, cursive or system-ui</p>
+<div class="footer">
+<p>Learn more about font-family <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-family" class="uri">https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-family</a></p>
+</div>
+</div>
+</section>
+<section id="your-styletheme-using-css" class="slide level2">
+<h2>Your Style/Theme using CSS</h2>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><a href="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWJoNjQzNG4xMHA3c3JvNjFjOGxkM2ZyNzFrazgyaHRtbmZ6NmVldyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fuJPZBIIqzbt1kAYVc/giphy.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img data-src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWJoNjQzNG4xMHA3c3JvNjFjOGxkM2ZyNzFrazgyaHRtbmZ6NmVldyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fuJPZBIIqzbt1kAYVc/giphy.gif"></a></p>
+</div><div class="column" style="width:70%;">
 <ul>
 <li><p>Cascading Style Sheets (CSS) is a style sheet language.</p></li>
 <li><p>CSS is used for specifying the presentation and styling of a document written in a markup language such as HTML</p></li>
 </ul>
-
-<aside><div>
-<p>Source: <a href="https://en.wikipedia.org/wiki/CSS" class="uri">https://en.wikipedia.org/wiki/CSS</a></p>
-</div></aside></section>
-<section id="css-edit-_quarto.yml" class="slide level2">
-<h2>CSS; edit <code>_quarto.yml</code></h2>
-<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb8-1"><a></a><span class="fu">format</span><span class="kw">:</span></span>
-<span id="cb8-2"><a></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
-<span id="cb8-3"><a></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span><span class="at"> cosmo</span></span>
-<span id="cb8-4"><a></a><span class="at">    </span><span class="fu">css</span><span class="kw">:</span><span class="at"> styles.css</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div>
+<div class="footer">
+<p>Image source <a href="https://giphy.com/gifs/HostGator-webhosting-hostgator-webhost-fuJPZBIIqzbt1kAYVc" class="uri">https://giphy.com/gifs/HostGator-webhosting-hostgator-webhost-fuJPZBIIqzbt1kAYVc</a><br>
+Source <a href="https://en.wikipedia.org/wiki/CSS" class="uri">https://en.wikipedia.org/wiki/CSS</a></p>
+</div>
+</section>
+<section id="add-style-file-edit-_quarto.yml" class="slide level2">
+<h2>Add Style File; edit <code>_quarto.yml</code></h2>
+<div class="sourceCode" id="cb12" data-code-line-numbers="4"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb12-1"><a></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb12-2"><a></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb12-3"><a></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span><span class="at"> cosmo</span></span>
+<span id="cb12-4"><a></a><span class="at">    </span><span class="fu">css</span><span class="kw">:</span><span class="at"> styles.css</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br></p>
 <div class="fragment">
 <p>Codes for the CSS file</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a></a>body {</span>
-<span id="cb9-2"><a></a>  font-family: Arial, sans-serif;</span>
-<span id="cb9-3"><a></a>  background-color: #f0f0f0;</span>
-<span id="cb9-4"><a></a>}</span>
-<span id="cb9-5"><a></a></span>
-<span id="cb9-6"><a></a>h1 {</span>
-<span id="cb9-7"><a></a>  color: #333;</span>
-<span id="cb9-8"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-
-</div>
-<aside><div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb13-1"><a></a>body {</span>
+<span id="cb13-2"><a></a>  <span class="kw">font-family</span><span class="ch">:</span> <span class="dv">Arial</span><span class="op">,</span> <span class="dv">sans-serif</span><span class="op">;</span></span>
+<span id="cb13-3"><a></a>  <span class="kw">background-color</span><span class="ch">:</span> <span class="cn">#f0f0f0</span><span class="op">;</span></span>
+<span id="cb13-4"><a></a>}</span>
+<span id="cb13-5"><a></a></span>
+<span id="cb13-6"><a></a>h1 {</span>
+<span id="cb13-7"><a></a>  <span class="kw">color</span><span class="ch">:</span> <span class="cn">#333</span><span class="op">;</span></span>
+<span id="cb13-8"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="footer">
 <p>Also check out <a href="https://sass-lang.com/">SCSS</a>.<br>
 Learn more about CSS: <a href="https://www.w3schools.com/css/default.asp" class="uri">https://www.w3schools.com/css/default.asp</a></p>
-</div></aside></section>
-<section id="render-website" class="slide level2">
-<h2>Render Website</h2>
-<p><img data-src="images/render-website.png"></p>
-<p><img data-src="images/css-homepage-ajay.png"></p>
+</div>
+</div>
 </section>
+<section id="section" class="slide level2" data-background-color="black" data-background-image="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjM0d2twY3l3eWU4ZjYxNXNieTYxM3ZzaWxwMG1wNTZmb2xybWNteiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8PpFJcG4y8HqsxQumz/giphy.gif" data-background-size="35%">
+<h2></h2>
+<p>Imagine a world where all websites are responsive</p>
+<!-- ![](images/render-website.png) -->
+<!-- ![](images/css-homepage-ajay.png) -->
+<div class="footer">
+<p>GIF source <a href="https://giphy.com/gifs/animation-gif-artist-trapped-8PpFJcG4y8HqsxQumz" class="uri">https://giphy.com/gifs/animation-gif-artist-trapped-8PpFJcG4y8HqsxQumz</a></p>
+</div>
+</section></section>
 <section>
-<section id="launch-your-website" class="title-slide slide level1 center">
+<section id="launch-your-website" class="title-slide slide level1 center" data-background-color="silver">
 <h1>🚀 Launch Your Website</h1>
 
 </section>
-<section id="your-files-for-the-github" class="slide level2">
-<h2>Your files for the github</h2>
-
-<img data-src="images/github-website1.png" class="r-stretch"></section>
+<section id="push-your-files-to-github" class="slide level2">
+<h2>Push Your Files to GitHub</h2>
+<p>Tick First Box <span class="math inline">\(\rightarrow\)</span> Ctrl + a <span class="math inline">\(\rightarrow\)</span> Tick Second Box</p>
+<p><a href="images/github-website1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img data-src="images/github-website1.png"></a></p>
+</section>
 <section id="select-files-and-click-commit" class="slide level2">
-<h2>Select files and click <code>Commit</code></h2>
-
-<img data-src="images/github-website2.png" class="r-stretch"></section>
-<section id="commit-message-and-click-commit" class="slide level2">
-<h2>Commit message and click <code>Commit</code></h2>
-
-<img data-src="images/github-website3.png" class="r-stretch"></section>
+<h2>Select Files and Click <code>Commit</code></h2>
+<p><a href="images/github-website2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15"><img data-src="images/github-website2.png"></a></p>
+</section>
+<section id="write-commit-message-and-click-commit" class="slide level2">
+<h2>Write Commit Message and click <code>Commit</code></h2>
+<p><a href="images/github-website3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-16"><img data-src="images/github-website3.png"></a></p>
+</section>
 <section id="let-it-run-and-close" class="slide level2">
 <h2>Let it Run and Close</h2>
-
-<img data-src="images/github-website4.png" class="r-stretch"></section>
+<p><a href="images/github-website4.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17"><img data-src="images/github-website4.png"></a></p>
+</section>
 <section id="branch-ahead-origin-and-click-push" class="slide level2">
-<h2>Branch ahead Origin and click <code>Push</code></h2>
-
-<img data-src="images/github-website5.png" class="r-stretch"></section>
-<section id="after-update-close-all-windows" class="slide level2">
-<h2>After update close all windows</h2>
-
-<img data-src="images/github-website7.png" class="r-stretch"></section>
+<h2>Branch Ahead Origin and click <code>Push</code></h2>
+<p><a href="images/github-website5.png" class="lightbox" data-gallery="quarto-lightbox-gallery-18"><img data-src="images/github-website5.png"></a></p>
+</section>
+<section id="let-it-run-close-commit-dialog-boxes" class="slide level2">
+<h2>Let it Run, Close Commit Dialog Boxes</h2>
+<p><a href="images/github-website7.png" class="lightbox" data-gallery="quarto-lightbox-gallery-19"><img data-src="images/github-website7.png"></a></p>
+</section>
 <section id="check-github-repo-for-latest-updates" class="slide level2">
 <h2>Check GitHub Repo for Latest Updates</h2>
-
-<img data-src="images/github-website8.png" class="r-stretch"></section>
-<section id="open-netlify-account." class="slide level2">
-<h2>Open Netlify Account.</h2>
+<p><a href="images/github-website8.png" class="lightbox" data-gallery="quarto-lightbox-gallery-20"><img data-src="images/github-website8.png"></a></p>
+</section>
+<section id="open-netlify-website" class="slide level2">
+<h2>Open Netlify Website</h2>
 <iframe width="780" height="500" src="https://www.netlify.com/" title="Webpage example"></iframe>
 
 <aside><div>
@@ -467,31 +647,47 @@ Learn more about CSS: <a href="https://www.w3schools.com/css/default.asp" class=
 <section id="netlify" class="slide level2">
 <h2>Netlify</h2>
 <p>Add New Site <span class="math inline">\(\rightarrow\)</span> Import an Existing Project <span class="math inline">\(\rightarrow\)</span> Choose GitHub</p>
-
-<img data-src="images/netlify1.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/netlify1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-21"><img data-src="images/netlify1.png" class="quarto-figure quarto-figure-center"></a></p>
+</figure>
+</div>
+</section>
 <section id="netlify-1" class="slide level2">
 <h2>Netlify</h2>
 <ul>
 <li><p>In Publish Directory box write <code>_site</code></p></li>
 <li><p>Deploy website-ajay <span class="math inline">\(\rightarrow\)</span> Site deploy in progress</p></li>
 </ul>
-
-<img data-src="images/netlify2.png" class="r-stretch"></section>
+<p><a href="images/netlify2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-22"><img data-src="images/netlify2.png"></a></p>
+</section>
 <section id="site-published-configure-site" class="slide level2">
 <h2>Site Published, Configure Site</h2>
-
-<img data-src="images/netlify3.png" class="r-stretch"></section>
+<p><a href="images/netlify3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-23"><img data-src="images/netlify3.png"></a></p>
+</section>
 <section id="change-site-name" class="slide level2">
 <h2>Change Site Name</h2>
-
-<img data-src="images/netlify4.png" class="r-stretch"></section>
+<p><a href="images/netlify4.png" class="lightbox" data-gallery="quarto-lightbox-gallery-24"><img data-src="images/netlify4.png"></a></p>
+</section>
 <section id="site-thumbnail-with-updated-url" class="slide level2">
 <h2>Site Thumbnail with updated URL</h2>
-
-<img data-src="images/netlify5.png" class="r-stretch"></section>
-<section id="add-content" class="slide level2">
-<h2>Add Content</h2>
-<p>Aenean placerat luctus tortor vitae molestie. Nulla at aliquet nulla. Sed efficitur tellus orci, sed fringilla lectus laoreet eget. Vivamus maximus quam sit amet arcu dignissim, sed accumsan massa ullamcorper. Sed iaculis tincidunt feugiat. Nulla in est at nunc ultricies dictum ut vitae nunc. Aenean convallis vel diam at malesuada. Suspendisse arcu libero, vehicula tempus ultrices a, placerat sit amet tortor. Sed dictum id nulla commodo mattis. Aliquam mollis, nunc eu tristique faucibus, purus lacus tincidunt nulla, ac pretium lorem nunc ut enim. Curabitur eget mattis nisl, vitae sodales augue. Nam felis massa, bibendum sit amet nulla vel, vulputate rutrum lacus. Aenean convallis odio pharetra nulla mattis consequat.</p>
+<p><a href="images/netlify5.png" class="lightbox" data-gallery="quarto-lightbox-gallery-25"><img data-src="images/netlify5.png"></a></p>
+<aside class="notes">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis posuere ligula sit amet lacinia. Duis dignissim pellentesque magna, rhoncus congue sapien finibus mollis. Ut eu sem laoreet, vehicula ipsum in, convallis erat. Vestibulum magna sem, blandit pulvinar augue sit amet, auctor malesuada sapien. Nullam faucibus leo eget eros hendrerit, non laoreet ipsum lacinia. Curabitur cursus diam elit, non tempus ante volutpat a. Quisque hendrerit blandit purus non fringilla. Integer sit amet elit viverra ante dapibus semper. Vestibulum viverra rutrum enim, at luctus enim posuere eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section-1" class="slide level2" data-background-color="black" data-background-image="https://cdn.prod.website-files.com/64fa82cbdeed167ebaefef84/64fa868fecc183a3dd76ab72_603ec5023c4ad83b06783427_ERDRXg1TvG60WlNMOmdqI1UU4cXkbLIokPeCl4ZKyUOdfkCy4Ju7brzIdfWUuo4E-WoK4l9FzYaV8rVhe9wFG-aKiOHf_hAjlxPa9S2FRqipCoAqR6Na6eOpdanMJ39w_u51RDvc.jpeg" data-background-size="50%">
+<h2></h2>
 
 
 </section></section>
@@ -657,7 +853,7 @@ Learn more about CSS: <a href="https://www.w3schools.com/css/default.asp" class=
         previewLinks: false,
 
         // Transition style (none/fade/slide/convex/concave/zoom)
-        transition: 'none',
+        transition: 'slide',
 
         // Transition speed (default/fast/slow)
         transitionSpeed: 'default',
@@ -711,191 +907,243 @@ Learn more about CSS: <a href="https://www.w3schools.com/css/default.asp" class=
         ]
       });
     </script>
-    <script id="quarto-html-after-body" type="application/javascript">
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-      const toggleBodyColorMode = (bsSheetEl) => {
-        const mode = bsSheetEl.getAttribute("data-mode");
-        const bodyEl = window.document.querySelector("body");
-        if (mode === "dark") {
-          bodyEl.classList.add("quarto-dark");
-          bodyEl.classList.remove("quarto-light");
-        } else {
-          bodyEl.classList.add("quarto-light");
-          bodyEl.classList.remove("quarto-dark");
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
         }
-      }
-      const toggleBodyColorPrimary = () => {
-        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-        if (bsSheetEl) {
-          toggleBodyColorMode(bsSheetEl);
-        }
-      }
-      toggleBodyColorPrimary();  
-      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
-      tabsets.forEach(function(tabset) {
-        const tabby = new Tabby('#' + tabset.id);
-      });
-      const isCodeAnnotation = (el) => {
-        for (const clz of el.classList) {
-          if (clz.startsWith('code-annotation-')) {                     
-            return true;
-          }
-        }
-        return false;
-      }
-      const onCopySuccess = function(e) {
-        // button target
-        const button = e.trigger;
-        // don't keep focus
-        button.blur();
-        // flash "checked"
-        button.classList.add('code-copy-button-checked');
-        var currentTitle = button.getAttribute("title");
-        button.setAttribute("title", "Copied!");
-        let tooltip;
-        if (window.bootstrap) {
-          button.setAttribute("data-bs-toggle", "tooltip");
-          button.setAttribute("data-bs-placement", "left");
-          button.setAttribute("data-bs-title", "Copied!");
-          tooltip = new bootstrap.Tooltip(button, 
-            { trigger: "manual", 
-              customClass: "code-copy-button-tooltip",
-              offset: [0, -8]});
-          tooltip.show();    
-        }
-        setTimeout(function() {
-          if (tooltip) {
-            tooltip.hide();
-            button.removeAttribute("data-bs-title");
-            button.removeAttribute("data-bs-toggle");
-            button.removeAttribute("data-bs-placement");
-          }
-          button.setAttribute("title", currentTitle);
-          button.classList.remove('code-copy-button-checked');
-        }, 1000);
-        // clear code selection
-        e.clearSelection();
-      }
-      const getTextToCopy = function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
             }
-          }
-          return codeEl.innerText;
-      }
-      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-        text: getTextToCopy
-      });
-      clipboard.on('success', onCopySuccess);
-      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-          text: getTextToCopy,
-          container: window.document.getElementById('quarto-embedded-source-code-modal')
-        });
-        clipboardModal.on('success', onCopySuccess);
-      }
-        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-        var mailtoRegex = new RegExp(/^mailto:/);
-          var filterRegex = new RegExp('/' + window.location.host + '/');
-        var isInternal = (href) => {
-            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-        }
-        // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-        for (var i=0; i<links.length; i++) {
-          const link = links[i];
-          if (!isInternal(link.href)) {
-            // undo the damage that might have been done by quarto-nav.js in the case of
-            // links that we want to consider external
-            if (link.dataset.originalHref !== undefined) {
-              link.href = link.dataset.originalHref;
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
             }
           }
         }
-      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-        const config = {
-          allowHTML: true,
-          maxWidth: 500,
-          delay: 100,
-          arrow: false,
-          appendTo: function(el) {
-              return el.closest('section.slide') || el.parentElement;
-          },
-          interactive: true,
-          interactiveBorder: 10,
-          theme: 'light-border',
-          placement: 'bottom-start',
-        };
-        if (contentFn) {
-          config.content = contentFn;
-        }
-        if (onTriggerFn) {
-          config.onTrigger = onTriggerFn;
-        }
-        if (onUntriggerFn) {
-          config.onUntrigger = onUntriggerFn;
-        }
-          config['offset'] = [0,0];
-          config['maxWidth'] = 700;
-        window.tippy(el, config); 
-      }
-      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-      for (var i=0; i<noterefs.length; i++) {
-        const ref = noterefs[i];
-        tippyHover(ref, function() {
-          // use id or data attribute instead here
-          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-          try { href = new URL(href).hash; } catch {}
-          const id = href.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note) {
-            return note.innerHTML;
-          } else {
-            return "";
-          }
-        });
-      }
-      const findCites = (el) => {
-        const parentEl = el.parentElement;
-        if (parentEl) {
-          const cites = parentEl.dataset.cites;
-          if (cites) {
-            return {
-              el,
-              cites: cites.split(' ')
-            };
-          } else {
-            return findCites(el.parentElement)
-          }
-        } else {
-          return undefined;
-        }
-      };
-      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-      for (var i=0; i<bibliorefs.length; i++) {
-        const ref = bibliorefs[i];
-        const citeInfo = findCites(ref);
-        if (citeInfo) {
-          tippyHover(citeInfo.el, function() {
-            var popup = window.document.createElement('div');
-            citeInfo.cites.forEach(function(cite) {
-              var citeDiv = window.document.createElement('div');
-              citeDiv.classList.add('hanging-indent');
-              citeDiv.classList.add('csl-entry');
-              var biblioDiv = window.document.getElementById('ref-' + cite);
-              if (biblioDiv) {
-                citeDiv.innerHTML = biblioDiv.innerHTML;
-              }
-              popup.appendChild(citeDiv);
-            });
-            return popup.innerHTML;
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
           });
         }
-      }
-    });
+
+      })();
     </script>
+
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
+              }
+            }
+            return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+    (function() {
+      let previousOnload = window.onload;
+      window.onload = () => {
+        if (previousOnload) {
+          previousOnload();
+        }
+        lightboxQuarto.on('slide_before_load', (data) => {
+          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+          const href = trigger.getAttribute('href');
+          if (href !== null) {
+            const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+            if (imgEl !== null) {
+              const srcAttr = imgEl.getAttribute("src");
+              if (srcAttr && srcAttr.startsWith("data:")) {
+                slideConfig.href = srcAttr;
+              }
+            }
+          } 
+        });
+      
+        lightboxQuarto.on('slide_after_load', (data) => {
+          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(slideNode);
+          }
+        });
+      
+      };
+      
+    })();
+              </script>
     
 
 </body></html>

@@ -6,10 +6,17 @@
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.6.39">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/quarto-contrib/roughnotation-0.5.1/rough-notation.iife.js"></script>
+<script src="site_libs/quarto-contrib/roughnotation-init-1.0.0/rough.js"></script>
+<link href="site_libs/quarto-contrib/roughnotation-init-1.0.0/rough.css" rel="stylesheet">
+<script src="site_libs/quarto-contrib/roughnotation-flourish-bridge-1.0.0/flourish-bridge.js"></script>
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.30">
 
-  <title>R &amp; RStudio</title>
+  <title>R, RStudio &amp; GitHub</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -28,8 +35,9 @@
       vertical-align: middle;
     }
     /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
     pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
     pre > code.sourceCode > span:empty { height: 1.2em; }
     .sourceCode { overflow: visible; }
     code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -40,7 +48,7 @@
     }
     @media print {
     pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
     }
     pre.numberSource code
       { counter-reset: source-line 0; }
@@ -92,28 +100,8 @@
     code span.va { color: #111111; } /* Variable */
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
-    /* CSS for citations */
-    div.csl-bib-body { }
-    div.csl-entry {
-      clear: both;
-      margin-bottom: 0em;
-    }
-    .hanging-indent div.csl-entry {
-      margin-left:2em;
-      text-indent:-2em;
-    }
-    div.csl-left-margin {
-      min-width:2em;
-      float:left;
-    }
-    div.csl-right-inline {
-      margin-left:2em;
-      padding-left:1em;
-    }
-    div.csl-indent {
-      margin-left: 2em;
-    }  </style>
-  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-3f833ad789ad12d1d1e9ed1920be9c12.css">
+  </style>
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-e699b38f026904c891a8682dc878e627.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -206,16 +194,16 @@
       margin-right: 0; 
     }
   </style>
-  <link href="site_libs/countdown-0.4.0/countdown.css" rel="stylesheet">
-  <script src="site_libs/countdown-0.4.0/countdown.js"></script>
+  <link href="site_libs/countdown-0.6.0/countdown.css" rel="stylesheet">
+  <script src="site_libs/countdown-0.6.0/countdown.js"></script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" data-background-image="https://images.unsplash.com/photo-1593248196138-bad1a611a766?q=80&amp;w=1932&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-background-size="cover" class="quarto-title-block center">
-  <h1 class="title"><span class="clr-white r-fit-text">R &amp; RStudio</span></h1>
-  <p class="subtitle"><span class="clr-white r-fit-text">Dr.&nbsp;Ajay Kumar Koli, PhD <span class="math inline">\(\cdot\)</span> SARA Institute of Data Science, India</span></p>
+<section id="title-slide" data-background-color="black" data-background-image="https://images.unsplash.com/photo-1621947081720-86970823b77a?q=80&amp;w=1932&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-background-opacity="0.5" data-background-size="cover" class="quarto-title-block center">
+  <h1 class="title"><span class="clr-white r-fit-text">R, RStudio &amp; GitHub</span></h1>
+  <p class="subtitle"><span class="clr-white r-fit-text">Dr.&nbsp;Ajay Kumar Koli <span class="math inline">\(\cdot\)</span> 2nd SARA Bootcamp</span></p>
 
 <div class="quarto-title-authors">
 </div>
@@ -223,46 +211,51 @@
 </section>
 
 
-<section id="whole-game" class="slide level2">
-<h2>Whole Game</h2>
-<p><br></p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="https://r4ds.hadley.nz/diagrams/data-science/whole-game.png" class="quarto-figure quarto-figure-center"></p>
-</figure>
-</div>
+<section>
+<section id="r-language" class="title-slide slide level1 center" data-background-image="https://www.r-project.org/logo/Rlogo.png" data-background-size="30%" data-background-position="75%" data-background-color="silver">
+<h1>R Language</h1>
 
-<aside><div>
-<p>Image source: <span class="citation" data-cites="wickhamDataScienceImport2023">Wickham, Cetinkaya-Rundel, and Grolemund (<a href="#/references" role="doc-biblioref" onclick="">2023</a>)</span></p>
-</div></aside></section>
-<section id="r-programming-language" class="slide level2">
-<h2>R Programming Language</h2>
+</section>
+<section id="download-r-programming-language" class="slide level2">
+<h2>Download R Programming Language</h2>
 <p><br> <br></p>
 <div class="columns">
 <div class="column" style="width:30%;">
-<p><img data-src="https://www.r-project.org/logo/Rlogo.png"></p>
+<p><a href="https://www.r-project.org/logo/Rlogo.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img data-src="https://www.r-project.org/logo/Rlogo.png"></a></p>
 </div><div class="column" style="width:70%;">
 <p><br></p>
 <p>“R is a free software environment for statistical computing and graphics.”</p>
 </div></div>
-
-<aside><div>
+<div class="footer">
 <p>Download R from this link: <a href="https://www.r-project.org/" class="uri">https://www.r-project.org/</a></p>
-</div></aside></section>
-<section id="practice-r-software" class="slide level2 scrollable" data-background-image="images/r-software.png" data-background-size="contain" data-background-position="right">
-<h2>Practice R Software</h2>
+</div>
+</section>
+<section id="data-science-project-flowchart" class="slide level2">
+<h2>Data Science Project Flowchart</h2>
+<p><br></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://r4ds.hadley.nz/diagrams/data-science/whole-game.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img data-src="https://r4ds.hadley.nz/diagrams/data-science/whole-game.png" class="quarto-figure quarto-figure-center"></a></p>
+</figure>
+</div>
+<div class="footer">
+<p>Image source: <a href="https://r4ds.hadley.nz/" class="uri">https://r4ds.hadley.nz/</a></p>
+</div>
+</section>
+<section id="practice-in-r-console" class="slide level2 scrollable" data-background-image="images/r-software.png" data-background-size="contain" data-background-position="right">
+<h2>Practice in R Console</h2>
 <ol type="1">
 <li><p>Addition</p></li>
 <li><p>Subtraction</p></li>
 <li><p>Sequence</p></li>
 </ol>
 </section>
-<section id="structure-of-function" class="slide level2" data-background-color="black">
-<h2>Structure of Function</h2>
-
-<img data-src="https://sara-course-r4b.netlify.app/images/function_str5.png" class="r-stretch"></section>
-<section id="practice-r-software-1" class="slide level2 scrollable">
-<h2>Practice R Software</h2>
+<section id="structure-of-r-function" class="slide level2">
+<h2>Structure of R Function</h2>
+<p><a href="https://sara-course-r4b.netlify.app/images/function_str5.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img data-src="https://sara-course-r4b.netlify.app/images/function_str5.png"></a></p>
+</section>
+<section id="practice-r-console" class="slide level2 scrollable">
+<h2>Practice R Console</h2>
 <ol type="1">
 <li><p>Combine elements</p></li>
 <li><p>Create an object</p></li>
@@ -272,15 +265,15 @@
 <h2>RStudio IDE</h2>
 <p><br> <br></p>
 <div class="columns">
-<div class="column" style="width:30%;">
-<p><img data-src="https://static.macupdate.com/products/50318/l/rstudio-logo.webp?v=1671434805"></p>
-</div><div class="column" style="width:70%;">
-<p>“The RStudio integrated development environment (IDE) is a set of tools built to help you be more productive with R and Python.”</p>
+<div class="column" style="width:25%;">
+<p><a href="https://static.macupdate.com/products/50318/l/rstudio-logo.webp?v=1671434805" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img data-src="https://static.macupdate.com/products/50318/l/rstudio-logo.webp?v=1671434805"></a></p>
+</div><div class="column" style="width:75%;">
+<p><br> “The RStudio integrated development environment (IDE) is a set of tools built to help you be more productive with R and Python.”</p>
 </div></div>
-
-<aside><div>
-<p>Download R from this link: <a href="https://posit.co/download/rstudio-desktop/" class="uri">https://posit.co/download/rstudio-desktop/</a></p>
-</div></aside></section>
+<div class="footer">
+<p>Download RStudio from this link: <a href="https://posit.co/download/rstudio-desktop/" class="uri">https://posit.co/download/rstudio-desktop/</a></p>
+</div>
+</section>
 <section id="section" class="slide level2" data-background-image="https://sara-course-r4b.netlify.app/images/rstd_ide.png" data-background-size="contain" data-background-position="center" data-background-color="black">
 <h2></h2>
 </section>
@@ -290,62 +283,241 @@
 <li><p>An overview of RStudio IDE.</p></li>
 <li><p>Create project in RStudio.</p></li>
 </ol>
+</section></section>
+<section>
+<section id="r-packages" class="title-slide slide level1 center" data-background-image="images/packages.png" data-background-size="contain" data-background-position="right" data-background-color="silver">
+<h1>R<br>Packages</h1>
+
 </section>
-<section id="r-packages" class="slide level2">
+<section id="r-packages-1" class="slide level2">
 <h2>R Packages</h2>
+<blockquote>
+<p>Package is “a collection of <span class="rn-fragment fragment" data-rn-color="lightgreen">functions, data and documentation</span> that extends the capabilties of base R.”</p>
+</blockquote>
+<div class="fragment">
 <p><br></p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/metacran.png" class="quarto-figure quarto-figure-center"></p>
+<p><a href="images/metacran.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img data-src="images/metacran.png" class="quarto-figure quarto-figure-center"></a></p>
 </figure>
 </div>
+<div class="footer">
+<p>Image source: On 13 March 2026 <a href="https://www.r-pkg.org/">Metacran</a> | <a href="https://cran.r-project.org/web/packages/available_packages_by_name.html">CRAN</a>.</p>
+</div>
+</div>
+</section>
+<section id="install-r-packages" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Install R Packages</h2>
+<ul>
+<li class="fragment">Using Console</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb1-1" class="hljs-ln-code"><a></a><span class="fu"># function to install R package</span></span>
+<span id="cb1-2" class="hljs-ln-code"><a></a>install.packages("tidyverse")</span>
+<span id="cb1-3" class="hljs-ln-code"><a></a></span>
+<span id="cb1-4" class="hljs-ln-code"><a></a>library(tidyverse) #fun to call r package</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li class="fragment">Using RStudio Windows</li>
+</ul>
+</section></section>
+<section>
+<section id="github" class="title-slide slide level1 center" data-background-image="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/960px-GitHub_Invertocat_Logo.svg.png" data-background-size="30%" data-background-position="75%" data-background-color="silver">
+<h1>GitHub</h1>
+
+</section>
+<section id="github-1" class="slide level2">
+<h2>GitHub</h2>
 <blockquote>
-<p>“a collection of functions, data and documentation that extends the capabilties of base R.” <span class="citation" data-cites="wickhamDataScienceImport2023">(<a href="#/references" role="doc-biblioref" onclick="">Wickham, Cetinkaya-Rundel, and Grolemund 2023</a>)</span></p>
+<p>“platform that allows developers to create, store, manage, and share their code.”</p>
 </blockquote>
+<div class="fragment">
+<p><br></p>
+<blockquote>
+<p>“It uses Git to provide distributed version control”</p>
+</blockquote>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/1920px-Git-logo.svg.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/1920px-Git-logo.svg.png" class="quarto-figure quarto-figure-center" style="width:30.0%"></a></p>
+</figure>
+</div>
+<div class="footer">
+<p>Source of information <a href="https://en.wikipedia.org/wiki/GitHub" class="uri">https://en.wikipedia.org/wiki/GitHub</a></p>
+</div>
+</div>
+</section>
+<section id="install-git" class="slide level2">
+<h2>Install Git</h2>
+<iframe width="1100" height="500" src="https://gitforwindows.org/" title="Webpage example"></iframe>
 
 <aside><div>
-<p>Image source: On 29 Nov 2024 <a href="https://www.r-pkg.org/">Metacran</a> | <a href="https://cran.r-project.org/web/packages/available_packages_by_name.html">CRAN</a>.</p>
+<p>Webpage: <a href="https://gitforwindows.org/" class="uri">https://gitforwindows.org/</a></p>
 </div></aside></section>
-<section id="install-r-packages" class="slide level2">
-<h2>Install R Packages</h2>
-<ul>
-<li>Using Console</li>
-</ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)</span>
-<span id="cb1-2"><a></a></span>
-<span id="cb1-3"><a></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="install-git-1" class="slide level2">
+<h2>Install Git</h2>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><a href="images/git-install1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img data-src="images/git-install1.png"></a></p>
 </div>
-<ul>
-<li>Using RStudio Windows</li>
-</ul>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><a href="images/git-install2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img data-src="images/git-install2.png"></a></p>
+</div>
+</div>
+</div>
 </section>
-<section id="your-turn" class="slide level2" data-background-color="#1e1e1e">
+<section id="open-terminal-git---version" class="slide level2">
+<h2>Open Terminal <code>git --version</code></h2>
+<p><a href="images/terminal.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img data-src="images/terminal.png"></a></p>
+</section>
+<section id="github-users" class="slide level2">
+<h2>GitHub Users</h2>
+<p><br></p>
+<p><br></p>
+<p><a href="images/github-users2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img data-src="images/github-users2.png"></a></p>
+<div class="footer">
+<p>Source <a href="https://github.com/about" class="uri">https://github.com/about</a></p>
+</div>
+</section>
+<section id="github-sign-up" class="slide level2 smaller" data-background-color="black">
+<h2>GitHub Sign up</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><a href="images/github-account.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img data-src="images/github-account.png"></a></p>
+</div><div class="column" style="width:50%;">
+<ul>
+<li><strong>Username advice</strong>
+<ul>
+<li>all small cases</li>
+<li>use hyphen <code>-</code> to separate the words</li>
+<li>the shorter the better</li>
+<li>make it timeless (do not ajay-jnu, ajay-ny, ajay-microsoft)</li>
+<li>avoid special characters</li>
+<li>reuse from your social media</li>
+<li>comfortable to reveal to the world</li>
+</ul></li>
+</ul>
+</div></div>
+</section>
+<section id="github-settings" class="slide level2" data-background-color="black">
+<h2>GitHub Settings</h2>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><a href="images/github-settings.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img data-src="images/github-settings.png"></a></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><a href="images/github-password.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img data-src="images/github-password.png"></a></p>
+</div>
+</div>
+</div>
+</section>
+<section id="enable-two-factor-authentication" class="slide level2" data-background-color="black">
+<h2>Enable Two Factor Authentication</h2>
+<p><a href="images/github-two-factor1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img data-src="images/github-two-factor1.png"></a></p>
+</section>
+<section id="enable-two-factor-authentication-1" class="slide level2" data-background-color="black">
+<h2>Enable Two Factor Authentication</h2>
+<p><a href="images/github-two-factor2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15"><img data-src="images/github-two-factor2.png"></a></p>
+</section>
+<section id="rstudio-rightarrow-tools-rightarrow-global-options-rightarrow-gitsvn" class="slide level2">
+<h2><span class="r-fit-text">RStudio <span class="math inline">\(\rightarrow\)</span> Tools <span class="math inline">\(\rightarrow\)</span> Global Options <span class="math inline">\(\rightarrow\)</span> Git/SVN</span></h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/rstudio-github-path.png" class="lightbox" data-gallery="quarto-lightbox-gallery-16"><img data-src="images/rstudio-github-path.png" class="quarto-figure quarto-figure-center"></a></p>
+</figure>
+</div>
+</section>
+<section id="in-rstudio-save-github-details" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">In RStudio save GitHub Details</h2>
+<ul>
+<li>Using Console, Install R package <code>usethis</code></li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb2-1" class="hljs-ln-code"><a></a><span class="fu">## install if needed (do this exactly once):</span></span>
+<span id="cb2-2" class="hljs-ln-code"><a></a><span class="fu">## install.packages("usethis")</span></span>
+<span id="cb2-3" class="hljs-ln-code"><a></a></span>
+<span id="cb2-4" class="hljs-ln-code"><a></a>library(usethis)</span>
+<span id="cb2-5" class="hljs-ln-code"><a></a>use_git_config(user.name = "ajay-kolii",</span>
+<span id="cb2-6" class="hljs-ln-code"><a></a>               user.email = "mynameajay@gmail.com")</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="footer">
+<p>Read more here: <a href="https://usethis.r-lib.org/articles/git-credentials.html" class="uri">https://usethis.r-lib.org/articles/git-credentials.html</a></p>
+</div>
+</section>
+<section id="seeedit-saved-github-information" class="slide level2">
+<h2>See/Edit saved GitHub information</h2>
+<ul>
+<li><p>Run in console <code>edit_git_config()</code> from <code>usethis</code> package. OR</p></li>
+<li><p>Run in Terminal <br><code>git config --global --list</code></p></li>
+</ul>
+<div class="footer">
+<p>Read more here: <a href="https://usethis.r-lib.org/articles/git-credentials.html" class="uri">https://usethis.r-lib.org/articles/git-credentials.html</a></p>
+</div>
+</section>
+<section id="githubs-personal-access-token-pat" class="slide level2">
+<h2>GitHub’s Personal Access Token (PAT)</h2>
+<p><br></p>
+<blockquote>
+<p>It is a way to authenticate and interact with GitHub’s API and repositories without using your username and password.</p>
+</blockquote>
+</section>
+<section id="create-githubs-pat-in-console" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Create GitHub’s PAT in Console</h2>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb3-1" class="hljs-ln-code"><a></a>library(gitcreds)</span>
+<span id="cb3-2" class="hljs-ln-code"><a></a>create_github_token()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br></p>
+<div class="fragment">
+<p><a href="images/github-pat-codes.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17"><img data-src="images/github-pat-codes.png"></a></p>
+</div>
+</section>
+<section id="personal-access-token-pat" class="slide level2" data-background-color="black">
+<h2>Personal Access Token (PAT)</h2>
+<p><a href="images/github-pat1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-18"><img data-src="images/github-pat1.png"></a></p>
+</section>
+<section id="personal-access-token-pat-1" class="slide level2" data-background-color="black">
+<h2>Personal Access Token (PAT)</h2>
+<p><a href="images/github-pat2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-19"><img data-src="images/github-pat2.png"></a></p>
+</section>
+<section id="add-pat" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Add PAT</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb4-1" class="hljs-ln-code"><a></a><span class="fu">gitcreds_set</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+<div class="fragment">
+<p><a href="images/github-pat-added.png" class="lightbox" data-gallery="quarto-lightbox-gallery-20"><img data-src="images/github-pat-added.png"></a></p>
+</div>
+</section>
+<section id="view-github-credentials" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">View GitHub Credentials</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb5-1" class="hljs-ln-code"><a></a><span class="fu">gitcreds_get</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+<div class="fragment">
+<p><a href="images/github-credentials-rstudio.png" class="lightbox" data-gallery="quarto-lightbox-gallery-21"><img data-src="images/github-credentials-rstudio.png"></a></p>
+<ul>
+<li>To See Saved Credentials, Run in Terminal<br> <code>git config --global --list</code></li>
+</ul>
+</div>
+</section>
+<section id="first-.qmd-file" class="slide level2 scrollable">
+<h2>First <code>.qmd</code> File</h2>
+<ol type="1">
+<li><p>Create the file</p></li>
+<li><p>Save the file</p></li>
+<li><p>Render the file</p></li>
+</ol>
+</section>
+<section id="your-turn" class="slide level2" data-background-color="#003263">
 <h2>🤯 Your Turn</h2>
 <p><br></p>
 <p>Write a brief note describing your experience of using R and RStudio for the first time.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_e12373be" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
-<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
-<code class="countdown-time"><span class="countdown-digits minutes">15</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+<countdown-timer class="countdown" id="timer_083c61cb" minutes="5" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
-</div>
-</section>
-<section id="references" class="slide level2 smaller scrollable">
-<h2>References</h2>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-alstonBeginnersGuideConducting2021" class="csl-entry" role="listitem">
-Alston, Jesse M., and Jessica A. Rick. 2021. <span>“A Beginner’s Guide to Conducting Reproducible Research.”</span> <em>The Bulletin of the Ecological Society of America</em> 102 (2): e01801. <a href="https://doi.org/10.1002/bes2.1801">https://doi.org/10.1002/bes2.1801</a>.
-</div>
-<div id="ref-wickhamDataScienceImport2023" class="csl-entry" role="listitem">
-Wickham, Hadley, Mine Cetinkaya-Rundel, and Garrett Grolemund. 2023. <em>R for Data Science: Import, Tidy, Transform, Visualize, and Model Data</em>. 2nd ed. edition. O’Reilly Media. <a href="https://r4ds.hadley.nz/">https://r4ds.hadley.nz/</a>.
-</div>
-</div>
-</section>
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="images/logo-sara.png" class="slide-logo"></p>
@@ -508,7 +680,7 @@ Wickham, Hadley, Mine Cetinkaya-Rundel, and Garrett Grolemund. 2023. <em>R for D
         previewLinks: false,
 
         // Transition style (none/fade/slide/convex/concave/zoom)
-        transition: 'none',
+        transition: 'slide',
 
         // Transition speed (default/fast/slow)
         transitionSpeed: 'default',
@@ -601,190 +773,204 @@ Wickham, Hadley, Mine Cetinkaya-Rundel, and Garrett Grolemund. 2023. <em>R for D
     </script>
 
     <script id="quarto-html-after-body" type="application/javascript">
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-      const toggleBodyColorMode = (bsSheetEl) => {
-        const mode = bsSheetEl.getAttribute("data-mode");
-        const bodyEl = window.document.querySelector("body");
-        if (mode === "dark") {
-          bodyEl.classList.add("quarto-dark");
-          bodyEl.classList.remove("quarto-light");
-        } else {
-          bodyEl.classList.add("quarto-light");
-          bodyEl.classList.remove("quarto-dark");
-        }
-      }
-      const toggleBodyColorPrimary = () => {
-        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-        if (bsSheetEl) {
-          toggleBodyColorMode(bsSheetEl);
-        }
-      }
-      toggleBodyColorPrimary();  
-      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
-      tabsets.forEach(function(tabset) {
-        const tabby = new Tabby('#' + tabset.id);
-      });
-      const isCodeAnnotation = (el) => {
-        for (const clz of el.classList) {
-          if (clz.startsWith('code-annotation-')) {                     
-            return true;
-          }
-        }
-        return false;
-      }
-      const onCopySuccess = function(e) {
-        // button target
-        const button = e.trigger;
-        // don't keep focus
-        button.blur();
-        // flash "checked"
-        button.classList.add('code-copy-button-checked');
-        var currentTitle = button.getAttribute("title");
-        button.setAttribute("title", "Copied!");
-        let tooltip;
-        if (window.bootstrap) {
-          button.setAttribute("data-bs-toggle", "tooltip");
-          button.setAttribute("data-bs-placement", "left");
-          button.setAttribute("data-bs-title", "Copied!");
-          tooltip = new bootstrap.Tooltip(button, 
-            { trigger: "manual", 
-              customClass: "code-copy-button-tooltip",
-              offset: [0, -8]});
-          tooltip.show();    
-        }
-        setTimeout(function() {
-          if (tooltip) {
-            tooltip.hide();
-            button.removeAttribute("data-bs-title");
-            button.removeAttribute("data-bs-toggle");
-            button.removeAttribute("data-bs-placement");
-          }
-          button.setAttribute("title", currentTitle);
-          button.classList.remove('code-copy-button-checked');
-        }, 1000);
-        // clear code selection
-        e.clearSelection();
-      }
-      const getTextToCopy = function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
             }
           }
-          return codeEl.innerText;
-      }
-      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-        text: getTextToCopy
-      });
-      clipboard.on('success', onCopySuccess);
-      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-          text: getTextToCopy,
-          container: window.document.getElementById('quarto-embedded-source-code-modal')
-        });
-        clipboardModal.on('success', onCopySuccess);
-      }
-        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-        var mailtoRegex = new RegExp(/^mailto:/);
-          var filterRegex = new RegExp('/' + window.location.host + '/');
-        var isInternal = (href) => {
-            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          return false;
         }
-        // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-        for (var i=0; i<links.length; i++) {
-          const link = links[i];
-          if (!isInternal(link.href)) {
-            // undo the damage that might have been done by quarto-nav.js in the case of
-            // links that we want to consider external
-            if (link.dataset.originalHref !== undefined) {
-              link.href = link.dataset.originalHref;
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
             }
-          }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
         }
-      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-        const config = {
-          allowHTML: true,
-          maxWidth: 500,
-          delay: 100,
-          arrow: false,
-          appendTo: function(el) {
-              return el.closest('section.slide') || el.parentElement;
-          },
-          interactive: true,
-          interactiveBorder: 10,
-          theme: 'light-border',
-          placement: 'bottom-start',
-        };
-        if (contentFn) {
-          config.content = contentFn;
-        }
-        if (onTriggerFn) {
-          config.onTrigger = onTriggerFn;
-        }
-        if (onUntriggerFn) {
-          config.onUntrigger = onUntriggerFn;
-        }
-          config['offset'] = [0,0];
-          config['maxWidth'] = 700;
-        window.tippy(el, config); 
-      }
-      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-      for (var i=0; i<noterefs.length; i++) {
-        const ref = noterefs[i];
-        tippyHover(ref, function() {
-          // use id or data attribute instead here
-          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-          try { href = new URL(href).hash; } catch {}
-          const id = href.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note) {
-            return note.innerHTML;
-          } else {
-            return "";
-          }
-        });
-      }
-      const findCites = (el) => {
-        const parentEl = el.parentElement;
-        if (parentEl) {
-          const cites = parentEl.dataset.cites;
-          if (cites) {
-            return {
-              el,
-              cites: cites.split(' ')
-            };
-          } else {
-            return findCites(el.parentElement)
-          }
-        } else {
-          return undefined;
-        }
-      };
-      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-      for (var i=0; i<bibliorefs.length; i++) {
-        const ref = bibliorefs[i];
-        const citeInfo = findCites(ref);
-        if (citeInfo) {
-          tippyHover(citeInfo.el, function() {
-            var popup = window.document.createElement('div');
-            citeInfo.cites.forEach(function(cite) {
-              var citeDiv = window.document.createElement('div');
-              citeDiv.classList.add('hanging-indent');
-              citeDiv.classList.add('csl-entry');
-              var biblioDiv = window.document.getElementById('ref-' + cite);
-              if (biblioDiv) {
-                citeDiv.innerHTML = biblioDiv.innerHTML;
+        const getTextToCopy = function(trigger) {
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
               }
-              popup.appendChild(citeDiv);
-            });
-            return popup.innerHTML;
+            }
+            return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
           });
         }
-      }
-    });
-    </script>
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+    (function() {
+      let previousOnload = window.onload;
+      window.onload = () => {
+        if (previousOnload) {
+          previousOnload();
+        }
+        lightboxQuarto.on('slide_before_load', (data) => {
+          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+          const href = trigger.getAttribute('href');
+          if (href !== null) {
+            const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+            if (imgEl !== null) {
+              const srcAttr = imgEl.getAttribute("src");
+              if (srcAttr && srcAttr.startsWith("data:")) {
+                slideConfig.href = srcAttr;
+              }
+            }
+          } 
+        });
+      
+        lightboxQuarto.on('slide_after_load', (data) => {
+          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(slideNode);
+          }
+        });
+      
+      };
+      
+    })();
+              </script>
     
 
 </body></html>

@@ -1,0 +1,105 @@
+---
+title: "Student Record | Statistics using R"
+subtitle: "2nd SARA Statistics Winter School"
+author: "Jan 23-27, 2026 | Sonipat (HR)"
+format:
+  typst:
+    page-orientation: landscape
+abstract-title: "Welcome!"
+classoption: "landscape"
+abstract: |
+  |
+  |
+  | Total 20 participants registered and attended the five days residentail training during the 2nd SARA Statistics Winter School from 23-27 Jan 2026. There are **4 female participants.** SARA gave **fellowship to six participants** to attend the winter school. The whole event is proudly supported by **The ambedkar Educational Society, Sonipat.** 
+  | 
+  |  
+  | 
+  | All the best to all the participants.
+  |
+  |
+  | Dr. Ajay & Dr. Kiran
+  | Founders of SARA
+  | Contact: 925 315 2024
+  | Email: sara.institute.info@gmail.com
+
+
+---
+
+```{=typst}
+#set page(
+  flipped: true,
+  header: [
+  _Student Details of SARA Institute of Data Science_
+  #h(1fr)
+  #box(image("logo-sara.png", width:5%))
+])
+
+#set page(footer: context [
+  2nd SARA Statistics Summer School
+  #h(1fr)
+  #counter(page).display(
+  "1/1",
+  both: true,
+)
+])
+```
+
+
+```{=typst} 
+#v(10pt)
+
+#set table(
+  fill: (x, y) =>
+    if x == 0 or y == 0 {
+      gray.lighten(40%)
+    },
+  align: right,
+  
+)
+
+#show table.cell.where(x: 0): strong
+#show table.cell.where(y: 0): strong
+
+#table(
+  columns: (0.5fr, 1fr, 0.8fr, 1.5fr, 0.6fr),
+  rows: (1fr),
+  stroke: 0.5pt + rgb("666675"), 
+  align: left + horizon,
+  [S.No.], [*Name of the Participant*], [*Place*], [*Education*], [*Contact*],
+  [1.], [*Mr. Shiva Peelwan*], [Uttar Pradesh], [PG, Delhi Univeristy], [80774 02309], 
+  [2.], [Mr. Keerthivasan], [Tamil Nadu], [PhD Student, Woxsen Hyderabad], [63837 91093],
+  [3.], [Mr. Gajendra Singh Lodhi], [Madhya Pradesh], [PG, Delhi University], [82258 78426],
+  [4.], [Mr. Sree Kumar], [Haryana], [PhD Student, JNU], [97175 90129],
+  [5.], [*Mr. Manish*], [Haryana], [PG, Kurushetra University], [80535 90025],  
+  [6.], [*Dr. Mridula Manglam (F)*], [Uttar Pradesh], [PhD from University of Allahabad], [85460 04446], 
+  [7.], [Dr. Dhiraj Singha], [West Bengal], [PhD from Ambedkar University], [96357 36365], 
+  [8.], [Mr. Kunal Kumar], [Bihar], [PhD Student, JNU], [96933 11226],  
+  [9.], [Mr. Mohit Jorwal], [Delhi], [PG, JNU], [84488 16077],  
+  [10.], [*Miss. Aditi Gautam (F)*], [Uttar Pradesh], [PhD Student, Delhi University], [74286 86705],
+  [11.], [*Mr. Shubham Urkude*], [Delhi], [PG, APU], [83088 90035], 
+  [12.], [*Mr. Muhd. Sahal K.*], [Kerala], [PG, JNU], [95263 45641], 
+  [13.], [Mr. Rahul Bansod], [Maharashtra], [PhD Student, JNU], [75584 68262], 
+  [14.], [Mr. M. Shiva Kumar], [Telangana], [PhD Student, JNU], [91331 42598], 
+  [15.], [Dr. Priyanka Choudhary (F)], [Rajasthan], [Assit. Prof. Moti Lal Nehru College, DU], [94143 63424], 
+  [16.], [Mr. Mayur Durge], [Maharashtra], [PhD Student, JNU], [86984 57242], 
+  [17.], [Mr. Ashutosh Sinha ], [Bihar], [PhD Student, JNU], [70048 28287], 
+  [18.], [Mr. Sukh Pal], [Haryana], [MPhil, UGC-NET], [94161 39129],
+  [19.], [Mr. Apoorv Gupta], [Delhi], [PhD Student, LPU], [96543 77351],
+  [20.], [Miss. Vibhutti Narwal (F)], [Haryana], [BTech Data Science, SRM University], [92530 04525],
+)
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+

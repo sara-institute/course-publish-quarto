@@ -1,33 +1,37 @@
 ---
-title-block-banner: "#93a79e"
+title-block-banner: "#003262"
 #title-block-banner-color: "#90A69E"
 title: "Publish using Quarto"
-subtitle: "SARA Data Science Bootcamp March 2025"
+subtitle: "2nd SARA Bootcamp March 2026"
 format: html
 toc: true
 number-sections: true
 ---
 
-![](logo-lotus.png){fig-align=center width="30%"}
+![](banner.png){fig-align=center}
 
-## Welcome to [SARA](https://sara-edu.netlify.app/) Data Science Bootcamp! {.unnumbered}
+## Welcome 2nd SARA Bootcamp! {.unnumbered}
 
-[Quarto](https://quarto.org/) is a wonderful tool for publishing websites, theses, books, articles, and much more. We want your publications to be as beautiful and elegant as lotus flowers.
+This website is your go-to resource for the bootcamp - it includes all slides and study materials in one place.
 
-This is the website for the slides of the SARA Data Science Bootcamp - "Publish using Quarto." At SARA, we strongly believe in accessible data science education.
+Each participant will:
 
-If you found our study materials useful, please give us a star on GitHub. 
+1. Learn to use Quarto for writing a thesis, book, or research paper.     
+2. Build a personal website using Quarto, GitHub, and Netlify.    
+3. Create beautiful interactive slides using Reveal.js.   
+
+If you find the materials helpful, we'd love a ⭐ on GitHub!
 
 <span style="text-shadow: none;"><a class="github-button" href="https://github.com/sara-institute/course-publish-quarto" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star this on GitHub">Star</a><script async defer src="https://buttons.github.io/buttons.js"></script></span>
 
-Thank you for your support!
+Thank you!
 
-Email us at `sara.institute.info@gmail.com` $\cdot$ Call us at `925 315 2024`.
+SARA website: <https://sara-edu.netlify.app/>
+
+SARA Email: `sara.institute.info@gmail.com` $\cdot$ Call us at `925 315 2024`.
 
 
-## {.unnumbered}
-
-<br>
+## [DAY 1]{style="color:#b01818"} {.unnumbered}
 
 The slides title background image is from [Sora Sagano | unsplash](https://images.unsplash.com/photo-1593248196138-bad1a611a766?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 
@@ -53,47 +57,47 @@ The slides title background image is from [Sora Sagano | unsplash](https://image
 
 ## Session
 
-{{< revealjs file="github.html" height="500px" class="ratio ratio-16x9" >}}
-
-<br>
-
-<br>
-
-## Session
-
-{{< revealjs file="markdown.html" height="500px" class="ratio ratio-16x9" >}}
-
-<br>
-
-<br>
-
-## Session
-
 {{< revealjs file="website.html" height="500px" class="ratio ratio-16x9" >}}
 
 <br>
 
 <br>
 
-## Session
+<!-- ## Session -->
 
-{{< revealjs file="thesis.html" height="500px" class="ratio ratio-16x9" >}}
+<!-- {{< revealjs file="markdown.html" height="500px" class="ratio ratio-16x9" >}} -->
 
-<br>
+<!-- <br> -->
 
-<br>
+<!-- <br> -->
 
-## Session
+<!-- ## Session -->
 
-{{< revealjs file="slides.html" height="500px" class="ratio ratio-16x9" >}}
+<!-- {{< revealjs file="website.html" height="500px" class="ratio ratio-16x9" >}} -->
 
-<br>
+<!-- <br> -->
 
-<br>
+<!-- <br> -->
 
-## Session
+<!-- ## Session -->
 
-{{< revealjs file="thanks.html" height="500px" class="ratio ratio-16x9" >}}
+<!-- {{< revealjs file="thesis.html" height="500px" class="ratio ratio-16x9" >}} -->
+
+<!-- <br> -->
+
+<!-- <br> -->
+
+<!-- ## Session -->
+
+<!-- {{< revealjs file="slides.html" height="500px" class="ratio ratio-16x9" >}} -->
+
+<!-- <br> -->
+
+<!-- <br> -->
+
+<!-- ## Session -->
+
+<!-- {{< revealjs file="thanks.html" height="500px" class="ratio ratio-16x9" >}} -->
 
 
 

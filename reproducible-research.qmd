@@ -1,0 +1,293 @@
+---
+title: "[Reproducible Research]{.clr-white .r-fit-text}"
+subtitle: "[Dr. Ajay Kumar Koli $\\cdot$ 2nd SARA Bootcamp]{.clr-white .r-fit-text}"
+#author: "[SARA Institute of Data Science, Sonipat, Haryana, India]{.clr-white .r-fit-text}"
+logo: images/logo-sara.png
+page-title: "Bootcamp"
+format: revealjs
+progress: true
+controls: true
+slide-number: true
+scrollable: true
+menu: true
+incremental: true
+theme: style.scss
+bibliography: references.bib
+lightbox: true
+filters:
+  - roughnotation
+title-slide-attributes: 
+  data-background-image: "https://images.unsplash.com/photo-1621947081720-86970823b77a?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  data-background-size: "cover"
+  data-background-color: "black"
+  data-background-opacity: "0.5"
+---
+
+## {background-image="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjJrc3ozM2c2NXJpZ3U0NGFtYzFzeTgzOWc1bDY4azF5N2Z4cGpicyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ZWhA850E7azfO/giphy.gif" background-size=50% background-color=black}
+
+# [Our Common<br>Research Frustrations]{.r-fit-text} {background-color=silver}
+
+::: {layout-nrow="1"}
+![](images/excel.jpg)
+
+![](images/word.jpg)
+
+![](images/ppt.jpg)
+:::
+
+::: footer
+Image source: [R. Azad at Unsplash](https://unsplash.com/@rubaitulazad)
+:::
+
+## Repetitive Data Cleaning
+
+<br>
+
+::: {layout-nrow="1"}
+![](images/excel.jpg)
+
+![](images/word.jpg)
+
+![](images/ppt.jpg)
+:::
+
+- Spending hours **manually cleaning** survey data in Excel
+
+- Making the **same corrections** across multiple data sets
+
+- Risk of human error in **copy-paste** operations
+
+## Version Control Nightmares
+
+<br>
+
+::: {layout-nrow="1"}
+![](images/excel.jpg)
+
+![](images/word.jpg)
+
+![](images/ppt.jpg)
+:::
+
+- **Files named:** "Analysis_final.xlsx", "Analysis_final2.xlsx", "Analysis_FINAL_FINAL.xlsx"
+
+- **Forgetting** what changes you made between versions
+
+- Collaborators **overwriting** each other's work
+
+## Lack of Reproducibility
+
+<br>
+
+::: {layout-nrow="1"}
+![](images/excel.jpg)
+
+![](images/word.jpg)
+
+![](images/ppt.jpg)
+:::
+
+- How did I generate this graph **six months ago**?
+
+- Can't **replicate** your own analysis for revisions
+
+- Reviewers asking for different analysis - **starting from sratch**
+
+## Limited Visualization Options
+
+<br>
+
+::: {layout-nrow="1"}
+![](images/excel.jpg)
+
+![](images/word.jpg)
+
+![](images/ppt.jpg)
+:::
+
+- Stuck with basic **Excel** charts
+
+- Spending hours formating graphs **manually**
+
+- Can't create **interactive or dynamic** visualizations
+
+## Time-Consuming Report Writing
+
+<br>
+
+::: {layout-nrow="1"}
+![](images/excel.jpg)
+
+![](images/word.jpg)
+
+![](images/ppt.jpg)
+:::
+
+- **Copy-pasting results** into Word/PPT documents
+
+- Updating 50 tables when **data changes**
+
+- Inconsistent **formatting** across documents
+
+## [The Magic of Quarto]{.r-fit-text .clr-white .theme-cursive} {background-color="black"}
+
+![](https://cdn.myportfolio.com/45214904-6a61-4e23-98d6-b140f8654a40/7ebda7dd-2f29-44a5-b625-0e5de613c9a2.png?h=fdba5cb561f19f728a97f882b5d887c0){fig-align="center"}
+
+::: footer
+Artwork source: [Allison Horst](https://allisonhorst.com/allison-horst)
+:::
+
+# Automated,<br>Reproducible Research with Quarto {background-image="https://cdn.myportfolio.com/45214904-6a61-4e23-98d6-b140f8654a40/b2f0e2ac-40b2-42bf-b854-ec700b4086f3.png?h=b3a4f2136ea8e31650e6fe317adae875" background-size="25%" background-position="70% 90%" background-color=silver}
+
+::: footer
+Artwork source: [Allison Horst](https://allisonhorst.com/allison-horst)
+:::
+
+## Reproducible Research
+
+<br>
+
+> "Reproducible research is when someone else (or your future self) can take your data and code, run it, and arrive at the same results you reported."
+
+::: footer
+AI generated information
+:::
+
+## Why Should Researchers Aim for It?
+
+1. 🔍 **It builds trust:** [If others can verify your work, your findings carry more weight. Science runs on trust — reproducibility is how you earn it.]{.rn-fragment rn-color=orange}
+
+1. 🐛 **It catches mistakes:** [When you document every step, errors are easier to spot — by you or by reviewers. Many high-profile retractions could have been avoided with reproducible practices.]{.rn-fragment rn-color=lightgreen}
+
+1. 🕐 **It saves your future self:** [Come back to a project after 6 months and you'll thank yourself for writing everything down. Undocumented analysis is a nightmare to revisit.]{.rn-fragment rn-color=skyblue}
+
+1. 🤝 **It enables collaboration:** [Teammates and collaborators can pick up exactly where you left off — no guessing, no "it works on my machine" problems.]{.rn-fragment rn-color=lavender}
+
+1. 🌍 **It advances science faster:** [When research is reproducible, others can build on it confidently instead of wasting time redoing or questioning your work.]{.rn-fragment rn-color=tomato}
+
+1. 📋 **It's increasingly required:** [Journals, funding bodies, and institutions are now requiring reproducibility as a standard. Getting ahead of it is a career advantage.]{.rn-fragment}
+
+::: footer
+AI generated information
+:::
+
+## The Problem:
+
+- We run analysis in **SPSS**, create charts in **Excel**, [copy-paste]{.rn-fragment rn-type=crossed-off rn-color=red} everything to **Word**
+
+- Your boss asks for **changes** - you **redo everything** [manually]{.rn-fragment rn-type=crossed-off rn-color=red}
+
+## Quarto Solutions {background-image="https://cdn.myportfolio.com/45214904-6a61-4e23-98d6-b140f8654a40/2b931008-dc7c-4bec-92cb-112a55126975.png?h=871b1aae03178c6070513da1c32ad80c" background-size="50%" background-position="50% 90%"}
+
+- [Your research **narrative** (written text)]{.rn-fragment rn-type=box rn-color=red fragment-index=1}
+
+- [Live Code that runs **analysis**]{.rn-fragment rn-type=box rn-color=blue}
+
+- [Automatically generated **tables and figures**]{.rn-fragment rn-type=box rn-color=orange}
+
+- [Citations and **references**]{.rn-fragment rn-type=box rn-color=seagreen}
+
+::: footer
+Artwork source: [Allison Horst](https://allisonhorst.com/allison-horst)
+:::
+
+## Quarto Produces: {background-image="https://cdn.myportfolio.com/45214904-6a61-4e23-98d6-b140f8654a40/6f28e7d4-3394-43f9-8b0d-41c52de3883f.png?h=5d4266045860148112f98fc5abb30dac" background-size="60%" background-position="center 70%"}
+
+> Articles & Reports ~ Presentations ~ Websites ~ Books & [more](https://quarto.org/docs/gallery/#interactive-docs)
+
+::: footer
+Artwork source: [Allison Horst](https://allisonhorst.com/allison-horst)
+:::
+
+## The Learning Curve {background-image="https://cdn.myportfolio.com/45214904-6a61-4e23-98d6-b140f8654a40/decd5894-be6d-4ec4-8396-f5be0b09aa48.png?h=fd9e6d4af36177f99cf991fc946501cb" background-size="50%" background-position="right"}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- R for Data Science 2e ([free ebook](https://r4ds.hadley.nz/))
+
+- Quarto [guide](https://quarto.org/docs/guide/) includes documentation and tutorials
+
+- YouTube Channels: [@RProgramming101](https://www.youtube.com/@RProgramming101), [@rappa753](https://www.youtube.com/@rappa753)
+
+- Posit (formerly RStudio) [blog](https://posit.co/blog/)
+:::
+
+::: {.column width="50%"}
+
+:::
+
+::::
+
+
+::: footer
+Artwork source: [Allison Horst](https://allisonhorst.com/allison-horst)
+:::
+
+
+## Common Fears, Overcoming Barriers
+
+<br>
+
+> 🫠 *"I'm not good at math/technical things"*
+
+::: fragment
+
+- Coding is more about **logical thinking** than math   
+
+- You already do logical thinking in **research design**   
+
+- Many successful coders **struggled** with math   
+
+:::
+
+## Common Fears, Overcoming Barriers
+
+<br>
+
+> 🏃🏽‍♂️ *"I don't have time to learn"*
+
+::: fragment
+
+- Initial **investment** pays dividends
+
+- Even **30 minutes** daily for a month makes a difference
+
+- The time you **save later** is worth it
+
+:::
+
+## Common Fears, Overcoming Barriers
+
+<br>
+
+> 😬 *"What if I get stuck?"*
+
+::: fragment
+
+- Massive **online community** ready to help
+
+- Error messages are normal—even **experts Google** them
+
+- AI assistants (like **ChatGPT**) can help with code
+
+:::
+
+## Common Fears, Overcoming Barriers
+
+<br>
+
+> 🥱 *"My field doesn't really need this"*
+
+::: fragment
+
+- Every field is generating **more data**
+
+- **Funders** increasingly expect computational methods[^1]
+
+- Sets you apart in **job market**   
+
+:::
+
+[^1]: Computational Social Science related programs, [CSSSA](https://computationalsocialscience.org/education-for-css/)
+

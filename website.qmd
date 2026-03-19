@@ -1,30 +1,56 @@
 ---
-title: "[WEBSITE]{.clr-white .r-fit-text}"
-subtitle: "[Dr. Ajay Kumar Koli (PhD) $\\cdot$ SARA Institute of Data Science, India]{.clr-white .r-fit-text}"
+title: "[Personal Website]{.clr-white .r-fit-text}"
+subtitle: "[Dr. Ajay Kumar Koli $\\cdot$ 2nd SARA Bootcamp]{.clr-white .r-fit-text}"
 #author: "[SARA Institute of Data Science, Sonipat, Haryana, India]{.clr-white .r-fit-text}"
-page-title: "quarto"
+logo: images/logo-sara.png
+page-title: "Bootcamp"
 format: revealjs
-#code-line-numbers: false
 progress: true
 controls: true
 slide-number: true
 scrollable: true
 menu: true
-logo: images/logo-sara.png
-#bibliography: references.bib
 theme: style.scss
+bibliography: references.bib
+transition: slide
+lightbox: true
+filters:
+  - roughnotation
 title-slide-attributes: 
-  data-background-image: "https://images.unsplash.com/photo-1593248196138-bad1a611a766?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  data-background-size: cover
+  data-background-image: "https://images.unsplash.com/photo-1621947081720-86970823b77a?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  data-background-size: "cover"
+  data-background-color: "black"
+  data-background-opacity: "0.5"
 ---
 
-## Website ... Why? {{< fa comments >}}
 
-- DeepSeek: "A website is not just a luxury—it’s a necessity for visibility, growth, and credibility in the digital age."
+##  🙄 Why Personal Website⁉️
 
-- ChatGPT: "to showcase who you are and what you do. ... your digital identity, share your expertise, and open doors to new opportunities."
+::: {.nonincremental}
 
-- Le Chat: "a powerful tool for personal branding, networking, and career development."
+1. [**Your digital presence already exists — you just don't control it.** Google your own name. Whatever comes up — a LinkedIn profile, an old social media post, someone else's mention of you — that's your reputation by default. A personal website lets you own that narrative instead of leaving it to algorithms and third-party platforms.]{.rn-fragment rn-color="skyblue"} 
+
+1. [**It's a living portfolio that works while you sleep.** Whether you're a developer, designer, teacher, or accountant, a personal website signals seriousness. Recruiters, clients, and collaborators will look you up. A well-crafted site tells your story better than a resume ever could — and it's available 24/7 without you having to say a word.]{.rn-fragment rn-color="gold"} 
+
+1. [**Social media platforms are rented land.** Twitter, LinkedIn, Instagram — they change their rules, throttle your reach, or simply disappear. Remember MySpace? Vine? Your personal website is yours permanently. No algorithm decides who sees it. No platform can delete your account.]{.rn-fragment rn-color=lavender} 
+
+1. [**It forces you to think clearly about who you are.**  Writing an "About Me" page, listing your work, articulating what you believe — it's unexpectedly clarifying. Most people never sit down and answer "what do I actually do and why does it matter?" A personal website makes you do that work.]{.rn-fragment rn-color="lightgreen"}
+
+1. [**The barrier is lower than ever.** You don't need to know how to code. Tools like Notion, Framer, or Squarespace mean you can have something live in an afternoon. The cost of not having one — missed opportunities, weak first impressions — far outweighs the effort.]{.rn-fragment rn-color=orange} 
+
+1. [**It compounds over time.** Every post you write, project you document, or idea you share builds a body of work. Five years from now, that archive is invaluable — to future employers, to your own growth, to people you haven't met yet who will find you through a search.]{.rn-fragment} 
+
+:::
+
+::: footer
+Reasons from Claude AI
+:::
+
+# Create<br>Project {background-image="https://bookdown.org/amy_yarnell/T32-book/images/session3/github-Rstudio.jpg" background-size=60% background-position=right background-color=silver}
+
+::: footer
+Image source: <https://bookdown.org/amy_yarnell/T32-book/version-control-and-rstudio.html>
+:::
 
 ## Create a GitHub Repository
 
@@ -40,52 +66,92 @@ title-slide-attributes:
 
 ## Copy Repo Link
 
-![](images/new-repo-link.png){width=50% fig-align=center}
+![](images/new-repo-link.png){width=70% fig-align=center}
 
-## Create Version Control Project
+## [Create RStudio Version Control Project]{.r-fit-text}
 
-![](images/project-version-control.png){width=50% fig-align=center}
+![](images/project-version-control.png){width=70% fig-align=center}
 
-## Create Version Control Project
+## Paste GitHub URL Link here
 
-![](images/project-repo-link.png){width=50% fig-align=center}
+![](images/project-repo-link.png){width=70% fig-align=center}
 
-## Create `_quarto.yml` File
+# Create<br>Project Files {background-image=images/bg-quarto-files.png background-size=45% background-position=right background-color=silver}
 
-::: {layout-ncol=2}
-
-![](images/text-file.png){fig-align=center}
-
-![](images/yaml-file.png){fig-align=center}
+::: footer
+Image source: <https://www.avonture.be/blog/quarto-revealjs-tips/>
 :::
 
 ## Understanding the Project Structure
 
-```markdown
+```.markdown
 website-ajay/
 ├── _quarto.yml
 ├── index.qmd
 ├── about.qmd
 └── styles.css
 ```
+. . .
+
+::: {.incremental}
+
+1. **`_quarto.yml`** is a **Configuration** file for your website.
+
+1. **`index.qmd`** creates the **homepage** of your website.
+    
+1. **`about.qmd`** ia an example about **page**.
+    
+1. **`styles.css`** is **styling** your website using customs CSS.
+
+:::
+
+## Create `_quarto.yml` File 
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+### Select Text File
+
+![](images/text-file.png){fig-align=center width=40%}
+:::
+
+::: {.column width="50%"}
+
+### Change Extension
+![](images/yaml-file.png){width=40% fig-align=center}
+:::
+
+::::
+
+## Edit `_quarto.yml`  {auto-animate=true}
+
+```{.yaml code-line-numbers="1-2|4-5"}
+project: 
+  type: website
+
+website:
+  title: "Dr. Ajay Kumar Koli"
+```
+
+<br>
 
 . . .
 
-- **`_quarto.yml`:** **Configuration** file for your website.
+::: {.callout-caution}
+1. The file extension is `.yml` and the selected extension was `YAML`.
 
-- **`index.qmd`:** The **homepage** of your website.
-    
-- **`about.qmd`:** An example about **page**.
-    
-- **`styles.css`:** Custom CSS for **styling** your website.
+1. Refresh the RStudio Project to see the `Build` option.
+:::
+
 
 ## Create the Homepage
 
 ![](images/homepage-ajay.png)
 
-## Edit `index.qmd`
+## Edit `index.qmd` {auto-animate=true}
 
-```yaml
+```{.yaml code-line-numbers="1-3|4|5-6|7-10|7-17|19-21|23-29|31-35"}
 ---
 title: "Dr. Ajay Kumar Koli"
 subtitle: "Data Science Educator <br>Co-founder of SARA"
@@ -104,34 +170,25 @@ about:
       href: https://www.linkedin.com/in/ajay-kumar-koli/
 ---
 
-Content goes here.
-```
+Ajay Kumar is the Chief Data Scientist at Wengo Analytics. 
+When not innovating on data platforms, Finley enjoys spending time
+unicycling and playing with her pet iguana.
 
-## Website Navigation
+## Education
 
-![](images/navbar-ajay.png)
+University of California, San Diego | San Diego, CA
+PhD in Mathematics | Sept 2011 - June 2015
 
-## Edit `_quarto.yml`
+Macalester College | St. Paul, MN
+B.A in Economics | Sept 2007 - June 2011
 
-```yaml
-project: 
-  type: website
+## Experience
 
-website:
-  title: "Dr. Ajay Kumar Koli"
-  navbar:
-    left:
-      - text: "Home"
-        href: index.qmd
-      - text: "About"
-        href: about.qmd
-    tools:
-      - icon: github
-        href: https://github.com/koliajaykr
-      - icon: linkedin
-        href: https://www.linkedin.com/in/ajay-kumar-koli/
-      - icon: twitter
-        href: https://x.com/ajay_kolii
+Wengo Analytics | Head Data Scientist | April 2018 - present
+
+GeoScynce | Chief Analyst | Spet 2012 - April 2018
+
+
 ```
 
 ## Built-In Templates, edit `index.qmd`
@@ -162,7 +219,102 @@ about:
 
 ::::
 
+::: footer
 More information here <https://quarto.org/docs/websites/website-about.html#templates>
+:::
+
+## Website Navigation Bar
+
+![](images/navbar-ajay.png)
+
+## Edit `_quarto.yml`
+
+```{.yaml code-line-numbers="6-9|10-11|12-18|19-21"}
+project: 
+  type: website
+
+website:
+  title: "Dr. Ajay Kumar Koli"
+  navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "About"
+        href: about.qmd
+    tools:
+      - icon: github
+        href: https://github.com/koliajaykr
+      - icon: linkedin
+        href: https://www.linkedin.com/in/ajay-kumar-koli/
+      - icon: twitter
+        href: https://x.com/ajay_kolii
+  page-footer: 
+    left: "Copyright 2021, Norah Jones"
+    right: "Made with Quarto & 💙"
+```
+
+
+## 🤯 Your Turn{background-color="#003262"}
+
+```{r}
+library(countdown)
+
+countdown(minutes = 15, top = 0)
+```
+
+<br>
+
+### Add an "About" Page to Your Quarto Website
+
+<br>
+
+::: {.callout-note collapse="true" title="💡 Hints"}
+
+- Create a new file called `about.qmd`
+
+- Use `href:` to add it to the navbar in `_quarto.yml`
+
+- A clickable email link in Markdown looks like: `[text](mailto:you@example.com)`
+
+:::
+
+## ✅ Answer  {background-color="#156A6B"}
+
+### Step 1 - Create `about.qmd`
+
+```yaml
+---
+title: "About"
+---
+
+Hi, I'm Ajay Kumar, a data scientist based in New York.
+I specialize in R, machine learning, and data visualization.
+Feel free to reach out — I love connecting with like-minded people!
+
+📧 [koliajaykumar@gmail.com](mailto:koliajaykumar@gmail.com)
+
+```
+
+## ✅ Answer  {background-color="#156A6B"}
+
+### Step 2 - Update `_quarto.yml`
+
+```{.yaml code-line-numbers="10-11"}
+project:
+  type: website
+
+website:
+  title: "Ajay Kumar"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+        
+```
+
+
 
 ## Themes; edit `_quarto.yml`
 
@@ -172,15 +324,32 @@ format:
     theme: cosmo
 ```
 
+<br>
+
 . . .
 
-- Quarto includes 25 themes from the [Bootswatch](https://bootswatch.com/), check out other [themes](https://quarto.org/docs/output-formats/html-themes.html#basic-options).
+```yaml
+theme: default # bootstrap 5 default
+theme: cosmo   # cosmo bootswatch theme
+theme: pandoc  # pandoc default html treatment
+theme: none    # no theme css added to document
+```
 
-## Website Colors
+::: footer
+More about HTML themes <https://quarto.org/docs/output-formats/html-themes.html>
+:::
+
+
+
+## Customise Website Appearance
 
 ![](images/colors-ajay.png)
 
-## Colors; edit `_quarto.yml`
+## Customize Colors; edit `_quarto.yml`
+
+> ["If you are using a Bootstrap theme or the Pandoc theme, there are a set of options you can provide in document metadata to customize its appearance."]{.rn-fragment}
+
+. . .
 
 - `fontcolor`: The main color for text on the site.
 
@@ -189,6 +358,10 @@ format:
 - `backgroundcolor`: Background color of the whole site.
 
 - `monobackgroundcolor`: Background color for code chunk.
+
+::: footer
+Learn more about HTML colors <https://www.canva.com/colors/>
+:::
 
 ## Colors; edit `_quarto.yml`
 
@@ -204,9 +377,9 @@ format:
 
 ![](images/colors-ajay.png){fig-align=center}
 
-## Fonts; edit `_quarto.yml`
+## Customize Fonts; edit `_quarto.yml`
 
-```yaml
+```{.yaml code-line-numbers="8"}
 format:
   html:
     theme: cosmo
@@ -217,30 +390,55 @@ format:
     mainfont: "monospace"
 ```
 
-## CSS
+<br>
 
+. . .
+
+`mainfont` - Sets the font-family property for the document. Also try sans-serif, serif, cursive or system-ui
+
+::: footer
+Learn more about font-family <https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-family>
+:::
+
+## Your Style/Theme using CSS
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="30%"}
+![](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWJoNjQzNG4xMHA3c3JvNjFjOGxkM2ZyNzFrazgyaHRtbmZ6NmVldyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fuJPZBIIqzbt1kAYVc/giphy.gif)
+:::
+
+::: {.column width="70%"}
 - Cascading Style Sheets (CSS) is a style sheet language.
 
 - CSS is used for specifying the presentation and styling of a document written in a markup language such as HTML
-
-::: {.aside}
-Source: <https://en.wikipedia.org/wiki/CSS>
 :::
 
-## CSS; edit `_quarto.yml`
+::::
 
-```yaml
+::: footer
+Image source <https://giphy.com/gifs/HostGator-webhosting-hostgator-webhost-fuJPZBIIqzbt1kAYVc>      
+Source <https://en.wikipedia.org/wiki/CSS>
+:::
+
+## Add Style File; edit `_quarto.yml`
+
+```{.yaml code-line-numbers=4}
 format:
   html:
     theme: cosmo
     css: styles.css
 ```
 
+<br>
+
 . . .
 
 Codes for the CSS file
 
-```markdown
+```css
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
@@ -252,28 +450,36 @@ h1 {
 
 ```
 
-::: {.aside}
+::: footer
 Also check out [SCSS](https://sass-lang.com/).    
 Learn more about CSS: <https://www.w3schools.com/css/default.asp>
 :::
 
-## Render Website
+## {background-color=black background-image="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjM0d2twY3l3eWU4ZjYxNXNieTYxM3ZzaWxwMG1wNTZmb2xybWNteiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8PpFJcG4y8HqsxQumz/giphy.gif" background-size=35%}
 
-![](images/render-website.png)
+Imagine a world where all websites are responsive
 
-![](images/css-homepage-ajay.png)
+<!-- ![](images/render-website.png) -->
 
-# 🚀 Launch Your Website
+<!-- ![](images/css-homepage-ajay.png) -->
 
-## Your files for the github
+::: footer
+GIF source <https://giphy.com/gifs/animation-gif-artist-trapped-8PpFJcG4y8HqsxQumz>
+:::
+
+# 🚀 Launch Your Website {background-color=silver}
+
+## Push Your Files to GitHub
+
+Tick First Box $\rightarrow$ Ctrl + a $\rightarrow$ Tick Second Box
 
 ![](images/github-website1.png)
 
-## Select files and click `Commit`
+## Select Files and Click `Commit`
 
 ![](images/github-website2.png)
 
-## Commit message and click `Commit`
+## Write Commit Message and click `Commit`
 
 ![](images/github-website3.png)
 
@@ -281,11 +487,11 @@ Learn more about CSS: <https://www.w3schools.com/css/default.asp>
 
 ![](images/github-website4.png)
 
-## Branch ahead Origin and click `Push`
+## Branch Ahead Origin and click `Push`
 
 ![](images/github-website5.png)
 
-## After update close all windows
+## Let it Run, Close Commit Dialog Boxes
 
 ![](images/github-website7.png)
 
@@ -293,7 +499,7 @@ Learn more about CSS: <https://www.w3schools.com/css/default.asp>
 
 ![](images/github-website8.png)
 
-## Open Netlify Account.
+## Open Netlify Website
 
 ```{=html}
 <iframe width="780" height="500" src="https://www.netlify.com/" title="Webpage example"></iframe>
@@ -329,24 +535,11 @@ Add New Site $\rightarrow$ Import an Existing Project $\rightarrow$ Choose GitHu
 
 ![](images/netlify5.png)
 
-## Add Content
+::: notes
 
 {{< lipsum 1 >}}
 
+:::
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## {background-color=black background-image="https://cdn.prod.website-files.com/64fa82cbdeed167ebaefef84/64fa868fecc183a3dd76ab72_603ec5023c4ad83b06783427_ERDRXg1TvG60WlNMOmdqI1UU4cXkbLIokPeCl4ZKyUOdfkCy4Ju7brzIdfWUuo4E-WoK4l9FzYaV8rVhe9wFG-aKiOHf_hAjlxPa9S2FRqipCoAqR6Na6eOpdanMJ39w_u51RDvc.jpeg" background-size=50%}
 

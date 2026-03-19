@@ -1,0 +1,108 @@
+---
+title: "Attendance Record | Statistics using R"
+subtitle: "2nd SARA Statistics Winter School"
+author: "Jan 23-27, 2026 | Sonipat (HR)"
+format:
+  typst:
+    page-orientation: landscape
+abstract-title: "Welcome!"
+classoption: "landscape"
+abstract: |
+  |
+  |
+  | - Please arrive on time and sign the attendance sheet upon entry  
+  | - Maintain respectful and professional conduct throughout the session
+  | - Mobile phones on silent mode
+  | - Your cooperation helps create a productive learning environment for all
+  |  
+  | 
+  | All the best to all the participants.
+  |
+  |
+  | Dr. Ajay & Dr. Kiran
+  | Founders of SARA
+  | Contact: 925 315 2024
+  | Email: sara.institute.info@gmail.com
+
+
+---
+
+```{=typst}
+#set page(
+  flipped: true,
+  header: [
+  _Attendance Record of SARA Institute of Data Science_
+  #h(1fr)
+  #box(image("logo-sara.png", width:5%))
+])
+
+#set page(footer: context [
+  2nd SARA Statistics Summer School
+  #h(1fr)
+  #counter(page).display(
+  "1/1",
+  both: true,
+)
+])
+```
+
+
+```{=typst} 
+#v(10pt)
+
+#set table(
+  fill: (x, y) =>
+    if x == 0 or y == 0 {
+      gray.lighten(40%)
+    },
+  align: right,
+  
+)
+
+#show table.cell.where(x: 0): strong
+#show table.cell.where(y: 0): strong
+
+#table(
+  columns: (0.5fr, 2fr, 1fr, 1fr, 1fr, 1fr, 1fr),
+  rows: (1.25cm),
+  stroke: 0.5pt + rgb("666675"), 
+  align: left + horizon,
+  [S.No.], [*Name of the Participant*], [*23 Jan*], [*24 Jan*], [*25 Jan*], [*26 Jan*], [*27 Jan*],
+  [1.], [Mr. Shiva Peelwan], [], [], [], [], [], 
+  [2.], [Mr. Keerthivasan], [], [], [], [], [],
+  [3.], [Mr. Gajendra Singh Lodhi], [], [], [], [], [],
+  [4.], [Mr. Sree Kumar], [], [], [], [], [], 
+  [5.], [Mr. Manish], [], [], [], [], [], 
+  [6.], [Dr. Mridula Manglam (F)], [], [], [], [], [], 
+  [7.], [Dr. Dhiraj Singha], [], [], [], [], [], 
+  [8.], [Mr. Kunal Kumar], [], [], [], [], [], 
+  [9.], [Mr. Mohit Jorwal], [], [], [], [], [], 
+  [10.], [Miss. Aditi Gautam (F)], [], [], [], [], [],
+  [11.], [Mr. Shubham Urkude], [], [], [], [], [],
+  [12.], [Mr. Muhd. Sahal K.], [], [], [], [], [],
+  [13.], [Mr. Rahul Bansod], [], [], [], [], [],
+  [14.], [Mr. M. Shiva Kumar], [], [], [], [], [],
+  [15.], [Dr. Priyanka Choudhary (F)], [], [], [], [], [],
+  [16.], [Mr. Mayur Durge], [], [], [], [], [],
+  [17.], [Mr. Ashutosh Sinha ], [], [], [], [], [],
+  [18.], [Mr. Sukh Pal], [], [], [], [], [],
+  [19.], [], [], [], [], [], [],
+  [20.], [], [], [], [], [], [],
+  
+)
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+

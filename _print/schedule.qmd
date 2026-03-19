@@ -1,0 +1,253 @@
+---
+title: "Statistics using R"
+subtitle: "2nd SARA Statistics Winter School"
+author: "Jan 23-27, 2026 | Sonipat (HR)"
+format: typst 
+abstract-title: "Welcome!"
+abstract: |
+  |
+  |
+  | **Savitribai Ramabai (SARA) Institute of Data Science** is a non-profit organization dedicated to inclusive education. We offer free and low-cost training in **coding, English, and data skills** for all. Priority admission for marginalized communities and women. Thank you to our students and donors for supporting us. We are proudly supported by **The ambedkar Educational Society, Sonipat.** 
+  | 
+  | All the best to all the participants.
+  |
+  |
+  | Dr. Ajay & Dr. Kiran
+  | Founders of SARA
+  | Contact: 925 315 2024
+  | Email: sara.institute.info@gmail.com
+
+
+---
+
+```{=typst}
+#set page(header: [
+  _Schedule of SARA Institute of Data Science_
+  #h(1fr)
+  #box(image("logo-sara.png", width:5%))
+])
+
+#set page(footer: context [
+  2nd SARA Statistics Summer School
+  #h(1fr)
+  #counter(page).display(
+  "1/1",
+  both: true,
+)
+])
+```
+
+
+## 📅 DAY 1 - Friday 23 Jan 2026
+
+```{=typst} 
+#v(10pt)
+
+// See the strokes section for details on this!
+#let frame(stroke) = (x, y) => (
+  left: if x > 0 { 0pt } else { stroke },
+  right: stroke,
+  top: if y < 2 { stroke } else { 0pt },
+  bottom: stroke,
+)
+
+#set table(
+  fill: (_, y) => if calc.odd(y) { rgb("EAF2F5") },
+  stroke: frame(rgb("21222C")),
+)
+
+#table(
+  columns: (0.9fr, 1fr, 1fr, 0.7fr),
+  rows: (0.7cm, 1.5cm),
+  align: left + horizon,
+  [*Time*], [*Activity*], [*Topic*], [*Your Progress*],
+  [08:30 am to 09:15 am], [Breakfast], [], [], 
+  [09:30 am to 10:00 am], [*_Welcome Ceremony_*], [Tribute with Candles], [],
+  [10:00 am to 11:30 am], [*Class Session 1*], [R, RStudio, & Quarto], [],
+  [11:30 am to 12:00 am], [Discussion Break], [], [],
+  [12:00 am to 01:30 pm], [*Class Session 2*], [R, RStudio, & Quarto], [],
+  [01:30 pm to 02:30 pm], [Lunch], [], [],
+  [02:30 pm to 04:00 pm], [*Class Session 3*], [Foundational Concepts in Statistical Research], [],
+  [04:00 pm to 04:30 pm], [Discussion Break with Tea], [], [],
+  [04:30 pm to 06:00 pm], [*Class Session 4*], [Frequency Distribution], [],
+  [07:30 pm to 08:30 pm], [Dinner], [], [],
+)
+
+#pagebreak()
+```
+
+## 📅 DAY 2 - Saturday 24 Jan 2026
+
+```{=typst} 
+#v(10pt)
+
+// See the strokes section for details on this!
+#let frame(stroke) = (x, y) => (
+  left: if x > 0 { 0pt } else { stroke },
+  right: stroke,
+  top: if y < 2 { stroke } else { 0pt },
+  bottom: stroke,
+)
+
+#set table(
+  fill: (_, y) => if calc.odd(y) { rgb("EAF2F5") },
+  stroke: frame(rgb("21222C")),
+)
+
+#table(
+  columns: (0.9fr, 1fr, 1fr, 0.7fr),
+  rows: (0.7cm, 1.5cm),
+  align: left + horizon,
+  [*Time*], [*Activity*], [*Topic*], [*Your Progress*],
+  [08:30 am to 09:30 am], [Breakfast], [], [], 
+  [10:00 am to 11:30 am], [*Class Session 1*], [Exploratory Data Analysis (EDA)], [],
+  [11:30 am to 12:00 am], [Discussion Break], [], [],
+  [12:00 am to 01:30 pm], [*Class Session 2*], [Exploratory Data Analysis (EDA)], [],
+  [01:30 pm to 02:30 pm], [Lunch], [], [],
+  [02:30 pm to 04:00 pm], [*Class Session 3*], [Throwing Shapes], [],
+  [04:00 pm to 04:30 pm], [Discussion Break with Tea], [], [],
+  [04:30 pm to 06:00 pm], [*Class Session 4*], [Central Tendency], [],
+  [07:30 pm to 08:30 pm], [Dinner], [], [],
+)
+
+#pagebreak()
+```
+
+## 📅 DAY 3 - Sunday 25 Jan 2026
+
+```{=typst} 
+#v(10pt)
+
+// See the strokes section for details on this!
+#let frame(stroke) = (x, y) => (
+  left: if x > 0 { 0pt } else { stroke },
+  right: stroke,
+  top: if y < 2 { stroke } else { 0pt },
+  bottom: stroke,
+)
+
+#set table(
+  fill: (_, y) => if calc.odd(y) { rgb("EAF2F5") },
+  stroke: frame(rgb("21222C")),
+)
+
+#table(
+  columns: (0.9fr, 1fr, 1fr, 0.7fr),
+  rows: (0.7cm, 1.5cm),
+  align: left + horizon,
+  [*Time*], [*Activity*], [*Topic*], [*Your Progress*],
+  [08:30 am to 09:30 am], [Breakfast], [], [], 
+  [10:00 am to 11:30 am], [*Class Session 1*], [Statistical Models], [],
+  [11:30 am to 12:00 am], [Discussion Break], [], [],
+  [12:00 am to 01:30 pm], [*Class Session 2*], [Measures of Dispersion], [],
+  [01:30 pm to 02:30 pm], [Lunch], [], [],
+  [02:30 pm to 04:00 pm], [*Class Session 3*], [Data Visualization using ggplot2], [],
+  [04:00 pm to 04:30 pm], [Discussion Break with Tea], [], [],
+  [04:30 pm to 06:00 pm], [*Class Session 4*], [GitHub Overview], [],
+  [07:30 pm to 08:30 pm], [Dinner], [], [],
+)
+
+#pagebreak()
+```
+
+## 📅 DAY 4 - Monday 26 Jan 2026
+
+```{=typst} 
+#v(10pt)
+
+// See the strokes section for details on this!
+#let frame(stroke) = (x, y) => (
+  left: if x > 0 { 0pt } else { stroke },
+  right: stroke,
+  top: if y < 2 { stroke } else { 0pt },
+  bottom: stroke,
+)
+
+#set table(
+  fill: (_, y) => if calc.odd(y) { rgb("EAF2F5") },
+  stroke: frame(rgb("21222C")),
+)
+
+#table(
+  columns: (0.9fr, 1fr, 1fr, 0.7fr),
+  rows: (0.7cm, 1.5cm),
+  align: left + horizon,
+  [*Time*], [*Activity*], [*Topic*], [*Your Progress*],
+  [08:30 am to 09:30 am], [Breakfast], [], [], 
+  [10:00 am to 11:30 am], [*Class Session 1*], [Probability Distribution], [],
+  [11:30 am to 12:00 am], [Discussion Break], [], [],
+  [12:00 am to 01:30 pm], [*Class Session 2*], [Framing Hypothesis (NHST)], [],
+  [01:30 pm to 02:30 pm], [Lunch], [], [],
+  [02:30 pm to 04:00 pm], [*Class Session 3*], [ANOVA & Chi-square Tests], [],
+  [04:00 pm to 04:30 pm], [Discussion Break with Tea], [], [],
+  [04:30 pm to 06:00 pm], [*Class Session 4*], [t-test], [],
+  [07:30 pm to 08:30 pm], [Dinner], [], [],
+)
+
+#pagebreak()
+```
+
+## 📅 DAY 5 - Tuesday 27 Jan 2026
+
+```{=typst} 
+#v(10pt)
+
+// See the strokes section for details on this!
+#let frame(stroke) = (x, y) => (
+  left: if x > 0 { 0pt } else { stroke },
+  right: stroke,
+  top: if y < 2 { stroke } else { 0pt },
+  bottom: stroke,
+)
+
+#set table(
+  fill: (_, y) => if calc.odd(y) { rgb("EAF2F5") },
+  stroke: frame(rgb("21222C")),
+)
+
+#table(
+  columns: (0.9fr, 1fr, 1fr, 0.7fr),
+  rows: (0.7cm, 1.5cm),
+  align: left + horizon,
+  [*Time*], [*Activity*], [*Topic*], [*Your Progress*],
+  [08:30 am to 09:30 am], [Breakfast], [], [], 
+  [10:00 am to 11:30 am], [*Class Session 1*], [Correlation vs Causation], [],
+  [11:30 am to 12:00 am], [Discussion Break], [], [],
+  [12:00 am to 01:30 pm], [*Class Session 2*], [Correlation vs Causation], [],
+  [01:30 pm to 02:30 pm], [Lunch], [], [],
+  [02:30 pm to 04:00 pm], [*Class Session 3*], [Linear Regression], [],
+  [04:00 pm to 04:30 pm], [Discussion Break with Tea], [], [],
+  [04:30 pm to 06:00 pm], [*Class Session 4*], [Linear Regression], [],
+  [06:30 pm to 07:30 pm], [*_Thanks Ceremony_*], [Your Feedback to Guests], [],
+  [07:30 pm to 08:30 pm], [Special Dinner], [], [],
+)
+
+#pagebreak()
+```
+
+# Your Feedback
+
+## Name *(optional)*:
+
+```{=typst}
+#set line(length: 100%)
+
+#stack(
+  spacing: 3.5em,
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+)
+```
+

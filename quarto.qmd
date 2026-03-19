@@ -1,69 +1,61 @@
 ---
-title: "[QUARTO]{.clr-white .r-fit-text}"
-subtitle: "[Dr. Ajay Kumar Koli (PhD) $\\cdot$ SARA Institute of Data Science, India]{.clr-white .r-fit-text}"
+title: "[Quarto Basics]{.clr-white .r-fit-text}"
+subtitle: "[Dr. Ajay Kumar Koli $\\cdot$ 2nd SARA Bootcamp]{.clr-white .r-fit-text}"
 #author: "[SARA Institute of Data Science, Sonipat, Haryana, India]{.clr-white .r-fit-text}"
-page-title: "quarto"
+logo: images/logo-sara.png
+page-title: "Bootcamp"
 format: revealjs
 progress: true
 controls: true
 slide-number: true
 scrollable: true
 menu: true
-logo: images/logo-sara.png
-#bibliography: references.bib
 theme: style.scss
+transition: slide
+lightbox: true
+bibliography: references.bib
+filters:
+  - roughnotation
 title-slide-attributes: 
-  data-background-image: "https://images.unsplash.com/photo-1593248196138-bad1a611a766?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  data-background-size: cover
+  data-background-image: "https://images.unsplash.com/photo-1621947081720-86970823b77a?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  data-background-size: "cover"
+  data-background-color: "black"
+  data-background-opacity: "0.5"
 ---
-
-## Most of Us Use {background-color=black}
-
-![](https://res.cdn.office.net/officehub/images/content/images/unauth-refresh/unauth-m365-hero-copilot-centric-7d5c104d84.png){fig-align="right"}
-
-## Some of Us Use {background-color=black}
-
-![](https://storage.googleapis.com/gweb-uniblog-publish-prod/images/blocosheader1.width-1200.format-webp.webp){fig-align="center"}
-
-## None of Us Use {background-color=black}
-
-<br>
-
-![](https://cdn.myportfolio.com/45214904-6a61-4e23-98d6-b140f8654a40/6f28e7d4-3394-43f9-8b0d-41c52de3883f_rw_1920.png?h=df468fed93290048029cf3bdfc27fbdf){fig-align="center"}
-
-::: aside
-Artwork from [Allison Horst](https://allisonhorst.com/horst-hill-collaborations)
-:::
-
-## {background-image="https://cdn.myportfolio.com/45214904-6a61-4e23-98d6-b140f8654a40/b041d35c-5117-4dd0-9b08-d2d0f7a77f9a.png?h=21528b7e9f1a2e24c9ec3d46cfca8653" background-size="cover"}
 
 ## Quarto
 
 <br>
 
 ::::: columns
-::: {.column width="25%"}
+::: {.column width="20%"}
 ![](https://raw.githubusercontent.com/github/explore/80f119e965a9a3df7b74c3f7b63a502e3d0ded36/topics/quarto/quarto.png)
 :::
 
-::: {.column width="75%"}
+::: {.column width="80%"}
 "An open-source scientific and technical publishing system to prepare articles & reports; presentations; dashboards; websites; books; and interactive documents.
 :::
 :::::
 
-::: aside
+::: footer
 Official Quarto Website: <https://quarto.org/>
 :::
 
-## Quarto Publishing System {background-color=black}
+## Quarto BTS
 
-![](https://cdn.myportfolio.com/45214904-6a61-4e23-98d6-b140f8654a40/c2ef45f1-4a68-4c7a-a43f-bdcf0f90e104.png?h=57404b88e9bf43eea2d2b57c71b13303)
+![](https://cdn.myportfolio.com/45214904-6a61-4e23-98d6-b140f8654a40/b5217f2a-f129-4bf9-90dc-c5b9783d0ea8.png?h=f8d3ed40353f4ae6eb77dae39072510c)
 
-::: aside
+::: footer
 Artwork from [Allison Horst](https://allisonhorst.com/horst-hill-collaborations)
 :::
 
-## Create Quarto Default Document {background-color="black"}
+# {background-image="https://cdn.myportfolio.com/45214904-6a61-4e23-98d6-b140f8654a40/b041d35c-5117-4dd0-9b08-d2d0f7a77f9a.png?h=21528b7e9f1a2e24c9ec3d46cfca8653" background-size="cover"}
+
+::: footer
+Artwork from [Allison Horst](https://allisonhorst.com/horst-hill-collaborations)
+:::
+
+## Create Quarto Document {.smaller}
 
 ::: {.centering layout-ncol=2 layout-valign="bottom"}
 
@@ -73,88 +65,235 @@ Artwork from [Allison Horst](https://allisonhorst.com/horst-hill-collaborations)
 
 :::
 
-## Quarto Document: Save & Render {background-color="black"}
+## YAML {background-color="lightgray" auto-animate=true}
 
-![](images/quarto-default-document.png)
+:::: {.columns}
 
-## Output of Quarto Document {background-color="black"}
+::: {.column width="50%"}
 
-![](images/quarto-default-output.png)
-
-
-## `.qmd` Files {background-color=black}
-
-![](https://cdn.myportfolio.com/45214904-6a61-4e23-98d6-b140f8654a40/b5217f2a-f129-4bf9-90dc-c5b9783d0ea8.png?h=f8d3ed40353f4ae6eb77dae39072510c)
-
-::: aside
-Artwork from [Allison Horst](https://allisonhorst.com/horst-hill-collaborations)
-:::
-
-## YAML, Markdown & Code Cells {background-color=black}
-
-![](images/quarto-default-document.png)
-
-## Practice Quarto using RStudio
-
-1.  Create a Quarto document with HTML format.
-
-2.  Explain YAML and Text:
-
-    -   To know about the all Quarto [YAML options](https://quarto.org/docs/reference/formats/html.html).
-    -   To know about the Quarto [text formating](https://quarto.org/docs/authoring/markdown-basics.html)
-    
-## 🤯 Your Turn {background-color="black"}
-
-```{r}
-library(countdown)
-
-countdown(minutes = 7)
-```
-
-![](images/turns/quarto-html-news.png){fig-align=center}    
-    
-## Practice Quarto
-
-1.  Explain Code Chunk
-    -   To know about the Quarto [code chunk options](https://quarto.org/docs/computations/execution-options.html)
-2.  Install `tidyverse` package.
-
-## 🤯 Your Turn {background-color="black"}
-
-```{r}
-library(countdown)
-
-countdown(minutes = 7)
-```
-
-````yaml
+```yaml
 ---
-title: "Quarto Exercise"
-author: "Your Name"
-date: "today"
+title: "Hello World"
+subtitle: "2nd SARA Bootcamp 2026"
+author: "Dr. Ajay Kumar Koli"
+date: today
 format: html
 ---
 
-# Quarto Exercise
+```
 
-Welcome to this Quarto exercise! In this exercise, we will practice using YAML, text, and code chunks to create a simple document.
+:::
 
-## Introduction
+::: {.column width="50%"}
 
-Quarto is a powerful tool for creating documents that integrate text, code, and visualizations. In this exercise, we will create a simple plot using R.
+```{=html}
+<iframe src="./_example1.html" width="100%" height="500"></iframe>
+```
 
-## Code Chunk
+:::
 
-Below is a code chunk that generates a simple plot using R.
+::::
 
-```{{r}}
+::: footer
+More YAML options for HTML ouput <https://quarto.org/docs/reference/formats/html.html>
+:::
 
-plot(1:100)
+## Markdown Syntax {background-color="lightgray" auto-animate=true}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+```yaml
+---
+title: "Hello World"
+subtitle: "2nd SARA Bootcamp 2026"
+author: "Dr. Ajay Kumar Koli"
+date: today
+format: html
+---
+
+## First Time Coding
+
+- Relax
+
+- Patience
+
+## Having Fun
+
+This is *just* the beginning. 
+It will be **awesome** at the end. 
+Learn more from this link <https://quarto.org/docs/reference/formats/html.html>.
+
+## Add Image
+
+![](images/intro/mission.jpg)
 
 ```
 
+:::
+
+::: {.column width="50%"}
+
+```{=html}
+<iframe src="./_example-02.html" width="100%" height="500"></iframe>
+```
+
+:::
+
+::::
+
+::: footer
+Markdown basics <https://quarto.org/docs/authoring/markdown-basics.html>
+:::
+
+## Code Blocks {background-color="lightgray" auto-animate=true} 
+
+:::: {.columns}
+
+::: {.column width="70%"}
+
+````yaml
+---
+title: "ggplot2 demo"
+author: "Norah Jones"
+date: "5/22/2021"
+format: 
+  html:
+    code-fold: true
+---
+
+## Air Quality
+
+@fig-airquality further explores the impact of temperature on ozone level.
+
+```{{r}}
+#| label: fig-airquality
+#| fig-cap: "Temperature and ozone level."
+#| warning: false
+
+library(ggplot2)
+
+ggplot(airquality, aes(Temp, Ozone)) + 
+  geom_point() + 
+  geom_smooth(method = "loess")
+```
 ````
 
+:::
+
+::: {.column width="30%"}
+
+<iframe src="./_example-03.html" width="100%" height="500"></iframe>
+
+:::
+
+::::
 
 
+::: footer
+R Code Blocks <https://quarto.org/docs/computations/r.html>
+:::
+
+## Inline Code {background-color="lightgray" auto-animate=true}
+
+:::: {.columns}
+
+::: {.column width="70%"}
+
+````yaml
+---
+title: "Inline Coding"
+date: "3/14/2026"
+format: html
+---
+
+```{{r}}
+marks <- c(2, 4, 6, 8)
+```
+
+The sum of the marks is `{{r}} sum(marks)`. 
+
+The mean of the marks is `{{r}} mean(marks)`. 
+````
+:::
+
+::: {.column width="30%"}
+
+<iframe src="./_example-04.html" width="100%" height="500"></iframe>
+
+:::
+
+::::
+
+## Quarto Output Formats
+
+::: {.panel-tabset}
+### HTML
+
+```yaml
+---
+title: "My document"
+format:
+  html:
+    toc: true
+    html-math-method: katex
+    css: styles.css
+---
+```
+
+### PDF
+
+```yaml
+---
+title: "My document"
+format:
+  pdf:
+    toc: true
+    number-sections: true
+    colorlinks: true
+---
+```
+
+### WORD
+
+```yaml
+---
+title: "My Document"
+format:
+  docx:
+    toc: true
+    number-sections: true
+    highlight-style: github
+---
+```
+:::
+
+<br>
+
+::: {.callout-caution}
+Not all YAML options are supported across every output format.
+:::
+
+::: footer
+More info <https://quarto.org/docs/output-formats/all-formats.html>
+:::
     
+## 🤯 Your Turn {background-color="#003262"}
+
+```{r}
+library(countdown)
+
+countdown(minutes = 15, top = 0)
+```
+
+![](images/turns/turn-01.png){fig-align=center width=40%}    
+
+::: footer
+This article webpage: <https://www.aljazeera.com/sports/2026/3/14/china-edge-taiwan-2-0-in-extra-time-to-reach-womens-asian-cup-semifinals>
+:::
+
+::: notes
+Output in HTML, PDF, and Word.
+:::
+
