@@ -279,8 +279,8 @@ Source: [Quarto guide](https://quarto.org/docs/authoring/markdown-basics.html)
 +-------------------------+-----------------------+
 | Markdown Syntax         | Output                |
 +=========================+=======================+
-| ``` markdown            | ![](lotus.png)        |
-| ![](lotus.png)          |                       |
+| ``` markdown            | ![](banner.png)      |
+| ![](banner.png)         |                       |
 | ```                     |                       |
 +-------------------------+-----------------------+
 

@@ -228,7 +228,7 @@
     "href": "thesis.html#add-images",
     "title": "Thesis using Quarto",
     "section": "Add images",
-    "text": "Add images\n\nIf image is saved in your computer, ![](add image path here)\n\n\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n![](lotus.png)"
+    "text": "Add images\n\nIf image is saved in your computer, ![](add image path here)\n\n\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n![](banner.png)\n |"
   },
   {
     "objectID": "thesis.html#add-images-1",
@@ -1272,6 +1272,27 @@
     "title": "Publish using Quarto",
     "section": "3 Session",
     "text": "3 Session\n    View slides in full screen"
+  },
+  {
+    "objectID": "index.html#day-2",
+    "href": "index.html#day-2",
+    "title": "Publish using Quarto",
+    "section": "DAY 2",
+    "text": "DAY 2"
+  },
+  {
+    "objectID": "index.html#session-3",
+    "href": "index.html#session-3",
+    "title": "Publish using Quarto",
+    "section": "4 Session",
+    "text": "4 Session\n    View slides in full screen"
+  },
+  {
+    "objectID": "index.html#session-4",
+    "href": "index.html#session-4",
+    "title": "Publish using Quarto",
+    "section": "5 Session",
+    "text": "5 Session\n    View slides in full screen"
   },
   {
     "objectID": "quarto.html#quarto",

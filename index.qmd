@@ -63,21 +63,23 @@ The slides title background image is from [Sora Sagano | unsplash](https://image
 
 <br>
 
-<!-- ## Session -->
+## [DAY 2]{style="color:#b01818"} {.unnumbered}
 
-<!-- {{< revealjs file="markdown.html" height="500px" class="ratio ratio-16x9" >}} -->
+## Session
 
-<!-- <br> -->
+{{< revealjs file="reproducible-research.html" height="500px" class="ratio ratio-16x9" >}}
 
-<!-- <br> -->
+<br>
 
-<!-- ## Session -->
+<br>
 
-<!-- {{< revealjs file="website.html" height="500px" class="ratio ratio-16x9" >}} -->
+## Session
 
-<!-- <br> -->
+{{< revealjs file="thesis.html" height="500px" class="ratio ratio-16x9" >}}
 
-<!-- <br> -->
+<br>
+
+<br>
 
 <!-- ## Session -->
 
