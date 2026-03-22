@@ -4,7 +4,7 @@ format: revealjs
 progress: true
 #slide-number: true
 scrollable: true
-menu: false
+menu: true
 incremental: true
 theme: style.scss
 transition: slide
@@ -63,6 +63,8 @@ lightbox: true
 ##  {background-image="images/thanks/bg.png" background-size="cover"}
 
 ![](images/thanks/students.png){width="75%" fig-align=center}
+
+##  {background-image="images/thanks/group-students.jpg" background-size="cover"}
 
 ##  {background-image="images/thanks/bg.png" background-size="cover"}
 
