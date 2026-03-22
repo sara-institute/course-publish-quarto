@@ -1,24 +1,20 @@
 ---
-title: "[THANK YOU!]{.clr-white .r-fit-text}"
-subtitle: "[Dr. Ajay Kumar Koli (PhD) $\\cdot$ SARA Institute of Data Science, India]{.clr-white .r-fit-text}"
-#author: "[SARA Institute of Data Science, Sonipat, Haryana, India]{.clr-white .r-fit-text}"
-page-title: "quarto"
+logo: images/logo-sara.png
 format: revealjs
 progress: true
-controls: true
-slide-number: true
+#slide-number: true
 scrollable: true
-menu: true
-logo: images/logo-sara.png
-#bibliography: references.bib
+menu: false
+incremental: true
 theme: style.scss
-title-slide-attributes: 
-  data-background-image: "https://images.unsplash.com/photo-1593248196138-bad1a611a766?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  data-background-size: cover
-bibliography: references.bib
+transition: slide
+highlight-style: github
+lightbox: true
 ---
 
-##  {background-image="https://images.unsplash.com/photo-1615715035868-fc94bd5ffdac?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" background-size="cover"}
+# Thank you!<br>Ceremony {background-image="images/intro/flyer-thank-you.png" background-size=contain background-position=right}
+
+##  {background-image="images/thanks/bg.png" background-size="cover"}
 
 <br>
 <br>
@@ -46,22 +42,29 @@ bibliography: references.bib
 [**Savitribai Ramabai (SARA) Institute of Data Science**]{.r-fit-text}
 :::::::
 
-# {background-image="https://images.unsplash.com/photo-1615715035868-fc94bd5ffdac?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" background-size="cover"}
+##  {background-image="images/thanks/bg.png" background-size="cover"}
 
-[![](images/flyer-march.png){fig-align=center}]{.r-stretch}
+[![](images/thanks/flyer-bootcamp-sara.png){fig-align=center}]{.r-stretch}
 
-## Event Overview {background-image="https://images.unsplash.com/photo-1615715035868-fc94bd5ffdac?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" background-size="cover"}
+##  {background-image="images/thanks/bg.png" background-size="cover"}
 
-- Open to Everyone, **Free** for all.
+[![](images/thanks/free-women.png){fig-align=center}]{.r-stretch}
 
-- Participants
-    - 46 registered.
-    - 13 reached.
-    - **10 attended**.
+##  Event Overview {background-image="images/thanks/bg.png" background-size="cover"}
 
-- **30 hours** of teaching.
+- Open to Everyone, **Free** for all women.
 
-## {background-image="https://images.unsplash.com/photo-1615715035868-fc94bd5ffdac?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" background-size="cover"}
+- 09 Participants
+
+- **25 hours** of teaching.
+
+- Three objectives: Website, Thesis, and Slides
+
+##  {background-image="images/thanks/bg.png" background-size="cover"}
+
+![](images/thanks/students.png){width="75%" fig-align=center}
+
+##  {background-image="images/thanks/bg.png" background-size="cover"}
 
 <br>
 <br>
@@ -74,8 +77,19 @@ bibliography: references.bib
 
 ::::
 
-## {background-image=images/students.jpg background-size=cover}
+# {{< fa brands whatsapp >}} Follow<br>SARA {background-color="seagreen" background-image="images/intro/sara-channel.jpeg" background-position="right" background-size="contain"}
 
+Receive Courses, Scholarships, & Talks <br>Updates on your WhatsApp.
 
+# {{< fa handshake >}} Donate<br>to SARA {background-color="#001b3a" background-image="images/intro/upi-sara.png" background-position="right" background-size="contain"}
+
+No Amount is too Small.
+
+##  {background-image="images/thanks/bg.png" background-size="cover"}
+
+<br>
+<br>
+
+[Thank you!]{.r-fit-text}
 
 

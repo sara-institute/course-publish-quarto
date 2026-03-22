@@ -93,13 +93,13 @@ The slides title background image is from [Sora Sagano | unsplash](https://image
 
 <!-- {{< revealjs file="slides.html" height="500px" class="ratio ratio-16x9" >}} -->
 
-<!-- <br> -->
+<br>
 
-<!-- <br> -->
+<br>
 
-<!-- ## Session -->
+## Session
 
-<!-- {{< revealjs file="thanks.html" height="500px" class="ratio ratio-16x9" >}} -->
+{{< revealjs file="thanks.html" height="500px" class="ratio ratio-16x9" >}}
 
 
 
